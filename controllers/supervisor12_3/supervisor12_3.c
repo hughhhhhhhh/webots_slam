@@ -101,7 +101,7 @@ int i,nn;
 //epuck enable receiver emitter
   WbDeviceTag emitter = wb_robot_get_device("emitter");
     // WbDeviceTag emittertoyellowbox = wb_robot_get_device("emittertoyellowbox");
-      WbDeviceTag emitter9 = wb_robot_get_device("emitter9");
+     // WbDeviceTag emitter9 = wb_robot_get_device("emitter9");
 
 
   WbDeviceTag receiver = wb_robot_get_device("receiver");
@@ -185,10 +185,10 @@ double transmittedPower,maxRange,antennaGain,frequency;
 WbNodeRef robot_node1 = wb_supervisor_node_get_from_def("MyBot1");
 WbNodeRef robot_node2 = wb_supervisor_node_get_from_def("MyBot2");
 WbNodeRef robot_node3 = wb_supervisor_node_get_from_def("MyBot3");
-WbNodeRef mybot = wb_supervisor_node_get_from_def("E_PUCK");
+//WbNodeRef mybot = wb_supervisor_node_get_from_def("E_PUCK");
 // WbNodeRef yellowBox = wb_supervisor_node_get_from_def("YELLOW_BOX");
 
-WbFieldRef translationField = wb_supervisor_node_get_field(mybot, "translation");
+//WbFieldRef translationField = wb_supervisor_node_get_field(mybot, "translation");
 WbFieldRef trans_field1 = wb_supervisor_node_get_field(robot_node1, "translation");
 WbFieldRef trans_field2 = wb_supervisor_node_get_field(robot_node2, "translation");
 WbFieldRef trans_field3 = wb_supervisor_node_get_field(robot_node3, "translation");
@@ -280,7 +280,7 @@ WbFieldRef rotat_field_epuck = wb_supervisor_node_get_field(epuck, "rotation");
      
      
     wb_emitter_send(emitter, data , 16 * sizeof(double));
-        wb_emitter_send(emitter9, data , 16 * sizeof(double));
+       // wb_emitter_send(emitter9, data , 16 * sizeof(double));//send to the epuck his won position
 
     
     
@@ -296,7 +296,7 @@ WbFieldRef rotat_field_epuck = wb_supervisor_node_get_field(epuck, "rotation");
   
   
    // Update the translation field
-   const double *translation = wb_supervisor_field_get_sf_vec3f(translationField);
+   //const double *translation = wb_supervisor_field_get_sf_vec3f(translationField);
 
     // Update the counter
    counter++;
