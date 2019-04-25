@@ -89,7 +89,7 @@ while (wb_robot_step(TIME_STEP3) != -1){
          receivedPower3 = targets[i].received_power;
         double message[3] = { dist3,receivedPower3,TIME_STEP3};
         wb_emitter_send(emitter3, message,3*sizeof(double));   //take care of the size of message!
-
+ // printf("the data is emitted  %f %f %f\n",  dist3,receivedPower3,TIME_STEP3);
 
 
          

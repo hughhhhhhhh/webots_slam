@@ -35,18 +35,17 @@
 #include <stdio.h>
 #include <math.h>
 #include <webots/device.h>
-#define TIME_STEP 64
-#define TIME_STEPEPUCK 320
-// #define ROUND(x) ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
-
-
 #include <webots/display.h>
 #include <webots/utils/system.h>
+#include "math.h"
+#include "rir_generator.h"
 
 
+
+#define TIME_STEP 64
+#define TIME_STEPEPUCK 320
 #define GROUND_X 2.0
 #define GROUND_Z 2.0
-
 #define LIGHT_GRAY 0x505050
 #define RED 0xBB2222
 #define GREEN 0x22BB11
@@ -55,12 +54,11 @@
 #define INDIGO  0x4b0082
 #define YELLOW   0xFFFF00
 #ifndef M_PI 
-    #define M_PI 3.14159265358979323846 
+#define M_PI 3.14159265358979323846 
 #endif
 
 
-#include "math.h"
-#include "rir_generator.h"
+
 
  double array[5];
 double literation (double xa, double ya, double xb, double yb, double xc, \
@@ -95,7 +93,7 @@ int main(int argc, const char *argv[]) {
   wb_robot_init();
 
 int i,nn;
-//int a,b,c;
+// //int a,b,c;
 
 
 //epuck enable receiver emitter
@@ -119,11 +117,11 @@ int i,nn;
 
 
   // First we get a handler to devices
-  WbDeviceTag ground_display = wb_robot_get_device("ground_display");
+  //WbDeviceTag ground_display = wb_robot_get_device("ground_display");
 
   // get the properties of the Display
-  int width = wb_display_get_width(ground_display);
-  int height = wb_display_get_height(ground_display);
+  // int width = wb_display_get_width(ground_display);
+  // int height = wb_display_get_height(ground_display);
  
 
 
@@ -144,15 +142,15 @@ double transmittedPower,maxRange,antennaGain,frequency;
     WbDeviceTag receiver2=0;
   
   
-  root = wb_supervisor_node_get_root();
-  children = wb_supervisor_node_get_field(root, "children");
-  nn = wb_supervisor_field_get_count(children);
-  printf("This world contains %d nodes:\n", nn);
-  for (i = 0; i < nn; i++) {
-    node = wb_supervisor_field_get_mf_node(children, i);
-    printf("-> %s\n", wb_supervisor_node_get_type_name(node));
-  }
-  printf("\n");
+  // root = wb_supervisor_node_get_root();
+  // children = wb_supervisor_node_get_field(root, "children");
+  // nn = wb_supervisor_field_get_count(children);
+  // printf("This world contains %d nodes:\n", nn);
+  // for (i = 0; i < nn; i++) {
+    // node = wb_supervisor_field_get_mf_node(children, i);
+    // printf("-> %s\n", wb_supervisor_node_get_type_name(node));
+  // }
+  // printf("\n");
   
    // node = wb_supervisor_field_get_mf_node(children, 8);
    node = wb_supervisor_node_get_from_def("MyBot3.Radar");
@@ -206,14 +204,14 @@ WbFieldRef rotat_field_epuck = wb_supervisor_node_get_field(epuck, "rotation");
     
     
   // paint the display's background
-  wb_display_set_color(ground_display, LIGHT_GRAY);
-  wb_display_fill_rectangle(ground_display, 0, 0, width, height);
-  wb_display_set_color(ground_display, RED);
-  wb_display_draw_line(ground_display, 0, height / 2, width - 1, height / 2);
-  wb_display_draw_text(ground_display, "x", width - 10, height / 2 - 10);
-  wb_display_set_color(ground_display, BLUE);
-  wb_display_draw_line(ground_display, width / 2, 0, width / 2, height - 1);
-  wb_display_draw_text(ground_display, "z", width / 2 - 10, height - 10);
+  // wb_display_set_color(ground_display, LIGHT_GRAY);
+  // wb_display_fill_rectangle(ground_display, 0, 0, width, height);
+  // wb_display_set_color(ground_display, RED);
+  // wb_display_draw_line(ground_display, 0, height / 2, width - 1, height / 2);
+  // wb_display_draw_text(ground_display, "x", width - 10, height / 2 - 10);
+  // wb_display_set_color(ground_display, BLUE);
+  // wb_display_draw_line(ground_display, width / 2, 0, width / 2, height - 1);
+  // wb_display_draw_text(ground_display, "z", width / 2 - 10, height - 10);
 
   // init image ref used to save into the image file
   //WbImageRef to_store = NULL;
@@ -390,13 +388,13 @@ WbFieldRef rotat_field_epuck = wb_supervisor_node_get_field(epuck, "rotation");
      // }
      
  // //matlab epuck
-   while (wb_receiver_get_queue_length(receiver) > 0) {
-   wb_receiver_set_channel(receiver,8);
-      // //receive null-terminated 8 bit ascii string from matlab
-      const char *string = wb_receiver_get_data(receiver);
-      wb_supervisor_set_label(0, string, 0.01, 0.01, 0.1, 0x000000, 0.0, "Arial");
-      wb_receiver_next_packet(receiver);
-    }
+   // while (wb_receiver_get_queue_length(receiver) > 0) {
+   // wb_receiver_set_channel(receiver,8);
+      //receive null-terminated 8 bit ascii string from matlab
+      // const char *string = wb_receiver_get_data(receiver);
+      // wb_supervisor_set_label(0, string, 0.01, 0.01, 0.1, 0x000000, 0.0, "Arial");
+      // wb_receiver_next_packet(receiver);
+    // }
   
   
   

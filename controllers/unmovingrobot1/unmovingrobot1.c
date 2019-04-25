@@ -82,6 +82,7 @@ while (wb_robot_step(TIME_STEP) != -1){
          //sprintf(message, "the first distance is %f", dist1);
         double message[1] = { dist1 };
         wb_emitter_send(emitter, message, sizeof(double));               
+       printf("the first distance is %f", dist1);
 
  }
     }
