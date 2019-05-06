@@ -68,12 +68,12 @@ rotat_field_epuck = wb_supervisor_node_get_field(epuck,'rotation');
 
 filename = 'inputsdata.mat';
 m = matfile(filename);
-wb_supervisor_field_set_sf_vec3f(trans_field1, m.pos1);
-wb_supervisor_field_set_sf_vec3f(trans_field2, m.pos2);
-wb_supervisor_field_set_sf_vec3f(trans_field3, m.pos3);
-wb_supervisor_field_set_sf_vec3f(trans, m.pos_robot);
+wb_supervisor_field_set_sf_vec3f(trans_field1, m.pos_Beacon1);
+wb_supervisor_field_set_sf_vec3f(trans_field2, m.pos_Beacon2);
+wb_supervisor_field_set_sf_vec3f(trans_field3, m.pos_Beacon3);
+wb_supervisor_field_set_sf_vec3f(trans, m.pos_Robot);
 % set the transmitted power 
-wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedpower);
+wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedPower);
 
 % DESCRIPTIVE TEXT
 
@@ -99,14 +99,14 @@ while wb_robot_step(TIME_STEP) ~= -1
                wb_console_print('now it is started', WB_STDOUT);
 
        elseif ex == 3
-              running_time=importdata('running_time.txt');
-              running_time =  running_time - 1;
-              X=sprintf('running counter is =%f', running_time);
+              running_Time=importdata('running_Time.txt');
+              running_Time =  running_Time - 1;
+              X=sprintf('running counter is =%f', running_Time);
               disp(X); 
-              fid = fopen('running_time.txt','wt');
-              fprintf(fid,'%g\n',running_time);     
+              fid = fopen('running_Time.txt','wt');
+              fprintf(fid,'%g\n',running_Time);     
               fclose(fid);
-              if running_time == 0
+              if running_Time == 0
               a=1003;
               fid = fopen('reload_record.txt','wt');
               fprintf(fid,'%g\n',a);     

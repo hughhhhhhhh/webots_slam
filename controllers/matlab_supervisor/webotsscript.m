@@ -1,31 +1,31 @@
 
 %% Initialization 
-% initialize the positions of the beacons
+% Initialize the positions of the beacons
 clc 
 clear all
+pos_Beacon1=[28 0 28];
+pos_Beacon2=[28 0 -25];
+pos_Beacon3=[-26 0 -27];
+% Initialize the position of the robot
+pos_Robot=[0 0 0];
+% Initialize the transmitted power[dbm]
+transmittedPower = 77;
+% Initialize the workspace
 reloadworld = 0;
-pos1=[28 0 28];
-pos2=[28 0 -25];
-pos3=[-26 0 -27];
-% initialize the position of the robot
-pos_robot=[0 0 0];
-% set the transmitted power[dbm]
-transmittedpower = 77;
-% set the workspace
 filename = 'inputsdata.mat';
 save(filename);
 controldata=0;
 fid = fopen('reload_record.txt','wt');
 fprintf(fid,'%g\n',controldata);  
 %% Run Simulation
-% set the running steps
-running_time = 500;
-% set the workspace
+% Set the running steps
+running_Time = 500;
+% Set the workspace
 controldata = 3;
 fid = fopen('reload_record.txt','wt');
 fprintf(fid,'%g\n',controldata); 
 fid = fopen('running_time.txt','wt');
-fprintf(fid,'%g\n',running_time); 
+fprintf(fid,'%g\n',running_Time); 
 %% Generate RIR
 RIR_Input=importdata('RIR_Input.txt');
 [t,I] = RIR(RIR_Input(1),RIR_Input(2),RIR_Input(3),[RIR_Input(4) RIR_Input(5) RIR_Input(6)],[RIR_Input(7) RIR_Input(8) RIR_Input(9)],[RIR_Input(10) RIR_Input(11) RIR_Input(12)],[RIR_Input(13) RIR_Input(14) RIR_Input(15)],RIR_Input(16),RIR_Input(17),RIR_Input(18),RIR_Input(19),RIR_Input(20),RIR_Input(21));
@@ -41,7 +41,8 @@ X = sprintf('maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz
 disp(X)
 %% Calculation the exploration
 set(gcf,'outerposition',get(0,'screensize'));
-imag1 = '/home/huanghe/catkin_ws/src/navigation/my_map.pgm';
+imag1 = '/home/huanghe/catkin_ws/my_map.pgm';
+% change your own location of the saved result
 imag2 = 'my_map.pgm';
 [count1,I1] = GetRgbHist(imag1);
 [count2,I2] = GetRgbHist(imag2);
