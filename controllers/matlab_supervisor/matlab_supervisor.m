@@ -78,17 +78,17 @@ wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedPower);
 % DESCRIPTIVE TEXT
 
 while wb_robot_step(TIME_STEP) ~= -1
-      ex=importdata('reload_Record.txt');
+      ex=importdata('mode_Choice.txt');
     if m.reload_Judgment == 1 && ex == 0
               a=1001;
-              fid = fopen('reload_Record.txt','wt');
+              fid = fopen('mode_Choice.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the world is reload', WB_STDOUT);
                 wb_supervisor_world_reload();
       elseif ex == 2
               a=1003;
-              fid = fopen('reload_Record.txt','wt');
+              fid = fopen('mode_Choice.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
@@ -108,7 +108,7 @@ while wb_robot_step(TIME_STEP) ~= -1
               fclose(fid);
               if running_Time == 0
               a=1003;
-              fid = fopen('reload_Record.txt','wt');
+              fid = fopen('mode_Choice.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
@@ -207,8 +207,8 @@ while wb_robot_step(TIME_STEP) ~= -1
       transmittedPower3=0.001*(10^(0.1*transmittedPower));
       delta = transmittedPower-receivedpower3;
       powerConsumption = 10*log(delta);
-      Z=sprintf(' maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz],power consumption is %.3f[dB]',maxRange,array(4),array(5),powerConsumption);
-      disp(Z);
+      % Z=sprintf(' maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz],power consumption is %.3f[dB]',maxRange,array(4),array(5),powerConsumption);
+      % disp(Z);
       
       fid = fopen('sensorInfo.txt','wt');
       fprintf(fid,'%g\n',maxRange,array(4),array(5),powerConsumption); 
@@ -269,8 +269,8 @@ end
   
   
   
-   Y=sprintf('the triliteration function value is a=%f b=%f c=%f', da,db,dc);
-    disp(Y); 
+   % Y=sprintf('the triliteration function value is a=%f b=%f c=%f', da,db,dc);
+    % disp(Y); 
   literation(data(10),data(11),data(12),data(13),data(14),data(15), da,db,dc);
 
   drawnow;

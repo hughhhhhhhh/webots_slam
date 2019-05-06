@@ -14,16 +14,16 @@ transmittedPower = 77;
 reload_Judgment = 0; % Set the judgment of reloading the world to 0,otherwise the world will be reloaded.
 filename = 'Initialization.mat';
 save(filename);
-reload_Record = 0;
-fid = fopen('reload_Record.txt','wt');
-fprintf(fid,'%g\n',reload_Record);  
+mode_Choice = 0;
+fid = fopen('mode_Choice.txt','wt');
+fprintf(fid,'%g\n',mode_Choice);  
 %% Run Simulation
 % Set the running steps
 running_Time = 500;
 % Set the workspace
-reload_Record = 1;
-fid = fopen('reload_Record.txt','wt');
-fprintf(fid,'%g\n',reload_Record); 
+mode_Choice = 3; %choose the webots at running mode 
+fid = fopen('mode_Choice.txt','wt');
+fprintf(fid,'%g\n',mode_Choice); 
 fid = fopen('running_Time.txt','wt');
 fprintf(fid,'%g\n',running_Time); 
 %% Generate RIR
@@ -56,14 +56,14 @@ legend('SLAM Result','Reference');
 str = sprintf('Exploration:%s %%',num2str(value));
 title(str);
 %% Stop the simulation for a while
-reload_Record = 2;
+mode_Choice = 2; %choose the webots as stop mode
 % set the stop time(s)
 stopTime = 5;
 % set the workspace
 filename = 'Initialization.mat';
 save(filename);
-fid = fopen('reload_Record.txt','wt');
-fprintf(fid,'%g\n',reload_Record); 
+fid = fopen('mode_Choice.txt','wt');
+fprintf(fid,'%g\n',mode_Choice); 
 
 %% Reload the world
 clc 
@@ -79,9 +79,9 @@ transmittedPower = 77;
 reload_Judgment = 1;
 filename = 'Initialization.mat';
 save(filename)
-reload_Record=0;
+mode_Choice=0; %choose the webots as reload mode
 fid = fopen('reload_Record.txt','wt');
-fprintf(fid,'%g\n',reload_Record);  
+fprintf(fid,'%g\n',mode_Choice);  
 % reload the world is finished
 %% Display the current room model
 displayRoom('testfile','HideVS');
