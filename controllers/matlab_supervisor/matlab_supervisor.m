@@ -72,36 +72,48 @@ wb_supervisor_field_set_sf_vec3f(trans_field1, m.pos1);
 wb_supervisor_field_set_sf_vec3f(trans_field2, m.pos2);
 wb_supervisor_field_set_sf_vec3f(trans_field3, m.pos3);
 wb_supervisor_field_set_sf_vec3f(trans, m.pos_robot);
+% set the transmitted power 
+wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedpower);
+
 % DESCRIPTIVE TEXT
 
 while wb_robot_step(TIME_STEP) ~= -1
       ex=importdata('reload_record.txt');
     if m.reloadworld == 1 && ex == 0
-              a=1000;
+              a=1001;
               fid = fopen('reload_record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the world is reload', WB_STDOUT);
                 wb_supervisor_world_reload();
       elseif ex == 2
-              a=1000;
+              a=1003;
               fid = fopen('reload_record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
                wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_PAUSE);
-               wb_console_print('now it is stopped', WB_STDOUT);
+               wb_console_print('now it is stopped', WB_STDOUT);               
                pause(m.stoptime);
-               wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_RUN);
+              wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_RUN);
                wb_console_print('now it is started', WB_STDOUT);
 
        elseif ex == 3
-                a=1000;
+              running_time=importdata('running_time.txt');
+              running_time =  running_time - 1;
+              X=sprintf('running counter is =%f', running_time);
+              disp(X); 
+              fid = fopen('running_time.txt','wt');
+              fprintf(fid,'%g\n',running_time);     
+              fclose(fid);
+              if running_time == 0
+              a=1003;
               fid = fopen('reload_record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
-               wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_RUN);
+               wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_PAUSE);
+               end
         % else 
              % wb_console_print('no input number', WB_STDOUT);
 
@@ -118,12 +130,13 @@ while wb_robot_step(TIME_STEP) ~= -1
   % drawnow;
 
   transmittedPower = wb_supervisor_field_get_sf_float(transmittedPower_field); 
-  % G = 10^(antennaGain/10);
-  % P=0.001*10^(0.1*transmittedPower);
-  % maxRange = P*(10^6)*(G^2)*(299792458^2)/((((10^9)*frequency)^2)*((4*3.14159265358979)^3));
-  % maxRange =  maxRange^0.25;
-  % maxRange = 80;
-  % wb_supervisor_field_set_sf_float(maxRange_field,maxRange);
+  G = 10^(antennaGain/10);
+  P=0.001*10^(0.1*transmittedPower);
+  maxRange = P*(10^6)*(G^2)*(299792458^2)/((((10^9)*frequency)^2)*((4*3.14159265358979)^3));
+  maxRange =  maxRange^0.25;
+  % Y=sprintf('maximal range is %f,transmitted power is %f[dBm] ',maxRange,transmittedPower);
+  % disp(Y);
+  wb_supervisor_field_set_sf_float(maxRange_field,maxRange);
     % //output the position of three robots
   trans1 = wb_supervisor_field_get_sf_vec3f(trans_field1);
   trans2 = wb_supervisor_field_get_sf_vec3f(trans_field2);
@@ -162,7 +175,7 @@ while wb_robot_step(TIME_STEP) ~= -1
       array(1)= message;  
      da = array(1);
     wb_receiver_next_packet(receiver0);
-     wb_console_print('1allesgut', WB_STDOUT);
+     % wb_console_print('1allesgut', WB_STDOUT);
 
     end
     
@@ -174,7 +187,7 @@ while wb_robot_step(TIME_STEP) ~= -1
       array(2) = message1;  
       db =array(2); 
     wb_receiver_next_packet(receiver1);
-      wb_console_print('2allesgut', WB_STDOUT);
+      % wb_console_print('2allesgut', WB_STDOUT);
 
     end
     
@@ -187,51 +200,75 @@ while wb_robot_step(TIME_STEP) ~= -1
      wb_receiver_next_packet(receiver2);
       array(3)= message2(1);
       dc= array(3);
-    array(4) = message2(2); 
-     array(5) = message2(3); 
+      array(4) = message2(2); 
+      array(5) = message2(3); 
+      % now calculate the energy consumption,changen them from dBm into mW
+      receivedpower3=0.001*(10^(0.1*array(4)));
+      transmittedPower3=0.001*(10^(0.1*transmittedPower));
+      delta = transmittedPower-receivedpower3;
+      powerConsumption = 10*log(delta);
+      Z=sprintf(' maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz],power consumption is %.3f[dB]',maxRange,array(4),array(5),powerConsumption);
+      disp(Z);
+      
+      fid = fopen('sensorinfo.txt','wt');
+      fprintf(fid,'%g\n',maxRange,array(4),array(5),powerConsumption); 
+     
+     
      % Y=sprintf('%f %f %f', array(3), array(4),array(5));
-   % disp(Y)
-     wb_console_print('3allesgut', WB_STDOUT);
+   % disp(Y);
+     % wb_console_print('3allesgut', WB_STDOUT);
 
 end
     
        if (mod(counter,50)==0)
       [yellowpos1,yellowpos2,yellowpos3,yellowpos4] = obstaclePosition([data(4),data(5),data(6)],[data(7),data(8)],data(9));
-     [t,I] = RIR(data(1),data(3),0,yellowpos1,yellowpos2,yellowpos3,yellowpos4,data(10),data(11),data(12),data(13),data(14),data(15));
+     % [t,I] = RIR(data(1),data(3),0,yellowpos1,yellowpos2,yellowpos3,yellowpos4,data(10),data(11),data(12),data(13),data(14),data(15));
+     
+     RIR_Input = [data(1),data(3),0,yellowpos1,yellowpos2,yellowpos3,yellowpos4,data(10),data(11),data(12),data(13),data(14),data(15)];
+     
+     fid = fopen('RIR_Input.txt','wt');
+     fprintf(fid,'%g\n',RIR_Input); 
+     
+     
+  
     end
     
     % draw the RIR and the trajectory of the robot
      counter = counter + 1;
-     subplot(2,1,1);
-     plot(1000*t,abs(I))% draw the RIR 
-     ylabel('Amplitude')
-     xlabel('Time (ms)')
-     title('RIR changes every 20 steps');
+     % subplot(2,1,1);
+     % plot(1000*t,abs(I))% draw the RIR 
+     % ylabel('Amplitude')
+     % xlabel('Time (ms)')
+     % title('RIR changes every 20 steps');
 
     % store position
-    samples = samples + 1;
-    p(samples,:) = pos;
+    % samples = samples + 1;
+    % p(samples,:) = pos;
     % plot latest trajectory segment
-     subplot(2,1,2);
-    if (samples > 100)
-      plot(p(samples-100:samples,1),-p(samples-100:samples,3));
-    else
-      plot(p(1:samples,1),-p(1:samples,3));
-    end
+     % subplot(2,1,2);
+    % if (samples > 100)
+      % plot(p(samples-100:samples,1),-p(samples-100:samples,3));
+    % else
+      % plot(p(1:samples,1),-p(1:samples,3));
+    % end
 
     % plot current e-puck position
-    hold on;
-    plot(p(samples,1),-p(samples,3),'ro');
-    axis([-30 30 -30 30]);
-    title('Trajectory (Supervisor)');
-    hold off;
+    % hold on;
+    % plot(p(samples,1),-p(samples,3),'ro');
+    % axis([-30 30 -30 30]);
+    % title('Trajectory (Supervisor)');
+    % hold off;
     
     
     
     
-   % receivedpower3=0.001*(10^(0.1*array(4)));
-   % powerConsumption = 10*log(1000*(P-receivedpower3));
-   
+     % receivedpower3=0.001*(10^(0.1*array(4)));
+     % powerConsumption = 10*log(1000*(P-receivedpower3));
+    % Z=sprintf('received power is  %f',array(4));
+  % disp(Z);
+  
+  
+  
    Y=sprintf('the triliteration function value is a=%f b=%f c=%f', da,db,dc);
     disp(Y); 
   literation(data(10),data(11),data(12),data(13),data(14),data(15), da,db,dc);
