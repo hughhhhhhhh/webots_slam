@@ -66,7 +66,7 @@ rotat_field_epuck = wb_supervisor_node_get_field(epuck,'rotation');
 
 % set the position of the beacons
 
-filename = 'inputsdata.mat';
+filename = 'Initialization.mat';
 m = matfile(filename);
 wb_supervisor_field_set_sf_vec3f(trans_field1, m.pos_Beacon1);
 wb_supervisor_field_set_sf_vec3f(trans_field2, m.pos_Beacon2);
@@ -78,23 +78,23 @@ wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedPower);
 % DESCRIPTIVE TEXT
 
 while wb_robot_step(TIME_STEP) ~= -1
-      ex=importdata('reload_record.txt');
-    if m.reloadworld == 1 && ex == 0
+      ex=importdata('reload_Record.txt');
+    if m.reload_Judgment == 1 && ex == 0
               a=1001;
-              fid = fopen('reload_record.txt','wt');
+              fid = fopen('reload_Record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the world is reload', WB_STDOUT);
                 wb_supervisor_world_reload();
       elseif ex == 2
               a=1003;
-              fid = fopen('reload_record.txt','wt');
+              fid = fopen('reload_Record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
                wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_PAUSE);
                wb_console_print('now it is stopped', WB_STDOUT);               
-               pause(m.stoptime);
+               pause(m.stopTime);
               wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_RUN);
                wb_console_print('now it is started', WB_STDOUT);
 
@@ -108,7 +108,7 @@ while wb_robot_step(TIME_STEP) ~= -1
               fclose(fid);
               if running_Time == 0
               a=1003;
-              fid = fopen('reload_record.txt','wt');
+              fid = fopen('reload_Record.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
@@ -210,7 +210,7 @@ while wb_robot_step(TIME_STEP) ~= -1
       Z=sprintf(' maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz],power consumption is %.3f[dB]',maxRange,array(4),array(5),powerConsumption);
       disp(Z);
       
-      fid = fopen('sensorinfo.txt','wt');
+      fid = fopen('sensorInfo.txt','wt');
       fprintf(fid,'%g\n',maxRange,array(4),array(5),powerConsumption); 
      
      
