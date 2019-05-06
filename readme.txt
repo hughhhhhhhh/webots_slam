@@ -10,27 +10,8 @@ If you haven't created any catkin workspace yet, you can create one with the fol
 mkdir -p catkin_ws/src 
 cd catkin_ws/src 
 catkin_init_workspace
-Extract and copy ‘webots_ros’ document in catkin_ws
+Extract and copy ‘webots_ros’  in catkin_ws
 catkin_make
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Running the webots
@@ -73,5 +54,5 @@ rosrun map_server map_saver -f my_map
 run the corresponding section in matlab script
 
 8) Run other sections of matlabscript
-for example run the simulation for 500 steps,generate RIR, Display the corresponding room model...
+for example run the simulation for 500 steps, generate RIR, display the corresponding room model...
 
