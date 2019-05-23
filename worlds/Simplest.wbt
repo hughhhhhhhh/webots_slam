@@ -5,35 +5,34 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.23632978762369536 0.934227080640044 0.26714788653575366 1.760262386231559
-  position -0.7395954184077631 0.12922764351918747 -0.424282746461732
+  orientation -0.08874214688163673 -0.9912853247564037 -0.09735623395257813 1.6720177318964375
+  position -117.47374742541842 18.423954993860143 -8.799062769731536
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-RectangleArena {
-  translation -0.060055087754398606 -8.881784197001252e-16 0.021762204796353157
-  rotation 0 0.9999999999999999 0 0.006544984694960331
-  floorSize 2 2
-  wallHeight 0.30000000000000004
+Floor {
+  size 60 60
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
 }
 DEF YELLOW_BOX Solid {
-  translation -0.4723493392460382 0.13999999999999913 0.4515684008942992
-  rotation 0 0.9999999999999999 0 3.1407963220000004
+  translation -30.06429297629478 1.22 0.12330608480752758
+  rotation 0 1 0 4.713185172922486
   children [
     DEF Shape Shape {
       appearance DEF PBR PBRAppearance {
-        baseColor 1 1 0
         roughness 0.03934117200000009
         metalness 0
       }
       geometry DEF geometryBox Box {
-        size 0.03 0.27999999999999997 1
+        size 60 2.4 0.2
       }
     }
   ]
-  name "YELLOW_BOX"
+  name "YELLOW_BOX(1)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -42,12 +41,181 @@ DEF YELLOW_BOX Solid {
     geometry USE geometryBox
   }
 }
+DEF EXTERNAL_WALL Wall {
+  translation 30 0 0
+  rotation 0 1 0 1.5708
+  name "wall(11)"
+  size 60 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation -27.45 0 30
+  name "wall(10)"
+  size 5.3 2.4 0.2
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -24 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(21)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(22)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -12 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(19)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(20)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 12 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(17)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(18)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 24 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(15)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(16)"
+    }
+  ]
+}
+DEF EXTERNAL_WALL Wall {
+  translation -18 0 30
+  name "wall(8)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 27.45 0 30
+  name "wall(9)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 18 0 30
+  name "wall(6)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 0 0 30
+  name "wall(5)"
+  size 22.4 2.4 0.2
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -12 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(11)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(12)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -24 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(13)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(14)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 24 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(7)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(8)"
+    }
+  ]
+}
+DEF EXTERNAL_WALL Wall {
+  translation -27.45 0 -30
+  name "wall(4)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 27.45 0 -30
+  name "wall(3)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation -18 0 -30
+  name "wall(2)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 18 0 -30
+  name "wall(1)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 0 0 -30
+  size 22.4 2.4 0.2
+}
+Shape {
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 1
+    metalness 0
+  }
+  geometry IndexedFaceSet {
+    coord Coordinate {
+      point [
+        0.21 0 0.07
+        0.09 0 0.22
+        0.25 0 0.26
+        0.21 0.0001 0.07
+        0.09 0.0001 0.22
+        0.25 0.0001 0.26
+      ]
+    }
+    coordIndex [
+      2, 1, 0, -1, 3, 4, 5, -1, 0, 1
+      4, 3, -1, 1, 2, 5, 4, -1, 2, 0
+      3, 5, -1
+    ]
+  }
+}
 DEF MyBot1 Robot {
-  translation 0.8323966066613612 -0.00022712894566719738 0.9402654563349926
-  rotation -0.02973262294932027 -0.9994566227315788 0.014227804136271683 -0.8927957937331182
+  translation 28.0000002357528 -0.00044314130425062576 28.000000191721742
+  rotation 0.024658334413555524 -0.9996262139197507 -0.011806734875226828 -0.8937214002308026
   children [
     Emitter {
-      range 10
       channel 1
       baudRate 115200
     }
@@ -69,7 +237,7 @@ DEF MyBot1 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.0320157883396
+        position 76.03200977842177
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -83,8 +251,8 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.045000000000000456 0.025 0
-        rotation 1 0 0 4.350877897815434
+        translation -0.04499997587308603 0.025212115180498637 -1.542937011755072e-06
+        rotation -0.9999998918029821 0.0003806369875079996 -0.0002674126174791365 1.9316465106636185
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -109,13 +277,13 @@ DEF MyBot1 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 7.468906452286107e-09 1.9442850125912518e-05 -1.11077289793849e-08
-        angularVelocity -7.396973702932319e-07 -9.732881956592659e-11 -4.7324211630045685e-07
+        linearVelocity -2.4584553946632727e-08 -4.295353548400262e-09 -1.9773598120935437e-08
+        angularVelocity -9.59344433410406e-07 -6.871065557000733e-10 1.1927421881327512e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03205019134317
+        position 76.03204412981988
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -129,16 +297,16 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499999999999927 0.025 0
-        rotation 1 0 0 3.953523494811867
+        translation 0.044999989753531276 0.025212064463406028 -1.5432472560188907e-06
+        rotation -0.9999999132084033 -0.0003814768288782203 0.00016750705986335405 2.3290006630999027
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity -9.270889030196718e-09 1.9476299695000426e-05 9.659119854135271e-09
-        angularVelocity 6.195958995933804e-07 1.2508216273088112e-10 6.224275495525662e-07
+        linearVelocity -2.458450383897165e-08 -4.295340048088276e-09 -1.9773520288438053e-08
+        angularVelocity -9.592713334820123e-07 7.537705731872109e-10 1.1926629675542997e-06
       }
     }
     DistanceSensor {
@@ -219,10 +387,11 @@ DEF MyBot1 Robot {
         }
       ]
       minRange 0.01
-      maxRange 2.7
+      maxRange 80
       horizontalFieldOfView 2
-      verticalFieldOfView 0.4
-      occlusion TRUE
+      verticalFieldOfView 0.5
+      frequency 28
+      transmittedPower 28
     }
   ]
   name "MyBot1"
@@ -241,16 +410,15 @@ DEF MyBot1 Robot {
     0, 100, 30
   ]
   cpuConsumption 5
-  linearVelocity 4.27930054583848e-09 8.08701611276774e-09 3.4528523419679816e-09
-  angularVelocity 1.5903532853224013e-07 1.2538037001145943e-11 -1.9720877358201487e-07
+  linearVelocity -5.726291447030732e-09 -4.183377143363044e-09 -4.6076961682517275e-09
+  angularVelocity 2.9783890572596216e-07 2.5685818389965918e-11 -3.7030089423557494e-07
 }
 DEF MyBot2 Robot {
-  translation 0.836649768259543 -0.00022712955130881063 -0.8753692259387843
-  rotation 0.002269664201519552 -0.9998961764710133 -0.014229719008493591 -2.825580102443016
+  translation 28.000000102355113 -0.00044314258645860444 -25.000000283878727
+  rotation 0.0018727965141490167 -0.9999284590784541 -0.011813947613099356 -2.8275029926747783
   children [
     Emitter {
       name "emitter2"
-      range 10
       channel 2
       baudRate 115200
     }
@@ -272,7 +440,7 @@ DEF MyBot2 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199841274345
+        position 76.0319935823803
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -286,8 +454,8 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499999999999844 0.025 0
-        rotation 1 0 0 4.350895273411594
+        translation -0.04499995669495855 0.025212115599550167 -1.4986610699878046e-06
+        rotation -0.9999998918132885 0.00038067417501943217 -0.00026732112475551944 1.9316349674483213
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -312,13 +480,13 @@ DEF MyBot2 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity -1.2506390968248896e-08 1.9440937602510653e-05 -8.446034660987695e-09
-        angularVelocity -4.670953912997131e-07 1.335523909054084e-07 7.796266329151123e-07
+        linearVelocity -9.840486352805798e-09 -4.243814899496099e-09 3.0317232270204986e-08
+        angularVelocity 1.4682412936993768e-06 -3.127281343451604e-09 4.7558158392542653e-07
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03196971009335
+        position 76.03196393869645
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -332,16 +500,16 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.044999999999999 0.025 0
-        rotation 0.9999999999999999 0 0 3.9536039760616917
+        translation 0.04499997063249233 0.025212064874104705 -1.4987907408759945e-06
+        rotation -0.9999999132145815 -0.00038149264641720675 0.00016743413756833844 2.328925132464122
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 7.984297219591736e-09 1.9476385831964646e-05 1.4713263106560806e-08
-        angularVelocity 7.392250679786193e-07 1.3355660471550184e-07 -6.627998493411903e-07
+        linearVelocity -9.60751189965637e-09 -4.125681201116994e-09 2.960021205937817e-08
+        angularVelocity 1.4412557813312048e-06 -1.7243881713331269e-09 4.6680743035914015e-07
       }
     }
     DistanceSensor {
@@ -423,10 +591,9 @@ DEF MyBot2 Robot {
         }
       ]
       minRange 0.01
-      maxRange 2.7
+      maxRange 78
       horizontalFieldOfView 2
       verticalFieldOfView 0.4
-      occlusion TRUE
     }
   ]
   name "MyBot2"
@@ -442,16 +609,28 @@ DEF MyBot2 Robot {
   }
   controller "unmovingrobot2"
   cpuConsumption 0.5
-  linearVelocity -4.76482694035862e-09 7.187360267835172e-09 4.859118953758154e-09
-  angularVelocity 1.3607780582366047e-07 1.334796515346448e-07 5.837491019782111e-08
+  linearVelocity -2.199281929744768e-09 -4.075507661127643e-09 7.618674045334337e-09
+  angularVelocity -4.39687566397861e-07 -2.4229946451557424e-09 -1.442397263608285e-07
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 12 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(9)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(10)"
+    }
+  ]
 }
 DEF MyBot3 Robot {
-  translation -0.8560649933259648 -0.0002271295511571958 -0.8281544435155709
-  rotation -0.006437170235335248 -0.9998780170002535 -0.014230739931654269 2.2917897281898623
+  translation -25.999997550520188 -0.00044314313209388445 -27.000002944209523
+  rotation 0.005432371969524101 -0.9999154640150454 0.011813304294799817 2.279917963965058
   children [
     Emitter {
       name "emitter3"
-      range 10
       channel 3
       baudRate 115200
     }
@@ -473,7 +652,7 @@ DEF MyBot3 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03198564225336
+        position 76.03199081483719
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -487,8 +666,8 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.045000000000000116 0.025 0
-        rotation 1 0 0 4.3509080439016845
+        translation -0.04499995633981143 0.02521211546434967 1.5102417739933945e-06
+        rotation -0.9999998919106798 0.0003845169963020637 -0.000261391102295516 1.932935667527437
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -513,13 +692,13 @@ DEF MyBot3 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity -1.2689360946213171e-08 1.9440938147354815e-05 8.16857391752918e-09
-        angularVelocity 5.326177051388618e-07 1.335523936264434e-07 7.36420101522639e-07
+        linearVelocity -2.5026381955273886e-08 5.215160072681297e-09 -1.973741592986188e-08
+        angularVelocity -1.0093952729024111e-06 1.847490921604759e-10 1.1766664179240502e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.0319407014705
+        position 76.03193863376647
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -533,16 +712,16 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.0449999999999973 0.025 0
-        rotation 1 0 0 3.953632984684542
+        translation 0.0449999701656373 0.02521206486101461 1.5106895762955375e-06
+        rotation -0.99999991326243 -0.00038388458263488595 0.0001615789578102581 2.3302036128384436
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 1.666873561817275e-08 1.947638528697837e-05 -1.5434729769758391e-09
-        angularVelocity -3.180470992927342e-07 1.3355658290274792e-07 -9.405334781784019e-07
+        linearVelocity -2.3336915670802738e-08 5.208389453058919e-09 -2.1733801143534664e-08
+        angularVelocity -1.0100141483926808e-06 -1.106750621081443e-09 1.1775114348826089e-06
       }
     }
     DistanceSensor {
@@ -624,9 +803,9 @@ DEF MyBot3 Robot {
         }
       ]
       minRange 0.01
-      maxRange 2.977812390043274
+      maxRange 79.23140049567527
       horizontalFieldOfView 2
-      occlusion TRUE
+      transmittedPower 77
     }
   ]
   name "MyBot3"
@@ -641,8 +820,8 @@ DEF MyBot3 Robot {
     mass 0.5
   }
   controller "unmovingrobot3"
-  linearVelocity 2.589489340086896e-09 7.1873517981657664e-09 6.293574967407982e-09
-  angularVelocity 1.0725505497741755e-07 1.3347965085009288e-07 -1.020837793123044e-07
+  linearVelocity -7.661731241833531e-09 5.5664540923318e-09 -6.569583711455586e-09
+  angularVelocity 2.7867966150071695e-07 -4.54537563704059e-10 -3.247152984071018e-07
 }
 DEF TRAIL Shape {
   appearance Appearance {
@@ -669,32 +848,10 @@ DEF Supervisior1 Robot {
       name "emittertoyellowbox"
       channel 7
     }
-    DEF GROUND Display {
-      children [
-        DEF SHAPE Shape {
-          appearance PBRAppearance {
-            baseColorMap ImageTexture {
-              url [
-                "textures/white256.png"
-              ]
-              filtering 0
-            }
-            roughness 1
-            metalness 0
-          }
-          geometry Plane {
-          }
-        }
-      ]
-      name "ground_display"
-      boundingObject USE SHAPE
-      width 100
-      height 100
-    }
     Receiver {
       channel 8
     }
-    Emitter {
+    DEF emitter Emitter {
       channel 8
     }
     Receiver {
@@ -710,32 +867,20 @@ DEF Supervisior1 Robot {
       channel 1
     }
   ]
-  controller "supervisor12_3"
+  controller "matlab_supervisor"
   supervisor TRUE
   cpuConsumption 0.5
 }
-DEF E_PUCK E-puck {
-  hidden position_0_0 2.0821672788717827e-12
-  hidden position_0_1 -3.569326847974175e-13
-  hidden linearVelocity_0 4.766234715784063e-05 -1.6765362479039445e-08 -1.6977053191637364e-05
-  hidden angularVelocity_0 -0.001131820721053627 -4.207871028804946e-08 -0.003177538911827706
-  hidden linearVelocity_1 6.354924793302436e-05 6.170531004290326e-06 -2.263785711301841e-05
-  hidden angularVelocity_1 -0.0011319649921801439 -4.206799006568647e-08 -0.0031774879776535984
-  hidden linearVelocity_2 6.355167928715524e-05 5.605621937210259e-06 -2.2634750627751993e-05
-  hidden angularVelocity_2 -0.0011316764403122952 -4.208942646724091e-08 -0.0031775898216272955
-  translation -0.8980012906878686 -6.396198904384982e-05 -0.4035581900313202
-  rotation -0.0002710088556816294 0.9999998869580421 0.00039068926689151084 1.909931096200874
-  name "e-puck camera"
-  controller "matlab"
-  emitter_channel 8
-  receiver_channel 8
-  turretSlot [
-    DEF receiverepuck Receiver {
-      name "receiverepuck"
-      channel 8
-    }
+DEF PIONEER_3AT Pioneer3at {
+  hidden linearVelocity_0 -0.4103726708502503 1.846118431487117e-05 0.5720489772353424
+  hidden angularVelocity_0 -8.479904038672623e-06 -1.6947987974074333e-06 -6.406899208305094e-06
+  translation -15.114498798950414 0.10761497082779382 21.06545251957096
+  rotation -0.000124140850662819 0.9999999176856542 0.0003862871133760279 2.5193016349182895
+  controller "ros"
+  controllerArgs "--name=pioneer3at"
+  extensionSlot [
     DEF RADAR_TARGET Solid {
-      scale 0.5 0.5 0.5
+      translation 0 0.19999999999999998 0
       children [
         Shape {
           appearance PBRAppearance {
@@ -751,9 +896,32 @@ DEF E_PUCK E-puck {
       name ""
       radarCrossSection 1
     }
-    Display {
-      width 52
-      height 39
+    Camera {
+      translation 0 0.17 -0.22
+      width 256
+      height 128
+      motionBlur 500
+      noise 0.02
+    }
+    Accelerometer {
+      lookupTable [
+        -39.24 -39.24 0.005
+        39.24 39.24 0.005
+      ]
+    }
+    Gyro {
+      lookupTable [
+        -50 -50 0.005
+        50 50 0.005
+      ]
+    }
+    SickLms291 {
+      translation 0 0.23 -0.136
+      noise 0.1
+    }
+    GPS {
+    }
+    InertialUnit {
     }
   ]
 }

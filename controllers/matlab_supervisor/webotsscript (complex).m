@@ -7,7 +7,7 @@ pos_Beacon1=[28 0 28];
 pos_Beacon2=[28 0 -25];
 pos_Beacon3=[-26 0 -27];
 % Initialize the position of the robot
-pos_Robot=[0 0 0];
+pos_Robot=[24 0 -26];
 % Initialize the transmitted power[dbm]
 transmittedPower = 77;
 % Initialize the workspace
@@ -21,7 +21,7 @@ fprintf(fid,'%g\n',mode_Choice);
 % Set the running steps
 running_Time = 500;
 % Set the workspace
-mode_Choice = 3;
+mode_Choice = 3; %choose the webots at running mode 
 fid = fopen('mode_Choice.txt','wt');
 fprintf(fid,'%g\n',mode_Choice); 
 fid = fopen('running_Time.txt','wt');
@@ -41,8 +41,8 @@ X = sprintf('maximal range is %f,received power is %f[dBm], frequency is %.3f[Hz
 disp(X);
 %% Calculation the exploration
 set(gcf,'outerposition',get(0,'screensize'));
-imag_SLAM = '/home/huanghe/catkin_ws/my_map.pgm'; % change your own location of the saved "my_map.pgm"
-imag_Reference = 'my_map.pgm';
+imag_SLAM = '/home/huanghe/catkin_ws/src/my_map_normal.pgm'; % change your own location of the saved "my_map.pgm"
+imag_Reference = 'my_map_normal.pgm';
 [count1,I1] = GetRgbHist(imag_SLAM);
 [count2,I2] = GetRgbHist(imag_Reference);
 value = imsimilar(count1,count2,2);
@@ -56,7 +56,7 @@ legend('SLAM Result','Reference');
 str = sprintf('Exploration:%s %%',num2str(value));
 title(str);
 %% Stop the simulation for a while
-mode_Choice = 2;
+mode_Choice = 2; %choose the webots as stop mode
 % set the stop time(s)
 stopTime = 5;
 % set the workspace
@@ -79,7 +79,7 @@ transmittedPower = 77;
 reload_Judgment = 1;
 filename = 'Initialization.mat';
 save(filename)
-mode_Choice=0;
+mode_Choice=0; %choose the webots as reload mode
 fid = fopen('reload_Record.txt','wt');
 fprintf(fid,'%g\n',mode_Choice);  
 % reload the world is finished

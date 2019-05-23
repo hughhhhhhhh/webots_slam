@@ -3,10 +3,11 @@ WorldInfo {
   info [
     "Example use of a Radar device."
   ]
+  basicTimeStep 16
 }
 Viewpoint {
-  orientation -0.5347683034027757 0.6634297538218817 0.5233391093923272 1.9500889412548208
-  position 33.19259208473065 119.37456092920908 -0.39046319994744305
+  orientation -0.5563577479807854 0.6785011324922079 0.47968976377294154 1.8081334508599094
+  position 52.49298265840273 197.6691341953493 10.137724511855223
 }
 TexturedBackground {
 }
@@ -17,6 +18,335 @@ Floor {
   tileSize 1 1
   appearance ThreadMetalPlate {
   }
+}
+DEF EXTERNAL_WALL Wall {
+  translation 19.584337040164016 -8.526512829121202e-14 30.120943699061787
+  rotation 0 1 0 3.1415963220000003
+  name "wall(9)"
+  size 21 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 19.679356464690002 -8.526512829121202e-14 69.19168880188985
+  rotation 0 1 0 3.1415963220000003
+  name "wall(25)"
+  size 21 2.4 0.2
+}
+Floor {
+  translation 0 0 60
+  name "floor(1)"
+  size 60 60
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
+}
+Floor {
+  translation 60 0 60
+  name "floor(2)"
+  size 60 60
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
+}
+DEF EXTERNAL_WALL Wall {
+  translation 30 0 0
+  rotation 0 1 0 1.5708
+  name "wall(11)"
+  size 60 2.4 0.2
+}
+Floor {
+  translation 60 0 0
+  name "floor(3)"
+  size 60 60
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
+}
+SolidRoundedBox {
+  translation -23.91312491368054 -5.6843418860808015e-14 -5.557434221061839
+  rotation 0 1 0 0.7853981610000004
+  name "rounded box(1)"
+}
+SolidTorus {
+  translation 25.176324682330826 -3.126388037344441e-13 -15.726837205029122
+}
+SolidBox {
+  translation 14.587940655713751 -1.9895196601282805e-13 -15.819012383549222
+  name "box(2)1212"
+}
+SolidRoundedBox {
+  translation 19.354325308093465 -1.4210854715202004e-14 -17.433649300839214
+}
+DEF OFFICES Transform {
+  translation 11 0 5
+  rotation 0 1 0 3.14159
+  children [
+    Panel {
+      translation 28.4604 0 -24.5373
+      name "panel(3)1"
+    }
+    Panel {
+      translation 28.4604 0 -17.2973
+      name "panel(4)1"
+    }
+    Panel {
+      translation 28.4604 0 -10.2573
+      name "panel(4)2"
+    }
+    Panel {
+      translation 27.0304 0 -24.5573
+      name "panel(4)3"
+    }
+    Panel {
+      translation 27.0304 0 -17.2873
+      name "panel(4)4"
+    }
+    Panel {
+      translation 27.0304 0 -10.2573
+      name "panel(4)5"
+    }
+    Panel {
+      translation 27.0774 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(4)6"
+    }
+    Panel {
+      translation 27.0774 0 -15.6551
+      rotation 0 1 0 1.5708
+      name "panel(4)7"
+    }
+    Panel {
+      translation 27.0774 0 -17.7651
+      rotation 0 1 0 1.5708
+      name "panel(4)8"
+    }
+    Panel {
+      translation 27.0774 0 -22.8751
+      rotation 0 1 0 1.5708
+      name "panel(4)9"
+    }
+    Panel {
+      translation 24.2974 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(4)12"
+    }
+    Panel {
+      translation 24.2974 0 -15.6951
+      rotation 0 1 0 1.5708
+      name "panel(4)11"
+    }
+    Panel {
+      translation 24.2974 0 -17.8051
+      rotation 0 1 0 1.5708
+      name "panel(4)122"
+    }
+    Panel {
+      translation 24.2974 0 -22.8551
+      rotation 0 1 0 1.5708
+      name "panel(4)13"
+    }
+    Panel {
+      translation 21.2474 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(4)14"
+    }
+    Panel {
+      translation 21.3952621435841 -9.947598300641403e-14 -15.729109202722
+      rotation 0 1 0 1.5708
+      name "panel(4)15"
+    }
+    Panel {
+      translation 21.31044627075896 -9.947598300641403e-14 -14.04973964987817
+      rotation 0 1 0 1.5708
+      name "panel(4)16"
+    }
+    Panel {
+      translation 21.296215948418833 -9.237055564881302e-14 -12.31909108621101
+      rotation 0 1 0 1.5708
+      name "panel(4)17"
+    }
+    Panel {
+      translation 21.2474 0 -17.7551
+      rotation 0 1 0 1.5708
+      name "panel(4)18"
+    }
+    Panel {
+      translation 21.181637678529647 1.0658141036401503e-14 -22.679400631189946
+      rotation 0 1 0 1.5708
+      name "panel(4)19"
+    }
+    Panel {
+      translation 21.187549941856076 7.105427357601002e-15 -21.115898284791456
+      rotation 0 1 0 1.5708
+      name "panel(11)2(1)20"
+    }
+    Panel {
+      translation 21.20323799951621 2.2382096176443156e-13 -19.58767785752691
+      rotation 0 1 0 1.5708
+      name "panel(16)1(1)21"
+    }
+    Panel {
+      translation 25.5604 0 -24.5873
+      name "panel(4)22"
+    }
+    Panel {
+      translation 25.5604 0 -17.3073
+      name "panel(4)23"
+    }
+    Panel {
+      translation 25.5604 0 -10.2573
+      name "panel(4)24"
+    }
+    Panel {
+      translation 24.1004 0 -24.5973
+      name "panel(4)25"
+    }
+    Panel {
+      translation 24.1004 0 -17.3373
+      name "panel(4)26"
+    }
+    Panel {
+      translation 24.1004 0 -10.2573
+      name "panel(4)27"
+    }
+    Panel {
+      translation 22.5504 0 -24.5873
+      name "panel(4)28"
+    }
+    Panel {
+      translation 22.5504 0 -17.3273
+      name "panel(4)29"
+    }
+    Panel {
+      translation 22.5504 0 -10.2573
+      name "panel(4)30"
+    }
+    Panel {
+      translation 20.9704 0 -10.2573
+      name "panel(4)31"
+    }
+    Panel {
+      translation 20.9704 0 -24.5773
+      name "panel(4)32"
+    }
+    Panel {
+      translation 20.9704 0 -17.3573
+      name "panel(4)33"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -16.5637
+      name "wooden chair(3)1"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -23.9137
+      name "wooden chair(4)2"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -18.1537
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)3"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -23.8937
+      name "wooden chair(4)4"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -18.0837
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)5"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -11.1637
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)6"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -23.8537
+      name "wooden chair(4)7"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -16.5637
+      name "wooden chair(4)8"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -18.0537
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)9"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -11.1037
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)10"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -16.5637
+      name "wooden chair(4)11"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -11.1937
+      rotation 0 1 0 3.14159
+      name "wooden chair(4)12"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(2)1"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -11.5037
+      rotation 0 1 0 6.28319
+      name "desk(5)2"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -23.5237
+      rotation 0 1 0 6.28319
+      name "desk(6)3"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(6)4"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(6)5"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -11.5337
+      rotation 0 1 0 6.28319
+      name "desk(6)6"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(6)7"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -11.5737
+      rotation 0 1 0 6.28319
+      name "desk(6)8"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -18.5337
+      rotation 0 1 0 6.28319
+      name "desk(6)9"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(6)10"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -23.4937
+      rotation 0 1 0 6.28319
+      name "desk(6)11"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -23.5337
+      rotation 0 1 0 6.28319
+      name "desk(6)12"
+    }
+  ]
 }
 DEF TREE Solid {
   translation 28.89193898219605 1.1839395514004166e-12 -15.224773678242421
@@ -482,280 +812,8 @@ DEF OFFICES Transform {
     }
   ]
 }
-DEF OFFICES Transform {
-  translation 0 0 -40
-  rotation 0 1 0 3.14159
-  children [
-    Panel {
-      translation 28.4604 0 -24.5373
-      name "panel(1)"
-    }
-    Panel {
-      translation 28.4604 0 -17.2973
-      name "panel(2)"
-    }
-    Panel {
-      translation 28.4604 0 -10.2573
-      name "panel(3)"
-    }
-    Panel {
-      translation 27.0304 0 -24.5573
-      name "panel(4)"
-    }
-    Panel {
-      translation 27.0304 0 -17.2873
-      name "panel(5)"
-    }
-    Panel {
-      translation 27.0304 0 -10.2573
-      name "panel(6)"
-    }
-    Panel {
-      translation 27.0774 0 -10.6551
-      rotation 0 1 0 1.5708
-      name "panel(7)"
-    }
-    Panel {
-      translation 27.0774 0 -15.6551
-      rotation 0 1 0 1.5708
-      name "panel(8)"
-    }
-    Panel {
-      translation 27.0774 0 -17.7651
-      rotation 0 1 0 1.5708
-      name "panel(9)"
-    }
-    Panel {
-      translation 27.0774 0 -22.8751
-      rotation 0 1 0 1.5708
-      name "panel(10)"
-    }
-    Panel {
-      translation 24.2974 0 -10.6551
-      rotation 0 1 0 1.5708
-      name "panel(12)"
-    }
-    Panel {
-      translation 24.2974 0 -15.6951
-      rotation 0 1 0 1.5708
-      name "panel(13)"
-    }
-    Panel {
-      translation 24.2974 0 -17.8051
-      rotation 0 1 0 1.5708
-      name "panel(14)"
-    }
-    Panel {
-      translation 24.2974 0 -22.8551
-      rotation 0 1 0 1.5708
-      name "panel(15)"
-    }
-    Panel {
-      translation 21.2474 0 -10.6551
-      rotation 0 1 0 1.5708
-      name "panel(17)"
-    }
-    Panel {
-      translation 21.3952621435841 -9.947598300641403e-14 -15.729109202722
-      rotation 0 1 0 1.5708
-      name "panel(18)"
-    }
-    Panel {
-      translation 21.31044627075896 -9.947598300641403e-14 -14.04973964987817
-      rotation 0 1 0 1.5708
-      name "panel(21)"
-    }
-    Panel {
-      translation 21.296215948418833 -9.237055564881302e-14 -12.31909108621101
-      rotation 0 1 0 1.5708
-      name "panel(22)"
-    }
-    Panel {
-      translation 21.2474 0 -17.7551
-      rotation 0 1 0 1.5708
-      name "panel(19)"
-    }
-    Panel {
-      translation 21.181637678529647 1.0658141036401503e-14 -22.679400631189946
-      rotation 0 1 0 1.5708
-      name "panel(20)"
-    }
-    Panel {
-      translation 21.187549941856076 7.105427357601002e-15 -21.115898284791456
-      rotation 0 1 0 1.5708
-      name "panel(11)2"
-    }
-    Panel {
-      translation 21.20323799951621 2.2382096176443156e-13 -19.58767785752691
-      rotation 0 1 0 1.5708
-      name "panel(16)1"
-    }
-    Panel {
-      translation 25.5604 0 -24.5873
-      name "panel(24)"
-    }
-    Panel {
-      translation 25.5604 0 -17.3073
-      name "panel(25)"
-    }
-    Panel {
-      translation 25.5604 0 -10.2573
-      name "panel(26)"
-    }
-    Panel {
-      translation 24.1004 0 -24.5973
-      name "panel(27)"
-    }
-    Panel {
-      translation 24.1004 0 -17.3373
-      name "panel(28)"
-    }
-    Panel {
-      translation 24.1004 0 -10.2573
-      name "panel(29)"
-    }
-    Panel {
-      translation 22.5504 0 -24.5873
-      name "panel(30)"
-    }
-    Panel {
-      translation 22.5504 0 -17.3273
-      name "panel(31)"
-    }
-    Panel {
-      translation 22.5504 0 -10.2573
-      name "panel(32)"
-    }
-    Panel {
-      translation 20.9704 0 -10.2573
-      name "panel(33)"
-    }
-    Panel {
-      translation 20.9704 0 -24.5773
-      name "panel(34)"
-    }
-    Panel {
-      translation 20.9704 0 -17.3573
-      name "panel(70)"
-    }
-    WoodenChair {
-      translation 28.2877 7.10543e-15 -16.5637
-      name "wooden chair(1)"
-    }
-    WoodenChair {
-      translation 28.2877 7.10543e-15 -23.9137
-      name "wooden chair(2)"
-    }
-    WoodenChair {
-      translation 28.2877 7.10543e-15 -18.1537
-      rotation 0 1 0 3.14159
-      name "wooden chair(3)"
-    }
-    WoodenChair {
-      translation 25.7177 7.10543e-15 -23.8937
-      name "wooden chair(5)"
-    }
-    WoodenChair {
-      translation 25.7177 7.10543e-15 -18.0837
-      rotation 0 1 0 3.14159
-      name "wooden chair(6)"
-    }
-    WoodenChair {
-      translation 28.2877 7.10543e-15 -11.1637
-      rotation 0 1 0 3.14159
-      name "wooden chair(7)"
-    }
-    WoodenChair {
-      translation 22.9577 7.10543e-15 -23.8537
-      name "wooden chair(9)"
-    }
-    WoodenChair {
-      translation 25.7177 7.10543e-15 -16.5637
-      name "wooden chair(10)"
-    }
-    WoodenChair {
-      translation 22.9577 7.10543e-15 -18.0537
-      rotation 0 1 0 3.14159
-      name "wooden chair(11)"
-    }
-    WoodenChair {
-      translation 25.7177 7.10543e-15 -11.1037
-      rotation 0 1 0 3.14159
-      name "wooden chair(12)"
-    }
-    WoodenChair {
-      translation 22.9577 7.10543e-15 -16.5637
-      name "wooden chair(14)"
-    }
-    WoodenChair {
-      translation 22.9577 7.10543e-15 -11.1937
-      rotation 0 1 0 3.14159
-      name "wooden chair(30)"
-    }
-    Desk {
-      translation 28.2877 7.10543e-15 -16.1837
-      rotation 0 1 0 6.28319
-      name "desk(1)"
-    }
-    Desk {
-      translation 28.2877 7.10543e-15 -11.5037
-      rotation 0 1 0 6.28319
-      name "desk(3)"
-    }
-    Desk {
-      translation 28.2877 7.10543e-15 -23.5237
-      rotation 0 1 0 6.28319
-      name "desk(4)"
-    }
-    Desk {
-      translation 25.6977 7.10543e-15 -16.1837
-      rotation 0 1 0 6.28319
-      name "desk(5)"
-    }
-    Desk {
-      translation 25.6977 7.10543e-15 -18.4537
-      rotation 0 1 0 6.28319
-      name "desk(6)"
-    }
-    Desk {
-      translation 25.6977 7.10543e-15 -11.5337
-      rotation 0 1 0 6.28319
-      name "desk(7)"
-    }
-    Desk {
-      translation 22.9277 7.10543e-15 -16.1837
-      rotation 0 1 0 6.28319
-      name "desk(8)"
-    }
-    Desk {
-      translation 22.9277 7.10543e-15 -11.5737
-      rotation 0 1 0 6.28319
-      name "desk(9)"
-    }
-    Desk {
-      translation 28.2877 7.10543e-15 -18.5337
-      rotation 0 1 0 6.28319
-      name "desk(11)"
-    }
-    Desk {
-      translation 22.9277 7.10543e-15 -18.4537
-      rotation 0 1 0 6.28319
-      name "desk(12)"
-    }
-    Desk {
-      translation 25.6977 7.10543e-15 -23.4937
-      rotation 0 1 0 6.28319
-      name "desk(13)"
-    }
-    Desk {
-      translation 22.9277 7.10543e-15 -23.5337
-      rotation 0 1 0 6.28319
-      name "desk(14)"
-    }
-  ]
-}
 DEF BOXES Transform {
-  translation -2 0 0
+  translation -4 0 7
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -788,7 +846,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -7 0 0
+  translation -10 0 7
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -821,7 +879,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -12 0 0
+  translation -16 0 7
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -832,7 +890,7 @@ DEF BOXES Transform {
       name "wooden box10"
     }
     WoodenBox {
-      translation 25.8306 0.91 9.13625
+      translation 25.8302 0.91 9.13625
       name "wooden box11"
     }
     WoodenBox {
@@ -854,7 +912,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -12 0 3
+  translation -16 0 3
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -887,7 +945,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -7 0 3
+  translation -10 0 3
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -920,7 +978,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -2 0 3
+  translation -4 0 3
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -957,11 +1015,11 @@ DEF KITCHEN Transform {
   rotation 0 1 0 4.71239
   children [
     Cabinet {
-      hidden translation_6 7.808864666003501e-11 0.689834243376987 0.699999998032304
-      hidden rotation_6 -0.9992243485365342 2.5919619287473504e-10 -0.03937894477685758 -7.62432874647389e-05
-      hidden position_6_0 0.002399153124513079
-      hidden translation_7 5.857372629147761e-07 0 0.00048282821738949847
-      hidden rotation_7 0 1 0 0.002426274809709151
+      hidden translation_6 4.838796030526282e-12 0.6899585454550267 0.6999999998771607
+      hidden rotation_6 -0.9992241504971717 3.6691550574777577e-10 -0.039383969622240014 -1.9062713201476055e-05
+      hidden position_6_0 7.146537339051719e-05
+      hidden translation_7 6.988745138158947e-10 0 1.667789120610883e-05
+      hidden rotation_7 0 1 0 8.380850223079593e-05
       translation 1 0.83 -2.15
       depth 0.7
       outerThickness 0.02
@@ -987,16 +1045,16 @@ DEF KITCHEN Transform {
       }
     }
     Cabinet {
-      hidden translation_6 -7.790390554873738e-11 1.0748387070235483 0.6699999982826377
-      hidden rotation_6 0.9989770034311993 2.194251207859739e-09 -0.04522108596243305 7.287323522085086e-05
-      hidden position_6_0 -0.002508184743717564
-      hidden translation_7 -7.041966937071376e-07 0 0.0005552448259081188
-      hidden rotation_7 0 -1 0 0.0025365254515459152
-      hidden translation_10 -7.790390554873738e-11 1.7448387070264673 0.6699999982826377
-      hidden rotation_10 0.9989770127014388 2.2015046529083767e-09 -0.04522088117351884 7.287323003115907e-05
-      hidden position_10_0 -0.0025081842834711572
-      hidden translation_11 -7.041964390774869e-07 0 0.0005552447254490622
-      hidden rotation_11 0 -1 0 0.0025365249758594523
+      hidden translation_6 -4.853006885241484e-12 1.07495966244731 0.6699999998927737
+      hidden rotation_6 0.9989765407330212 5.355709380210504e-10 -0.045231306250055454 1.8218619251073705e-05
+      hidden position_6_0 -7.469971768828148e-05
+      hidden translation_7 -8.397059436671128e-10 0 1.9173504438017183e-05
+      hidden rotation_7 0 -1 0 8.759024740127174e-05
+      hidden translation_10 -4.853006885241484e-12 1.7449596624436339 0.6699999998927737
+      hidden rotation_10 0.9989765488112551 5.403136808061262e-10 -0.04523112783420406 1.821862479243871e-05
+      hidden position_10_0 -7.469972515249399e-05
+      hidden translation_11 -8.39706221222869e-10 0 1.917350668074338e-05
+      hidden rotation_11 0 -0.9999999999999999 0 8.759025754142313e-05
       translation -1.65 0.15 0.11
       rotation 0 1 0 1.5708
       name "cabinet(1)"
@@ -1025,21 +1083,21 @@ DEF KITCHEN Transform {
       }
     }
     Cabinet {
-      hidden translation_6 -0.4400000000426303 0.3398602015411738 0.4999999993116617
-      hidden rotation_6 0.9981148200340846 1.9814517454436127e-09 -0.06137431081753339 5.367749480472297e-05
-      hidden position_6_0 -0.001846584718217389
-      hidden translation_7 -3.816925240318625e-07 0 0.00040878459026981706
-      hidden rotation_7 0 -0.9999999999999999 0 0.0018674500687918911
-      hidden translation_10 4.270006570550322e-11 0.3398602015376462 0.49999999931165817
-      hidden rotation_10 -0.9981079762097909 2.0041892604766962e-09 -0.061485509076492736 -5.367787025937121e-05
-      hidden position_10_0 0.0018469529151944133
-      hidden translation_11 3.818447446291007e-07 0 0.00040886609473526566
-      hidden rotation_11 0 1 0 0.0018678224366978362
-      hidden translation_14 0.44000000004268713 0.33986020154273766 0.49999999931165817
-      hidden rotation_14 -0.9981079691743411 1.985574880496216e-09 -0.061485623284410935 -5.3677859960725725e-05
-      hidden position_14_0 0.0018469524795167976
-      hidden translation_15 3.8184456638279407e-07 0 0.00040886599936757373
-      hidden rotation_15 0 1 0 0.0018678219802028856
+      hidden translation_6 -0.44000000000264095 0.3399650361489852 0.49999999995707256
+      hidden rotation_6 0.9981137106066892 5.460259201597008e-10 -0.06139235049211251 1.3419641251532326e-05
+      hidden position_6_0 -5.499625161801819e-05
+      hidden translation_7 -4.5515252677930107e-10 0 1.4116153006001007e-05
+      hidden rotation_7 0 -1 0 6.448678553245429e-05
+      hidden translation_10 2.6432189770275727e-12 0.3399650361578974 0.49999999995707256
+      hidden rotation_10 -0.9981068604295158 5.625690832739981e-10 -0.06150361910924402 -1.3419714648326554e-05
+      hidden position_10_0 5.5007184006752676e-05
+      hidden translation_11 4.5533324333213443e-10 0 1.411895461196036e-05
+      hidden rotation_11 0 1 0 6.449958629317916e-05
+      hidden translation_14 0.44000000000264095 0.33996503616243867 0.49999999995707256
+      hidden rotation_14 -0.998106850966301 5.708425576665836e-10 -0.06150377268212155 -1.3419705253379887e-05
+      hidden position_14_0 5.50071754807916e-05
+      hidden translation_15 4.553331600654076e-10 0 1.4118953382017698e-05
+      hidden rotation_15 0 1 0 6.44995794080306e-05
       translation 0.1 1.4 -2.15
       name "cabinet(2)"
       outerThickness 0.02
@@ -1066,11 +1124,11 @@ DEF KITCHEN Transform {
       }
     }
     Cabinet {
-      hidden translation_6 -4.262190600456961e-11 0.33986020155207375 0.49999999931165817
-      hidden rotation_6 0.9981148287777623 1.973380577118971e-09 -0.06137416862115851 5.367747146615393e-05
-      hidden position_6_0 -0.0018465842447011726
-      hidden translation_7 -3.8169232816076537e-07 0 0.0004087844854468899
-      hidden rotation_7 0 -1 0 0.001867449616724215
+      hidden translation_6 -2.6361135496699717e-12 0.3399650361665194 0.49999999995707256
+      hidden rotation_6 0.9981137333542832 5.603138630332974e-10 -0.06139198066176921 1.3419604159338998e-05
+      hidden position_6_0 -5.499620437362962e-05
+      hidden translation_7 -4.551518606454863e-10 0 1.4116142641147115e-05
+      hidden rotation_7 0 -1 0 6.448673732683192e-05
       translation -1.647 1.4 -0.37
       rotation 0 1 0 1.5708
       name "cabinet(3)"
@@ -1094,21 +1152,21 @@ DEF KITCHEN Transform {
       }
     }
     Cabinet {
-      hidden translation_6 -0.06500000004474771 0.3398601996698122 0.4999999993127453
-      hidden rotation_6 0.9978443791447497 5.0438181032399054e-09 -0.06562465245034901 5.369596852915263e-05
-      hidden position_6_0 -0.0019645322916951257
-      hidden translation_7 -4.614605593755705e-07 0 0.0004645447423874128
-      hidden rotation_7 0 -1 0 0.0019867210363255622
-      hidden translation_10 0.404999903157119 0.3398602578649552 0.4999999797167547
-      hidden rotation_10 -0.9978464366397201 0.0006493168937745546 -0.06559014615766902 -5.353912786130477e-05
-      hidden position_10_0 -5.709902429167688e-06
-      hidden translation_11 5.777936405160222e-07 0 -0.0005198123334907694
-      hidden rotation_11 0 -1 0 0.0022230846208895205
-      hidden translation_14 -0.4700000000323996 0.33986020662874505 0.49999999931425165
-      hidden rotation_14 0.9988691901831548 1.871104314969639e-09 -0.047543042633474794 5.362629456293392e-05
-      hidden position_14_0 -0.0014441898783946188
-      hidden translation_15 -1.8040974203437088e-07 0 0.00024704773450554663
-      hidden rotation_15 0 -1 0 0.0014605251129353495
+      hidden translation_6 -0.06500000000282213 0.3399650361166754 0.49999999995705835
+      hidden rotation_6 0.9978428191995576 7.287806986488431e-10 -0.06564836762539415 1.342335216558555e-05
+      hidden position_6_0 -5.84996949181962e-05
+      hidden translation_7 -5.499778688022872e-10 0 1.6037366528900044e-05
+      hidden rotation_7 0 -1 0 6.858706500539587e-05
+      hidden translation_10 0.40499999587453317 0.33996504510488157 0.49999999921235627
+      hidden rotation_10 -0.9978376291433891 0.00011532167921650803 -0.06572710678563623 -1.3403363646928061e-05
+      hidden position_10_0 -1.4228851912436062e-07
+      hidden translation_11 5.854183010023384e-07 0 -0.0005232308532117188
+      hidden rotation_11 0 -1 0 0.0022377046504947085
+      hidden translation_14 -0.4700000000020381 0.33996503624095586 0.49999999995711164
+      hidden rotation_14 0.9988689849007961 2.117937137898226e-10 -0.04754735537601944 1.3409301468976739e-05
+      hidden position_14_0 -4.302852292796728e-05
+      hidden translation_15 -2.1541016193005191e-10 0 8.53658267199711e-06
+      hidden rotation_15 0 -1 0 5.046752059031131e-05
       translation -1.48 0.15 -0.79
       rotation 0 1 0 1.5708
       name "cabinet(4)"
@@ -1136,37 +1194,37 @@ DEF KITCHEN Transform {
       }
     }
     Cabinet {
-      hidden translation_6 -0.04999999989595949 0.2698342260132399 0.6999999980305631
-      hidden rotation_6 -0.9985928937590642 7.196639315098016e-09 -0.053030486834441906 -7.631719561978229e-05
-      hidden position_6_0 0.0031733947845338445
-      hidden translation_7 1.3834090195063986e-06 0 0.0008621506552095899
-      hidden rotation_7 0 1 0 0.0032092020484705283
-      hidden translation_10 0.865000000082965 0.3398342398977048 0.6999999980336895
-      hidden rotation_10 -0.9991065773760822 2.927791777959474e-09 -0.04226164980038748 -7.625742103211366e-05
-      hidden position_10_0 0.0025688838839328016
-      hidden translation_11 7.219058938412459e-07 0 0.0005557579648323697
-      hidden rotation_11 0 0.9999999999999999 0 0.0025979132429777875
-      hidden translation_14 0.43499999991701443 0.3398342398933225 0.6999999980336931
-      hidden rotation_14 0.9991065737056175 2.9219679646413845e-09 -0.04226173657366169 7.62574277995569e-05
-      hidden position_14_0 -0.0025688844463324844
-      hidden translation_15 -7.219062048979819e-07 0 0.0005557580846899241
-      hidden rotation_15 0 -1 0 0.002597913789988249
-      hidden translation_18 -0.70000000000001 0.14455711125210705 0.6999999544967608
-      hidden rotation_18 1 7.487011538383432e-13 2.9209581148283017e-13 0.00029657307805715905
-      hidden position_18_0 0.039521307898106685
-      hidden translation_19 0 0 0.5825984408569305
-      hidden translation_26 -0.6999997283742125 0.3945777836863896 0.6999999359106432
-      hidden rotation_26 0.9999997964530349 0.0006159729641767511 -0.00016634661436610367 0.00026613309667554067
-      hidden position_26_0 0.0010165847989051283
-      hidden translation_27 0 0 0.4377528803902542
-      hidden translation_34 -0.7000000000000739 0.5895772014222925 0.6999999406947346
-      hidden rotation_34 -1 1.258517674590157e-10 1.2949767967731573e-09 -0.0002849400095106643
-      hidden position_34_0 0.002107641439098934
-      hidden translation_35 0 0 0.5452165385760938
-      hidden translation_42 -0.05000000000005045 0.5895772018631773 0.6999999406949939
-      hidden rotation_42 -1 9.974666202518789e-11 2.9093790782444053e-09 -0.00028493895384063597
-      hidden position_42_0 0.002107630912511134
-      hidden translation_43 0 0 0.5452103457818144
+      hidden translation_6 -0.049999999993488586 0.2699585451679144 0.6999999998770363
+      hidden rotation_6 -0.9985916100752698 1.216429987488916e-09 -0.0530546537758998 -1.9075213085561155e-05
+      hidden position_6_0 9.446157040592651e-05
+      hidden translation_7 1.646715375169805e-09 0 2.9745254125058325e-05
+      hidden rotation_7 0 1 0 0.00011072121898838504
+      hidden translation_10 0.8650000000051925 0.33995854539181347 0.6999999998771358
+      hidden rotation_10 -0.9991062278447402 4.949838799182461e-10 -0.04226991225273445 -1.9065056645916217e-05
+      hidden position_10_0 7.651021402910557e-05
+      hidden translation_11 8.609272184045835e-10 0 1.9192387032458578e-05
+      hidden rotation_11 0 1 0 8.971549980053503e-05
+      hidden translation_14 0.43499999999480465 0.3399585453843076 0.6999999998771393
+      hidden rotation_14 0.9991062274611369 4.949835913521132e-10 -0.0422699213197168 1.9065067760486e-05
+      hidden position_14_0 -7.651023002857866e-05
+      hidden translation_15 -8.609275237159153e-10 0 1.9192390033307486e-05
+      hidden rotation_15 0 -1 0 8.971551960042076e-05
+      hidden translation_18 -0.7000000000000028 0.14489226751386006 0.6999999969315631
+      hidden rotation_18 1 0 2.4905065492161237e-13 6.968064802848666e-05
+      hidden position_18_0 0.0011015243171506564
+      hidden translation_19 0 0 0.48899533390445293
+      hidden translation_26 -0.6999999890225546 0.39489436019579827 0.6999999944762578
+      hidden rotation_26 0.9999999957237227 9.1711714387397e-05 -1.1896052988637903e-05 6.658826044580389e-05
+      hidden position_26_0 0.0006799570470337774
+      hidden translation_27 0 0 0.4377784473497709
+      hidden translation_34 -0.6999999999999993 0.5898922663845758 0.6999999969314459
+      hidden rotation_34 1 0 -1.2077840861968927e-13 6.968231707806641e-05
+      hidden position_34_0 0.0011015440634567749
+      hidden translation_35 0 0 0.48902301765610856
+      hidden translation_42 -0.04999999999999716 0.5898922666022408 0.6999999969314743
+      hidden rotation_42 1 0 8.814336153890892e-13 6.968199534416164e-05
+      hidden position_42_0 0.0011015388121926495
+      hidden translation_43 0 0 0.48901740959536233
       translation 0.12 0.15 -2.15
       name "cabinet(5)"
       depth 0.7
@@ -1252,10 +1310,10 @@ DEF KITCHEN Transform {
       }
     }
     Fridge {
-      hidden position_0_0 -2.70680871104357e-07
-      hidden position_0_1 8.982394557414522e-07
-      hidden rotation_1 0 -1 0 3.2917740992269735e-07
-      hidden rotation_2 0 1 0 1.1230375576863896e-06
+      hidden position_0_0 -6.770313194231967e-08
+      hidden position_0_1 2.2463351657431882e-07
+      hidden rotation_1 0 -0.9999999999999999 0 1.3328003749250115e-07
+      hidden rotation_2 0 0.9999999999999999 0 4.500051996273259e-07
       translation 1.57 0 -1.8
       rotation 0 1 0 4.71239
     }
@@ -1296,7 +1354,7 @@ DEF KITCHEN Transform {
       rotation 0 -1 0 5.49779
     }
     Oven {
-      hidden position_0_0 -5.705472640366448e-37
+      hidden position_0_0 -4.777576701260642e-38
       translation -1.24 0.51 0.11
     }
   ]
@@ -1340,6 +1398,60 @@ DEF INTERNAL_WALL Wall {
   name "wall(13)"
   size 22.5 2.4 0.2
 }
+DEF INTERNAL_WALL Wall {
+  translation 13.352563641493553 -9.997920898283854e-10 9.0432223066286
+  rotation 0 1 0 6.283185307179586
+  name "wall(14)"
+  size 11.5 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation -19.78164421728976 -9.997920898283854e-10 19.848498623922094
+  rotation 0 1 0 1.5707963220000003
+  name "wall(16)"
+  size 20.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation -8.595440192034847 -9.991064160883769e-10 21.91855881510168
+  rotation 0 1 0 1.5707963220000003
+  name "wall(15)"
+  size 16.200000000000003 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 19.041851730717738 -1.0007868496584495e-09 2.8453295378645986
+  rotation 0 -1 0 4.712388985179587
+  name "wall(17)"
+  size 12.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation -7.3003577570287845 -1.0007300062395887e-09 -7.282686133445955
+  rotation 0 -1 0 4.712388985179587
+  name "wall(21)"
+  size 12.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 23.606003980780457 -9.997778789736702e-10 -22.014435084885445
+  rotation 0 -1 0 3.141592663179587
+  name "wall(19)"
+  size 12.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 11.330991731516942 -9.997494572642398e-10 -22.08398455695288
+  rotation 0 -1 0 3.141592663179587
+  name "wall(23)"
+  size 12.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 5.184454696430876 -9.997920898283854e-10 -15.769077946566933
+  rotation 0 -0.9999999999999999 0 1.5707963411795867
+  name "wall(22)"
+  size 12.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation -21.613545988442926 -1.0013694947017728e-09 -14.957663431040192
+  rotation 0 1 0 6.283185307179586
+  name "wall(18)"
+  size 14.200000000000001 2.4 0.2
+}
 DEF EXTERNAL_WALL Wall {
   translation -30 0 0
   rotation 0 1 0 1.5708
@@ -1347,10 +1459,52 @@ DEF EXTERNAL_WALL Wall {
   size 60 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
-  translation 30 0 0
+  translation -29.53715930235969 0 58.64712285936459
   rotation 0 1 0 1.5708
-  name "wall(11)"
-  size 60 2.4 0.2
+  name "wall(5)"
+  size 62 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 30.329754628576087 -8.242295734817162e-13 89.73516507103159
+  rotation 0 -1 0 3.1415890043591723
+  name "wall(20)"
+  size 120 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 89.9092457126094 -8.526512829121202e-13 29.81511231150442
+  rotation 0 -1 0 1.570792682359172
+  name "wall(6)"
+  size 120 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 9.348490451314134 3.410605131648481e-13 49.801740152634174
+  rotation 0 -1 0 1.570792682359172
+  name "wall(24)"
+  size 39 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 70.15814204375718 3.410605131648481e-13 49.52317846710234
+  rotation 0 -1 0 1.570792682359172
+  name "wall(27)"
+  size 39 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 50.138285863216936 6.963318810448982e-13 30.103776575019314
+  rotation 0 0.9999999999999999 0 3.6396677224481665e-06
+  name "wall(28)"
+  size 40 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 60.359422048599605 3.623767952376511e-13 -30.033174379028026
+  rotation 0 1 0 3.1415962836408275
+  name "wall(26)"
+  size 59 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 50.95936519378535 4.050093593832571e-13 69.1806668135264
+  rotation 0 1 0 3.1415962836408275
+  name "wall(29)"
+  size 39 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
   translation -27.45 0 30
@@ -1365,8 +1519,13 @@ DEF DOUBLE_WINDOW Transform {
       name "window(21)"
     }
     Window {
-      translation 0.4 0 0
+      translation 54.80336477050098 -2.0001361678012586e-14 39.19210500449711
       name "window(22)"
+      size 1.3 2.4 0.2
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(5)"
     }
   ]
 }
@@ -1374,60 +1533,25 @@ DEF DOUBLE_WINDOW Transform {
   translation -12 0 30
   children [
     Window {
-      translation -0.4 0 0
+      translation 2.079390793300538 5.3290705182007514e-14 -0.057399735409692454
       name "window(19)"
     }
     Window {
-      translation 0.4 0 0
+      translation 2.901559809833449 -1.9895196601282805e-13 -0.08169627320832618
       name "window(20)"
     }
   ]
 }
 DEF DOUBLE_WINDOW Transform {
   translation 12 0 30
-  children [
-    Window {
-      translation -0.4 0 0
-      name "window(17)"
-    }
-    Window {
-      translation 0.4 0 0
-      name "window(18)"
-    }
-  ]
 }
 DEF DOUBLE_WINDOW Transform {
   translation 24 0 30
-  children [
-    Window {
-      translation -0.4 0 0
-      name "window(15)"
-    }
-    Window {
-      translation 0.4 0 0
-      name "window(16)"
-    }
-  ]
 }
 DEF EXTERNAL_WALL Wall {
-  translation -18 0 30
+  translation -16.74859114738275 3.552713678800501e-15 29.97377096183498
   name "wall(8)"
-  size 10.4 2.4 0.2
-}
-DEF EXTERNAL_WALL Wall {
-  translation 27.45 0 30
-  name "wall(9)"
-  size 5.3 2.4 0.2
-}
-DEF EXTERNAL_WALL Wall {
-  translation 18 0 30
-  name "wall(6)"
-  size 10.4 2.4 0.2
-}
-DEF EXTERNAL_WALL Wall {
-  translation 0 0 30
-  name "wall(5)"
-  size 22.4 2.4 0.2
+  size 12.9 2.4 0.2
 }
 DEF DOUBLE_WINDOW Transform {
   translation -12 0 -30
@@ -1461,6 +1585,10 @@ DEF DOUBLE_WINDOW Transform {
     Window {
       translation -0.4 0 0
       name "window(7)"
+    }
+    Window {
+      translation 6.486546406523747 -7.105427357601002e-15 0.0038864608207553886
+      name "window(6)"
     }
     Window {
       translation 0.4 0 0
@@ -1540,8 +1668,8 @@ DEF YELLOW_BOX Solid {
   }
 }
 DEF MyBot1 Robot {
-  translation 28.00000001006497 -0.0004438507121200322 28.000000008250584
-  rotation 0.02466988460806768 -0.9996258632623297 -0.011812294039130571 -0.8937219191882066
+  translation 28.029797040153483 0.04487398226103795 27.705573677813106
+  rotation 0.21610820717803042 -0.7027632320135302 -0.6778060803210567 2.9193480225155346
   children [
     Emitter {
       channel 1
@@ -1565,7 +1693,7 @@ DEF MyBot1 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03200956555601
+        position 76.03200906615521
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1579,8 +1707,8 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499997587308606 0.025212115180827072 -1.5428918596970898e-06
-        rotation -0.999999891802966 0.0003806370439822239 -0.0002674125966468981 1.931646297797885
+        translation -0.04499997587308606 0.025212115181597567 -1.5427859292065684e-06
+        rotation -0.9999998918029287 0.00038063717647549103 -0.00026741254777271946 1.9316457983971402
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1605,13 +1733,13 @@ DEF MyBot1 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 8.316076072341646e-08 9.284770245226817e-06 6.778517151367885e-08
-        angularVelocity 2.8527406324821314e-06 4.042570507223337e-11 -3.5470907137150525e-06
+        linearVelocity 2.2303222268361952e-05 -1.4050419357332103e-05 3.384364054481722e-06
+        angularVelocity 5.212959374063564e-05 7.438240304341681e-08 -0.0003419194154541617
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.0320439169626
+        position 76.03204335363306
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1625,16 +1753,16 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499998975353128 0.025212064463734512 -1.5432021165555701e-06
-        rotation -0.9999999132083952 -0.0003814768641733166 0.00016750702693332016 2.3290004502426473
+        translation 0.04499998975353126 0.02521206446460381 -1.5430826543776137e-06
+        rotation -0.9999999132083743 -0.0003814769575822652 0.0001675069397835417 2.3289998869131447
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 8.401002916835041e-08 9.284797917282963e-06 6.670465329850341e-08
-        angularVelocity 2.853302134720184e-06 -1.0185233918965272e-09 -3.5466670517757995e-06
+        linearVelocity 8.472423518822156e-06 1.3757301586530035e-05 1.2817475488269306e-06
+        angularVelocity 5.15650039802036e-05 -2.1293109227672384e-07 -0.0003420053613952091
       }
     }
     DistanceSensor {
@@ -1738,12 +1866,12 @@ DEF MyBot1 Robot {
     0, 100, 30
   ]
   cpuConsumption 5
-  linearVelocity 1.0941803830722338e-07 9.278369275200914e-06 8.800036597554932e-08
-  angularVelocity 1.7455899697965729e-06 -4.833107908467166e-10 -2.1700139052651445e-06
+  linearVelocity 1.5388296223559495e-05 -1.4230570064909646e-07 2.3331264727515482e-06
+  angularVelocity 5.18472946092027e-05 -6.92765487260669e-08 -0.00034196238909203996
 }
 DEF MyBot2 Robot {
-  translation 28.000000005325447 -0.00044385198079329585 -25.000000011591215
-  rotation 0.0018736241348459573 -0.9999283919663265 -0.011819495430753764 -2.827509917436845
+  translation 27.86478791622001 0.044873982260971446 -24.962668449046824
+  rotation -0.8781780026208054 -0.47028493796487525 0.0873811926921681 -1.8584640543105297
   children [
     Emitter {
       name "emitter2"
@@ -1768,7 +1896,7 @@ DEF MyBot2 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199372396172
+        position 76.0319931924069
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1782,8 +1910,8 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499995669495855 0.025212115599337982 -1.4986911016156104e-06
-        rotation -0.9999998918132991 0.00038067413746168695 -0.0002673211386184205 1.9316351090297283
+        translation -0.04499995669495855 0.025212115600134588 -1.4985783505478372e-06
+        rotation -0.9999998918132595 0.0003806742784689068 -0.00026732108657138867 1.9316345774749666
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1808,13 +1936,13 @@ DEF MyBot2 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 3.3833783026177326e-08 9.28478254964608e-06 -1.0184164982047965e-07
-        angularVelocity -4.3296176869213525e-06 -1.0033741295346489e-09 -1.4059092703064103e-06
+        linearVelocity -5.719271967876695e-06 -1.1858953230898831e-05 4.443711126338455e-06
+        angularVelocity 0.0001783275662116598 5.824398365756052e-08 0.00022966980001022706
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03196407804744
+        position 76.03196354650532
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1828,16 +1956,16 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997063249231 0.025212064873895844 -1.4988202923258098e-06
-        rotation -0.9999999132145866 -0.00038149262331403194 0.0001674341591293641 2.328925271815098
+        translation 0.04499997063249231 0.025212064874692502 -1.4987075709149234e-06
+        rotation -0.9999999132145668 -0.00038149271143907235 0.0001674340768867167 2.3289247402730306
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 3.250789091596609e-08 9.28477533083806e-06 -1.0220811459465538e-07
-        angularVelocity -4.329469180269064e-06 -2.0614093538046785e-09 -1.406600606437671e-06
+        linearVelocity -1.4951251842445501e-05 1.1565975542850997e-05 1.1605959287077638e-05
+        angularVelocity 0.0001783275710683856 5.8244099535512034e-08 0.00022966980623090192
       }
     }
     DistanceSensor {
@@ -1937,8 +2065,8 @@ DEF MyBot2 Robot {
   }
   controller "unmovingrobot2"
   cpuConsumption 0.5
-  linearVelocity 4.332496219500515e-08 9.278364381792861e-06 -1.335839032493118e-07
-  angularVelocity -2.6490285714347316e-06 -1.5297151162614161e-09 -8.603257595931033e-07
+  linearVelocity -1.0335133770412543e-05 -1.423057008195998e-07 8.024734413072535e-06
+  angularVelocity 0.00017832756363496356 5.824092108762619e-08 0.00022966980700824454
 }
 DEF DOUBLE_WINDOW Transform {
   translation 12 0 -30
@@ -1954,8 +2082,8 @@ DEF DOUBLE_WINDOW Transform {
   ]
 }
 DEF MyBot3 Robot {
-  translation -26.000000009902546 -0.0004439096837080894 -27.000000008619107
-  rotation -0.005357322154693721 -0.9999157845586925 -0.01182044371863252 2.2902712138928627
+  translation -26.3265020469009 0.08144112238428901 -26.8307499837084
+  rotation -0.32141575917536747 -2.6366339564400607e-08 -0.946938176310218 -3.141592084443109
   children [
     Emitter {
       name "emitter3"
@@ -1980,7 +2108,7 @@ DEF MyBot3 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199101711996
+        position 76.0319909358566
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1994,8 +2122,8 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499995633981144 0.02521211546465516 1.510198866686916e-06
-        rotation -0.9999998919106948 0.00038451694301026976 -0.00026139112293076613 1.9329358698101922
+        translation -0.044999956339811416 0.025212115464532434 1.5102161039022197e-06
+        rotation -0.9999998919106887 0.00038451696441926185 -0.0002613911146409363 1.9329357885468348
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -2020,13 +2148,13 @@ DEF MyBot3 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity -8.02177885603948e-08 9.284655897915376e-06 -7.120087311578196e-08
-        angularVelocity -2.9986424230989362e-06 1.6438738873349202e-10 3.423206477186306e-06
+        linearVelocity -4.0742378277877955e-07 3.3280766967180855e-07 3.3752625898247273e-07
+        angularVelocity 6.994380047240476e-06 1.6117402715118347e-06 3.092330124027697e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03193849918995
+        position 76.03193836214118
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -2040,16 +2168,16 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997016563732 0.025212064860811303 1.5107181152458881e-06
-        rotation -0.9999999132624251 -0.00038388460460220204 0.0001615789366492508 2.3302034782619305
+        translation 0.0449999701656373 0.02521206486060426 1.5107471784774052e-06
+        rotation -0.9999999132624199 -0.00038388462697307174 0.00016157891509950242 2.3302033412131706
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity -8.111574498799499e-08 9.284687799197484e-06 -7.016068442394757e-08
-        angularVelocity -2.9991821738643442e-06 -8.947844216219462e-10 3.4227550626705756e-06
+        linearVelocity -5.102490221120467e-08 -3.4465554334923396e-07 -1.5507383588357677e-07
+        angularVelocity 6.531397308836159e-06 1.6116334239794335e-06 3.4497880419702277e-06
       }
     }
     DistanceSensor {
@@ -2148,8 +2276,8 @@ DEF MyBot3 Robot {
     mass 0.5
   }
   controller "unmovingrobot3"
-  linearVelocity -1.0558445952939281e-07 9.278271191726571e-06 -9.249852265401317e-08
-  angularVelocity -1.8346759731185166e-06 -3.590803916975324e-10 2.0939851094361625e-06
+  linearVelocity -1.5896155860259854e-07 1.3740389670147123e-07 7.844192499463266e-08
+  angularVelocity 1.9610764116414257e-06 -4.978985346526523e-13 3.974087445870629e-06
 }
 DEF TRAIL Shape {
   appearance Appearance {
@@ -2200,26 +2328,26 @@ DEF Supervisior1 Robot {
   cpuConsumption 0.5
 }
 DEF PIONEER_3AT Pioneer3at {
-  hidden position_0_0 5492.979070551525
-  hidden position_0_1 5669.172950710353
-  hidden position_0_2 5559.28486352283
-  hidden position_0_3 5755.055620173769
-  hidden linearVelocity_0 3.195194258393289e-06 -3.984565354719714e-06 -2.2597408436690934e-08
-  hidden angularVelocity_0 2.4797948980792656e-08 4.065599829492569e-08 2.6644226924804086e-05
-  hidden rotation_8 1 0 0 1.2911394363762605
-  hidden linearVelocity_8 5.472761707849744e-06 -7.454858857339638e-06 -2.0914569860708464e-08
-  hidden angularVelocity_8 -3.10937094862712e-07 5.468737644993929e-07 -0.45291911749905595
-  hidden rotation_9 0.9999999999999999 0 0 4.277710605801284
-  hidden linearVelocity_9 5.488817641390011e-06 -7.4644298356376515e-06 -1.7395170353458424e-08
-  hidden angularVelocity_9 -3.2127781289640754e-07 5.61726805038276e-07 -0.46610762785645166
-  hidden rotation_10 0.9999999999999999 0 0 4.324921246204872
-  hidden linearVelocity_10 4.8221421591801056e-06 -5.246175478668246e-07 -2.948031346534842e-08
-  hidden angularVelocity_10 -3.4865907710727375e-07 6.0301835289455e-07 -0.5032948377706004
-  hidden rotation_11 -0.9999999999999999 0 0 3.5266979203432975
-  hidden linearVelocity_11 4.837858156854134e-06 -5.34379937547873e-07 -2.9480336077516933e-08
-  hidden angularVelocity_11 -3.59642141497681e-07 6.194004861843852e-07 -0.5179487341747714
-  translation 29.658754975443784 0.11352976515869893 -3.5500891406723167
-  rotation -0.03132616103021407 0.9990182253881159 -0.0313250215880037 -1.5717778758503829
+  hidden position_0_0 873.1244089380519
+  hidden position_0_1 830.1957217210553
+  hidden position_0_2 879.0013360055729
+  hidden position_0_3 830.9083015109969
+  hidden linearVelocity_0 0.7039810515735766 7.144368263628672e-12 0.0051651738427791315
+  hidden angularVelocity_0 8.522305069101773e-07 -9.448293785257983e-07 6.2973895066285475e-09
+  hidden rotation_8 -1 0 0 6.044836517466687
+  hidden linearVelocity_8 0.7039809978118989 1.554545370600435e-07 0.005165130512786763
+  hidden angularVelocity_8 0.04695542431257584 -1.4701232195548095e-06 -6.399827703322988
+  hidden rotation_9 -1 0 0 0.8152611733498778
+  hidden linearVelocity_9 0.7039811058928386 -1.5546570619275708e-07 0.005165140193005833
+  hidden angularVelocity_9 0.04695548684048245 -1.6173789920536328e-06 -6.399827789636431
+  hidden rotation_10 1 0 0 0.6446070293715765
+  hidden linearVelocity_10 0.703980998299553 1.5546533745111993e-07 0.00516506387241381
+  hidden angularVelocity_10 0.04695546211763886 -1.4527240894612307e-06 -6.39982770304532
+  hidden rotation_11 -1 0 0 1.5278409334891834
+  hidden linearVelocity_11 0.7039811063114961 -1.5545492100590005e-07 0.005165082824941704
+  hidden angularVelocity_11 0.046955603262382364 -1.6896444976084352e-06 -6.399827788781581
+  translation 0.9434749584013861 0.1096884343995869 2.2453970349969024
+  rotation 5.0650292181776235e-05 0.999999997419894 5.093878338951233e-05 -1.5781330837834409
   controller "ros"
   controllerArgs "--name=pioneer3at"
   extensionSlot [
@@ -2268,4 +2396,8 @@ DEF PIONEER_3AT Pioneer3at {
     InertialUnit {
     }
   ]
+}
+SolidBox {
+  translation -14.171255006683893 9.237055564881302e-13 -7.403388208782658
+  name "box(2)2"
 }
