@@ -5,8 +5,10 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.38532585379023626 0.8068570872334822 0.4477785470318186 1.9277813443886347
-  position 189.83865344359967 256.52487523021784 -14.306662332706594
+  orientation -0.29157014117136937 0.8976780367065053 0.33039521060702737 1.7986989640074529
+  position 48.92297549169167 33.99625570296642 -15.120023938181285
+  follow "wall(13)17"
+  followOrientation TRUE
 }
 TexturedBackground {
 }
@@ -714,143 +716,44 @@ DEF OFFICES Transform {
     }
   ]
 }
-DEF BOXES Transform {
-  translation 2 0 10
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box(7)"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box(8)"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box(9)"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box(10)"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box(11)"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box(12)"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box(13)"
-    }
-  ]
-}
-DEF BOXES Transform {
-  translation -8 0 10
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box(10)23"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box(10)24"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box25"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box(10)26"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box(10)27"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box(10)28"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box(10)29"
-    }
-  ]
-}
-DEF BOXES Transform {
-  translation -2 0 10
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box(10)30"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box(10)31"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box(10)32"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box(10)33"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box(10)34"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box(10)35"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box(10)36"
-    }
-  ]
-}
 DEF INTERNAL_WALL Wall {
   translation -20.841722096896945 1.7763568394002505e-15 -0.895663661597073
   name "wall(7)"
   size 18.2 2.7 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 22.445573508205836 -1.0006980318164795e-09 -0.33897846323278014
+  translation 23.946530533498798 -1.0006980318164795e-09 -1.3465451669858979
   rotation 0 1 0 1.5707963220000003
   name "wall(13)17"
-  size 27.4 2.4 0.2
+  size 31.5 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 14.721685620655403 -1.0006838209617643e-09 8.116175895844844
+  translation 15.468528286713703 -1.0017070025012588e-09 3.449740374749524
   rotation 0 -1 0 4.7123890043591725
   name "wall(1316"
-  size 25.099999999999998 2.4 0.2
+  size 34.300000000000004 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 6.426275502676432 -1.0007122426711947e-09 -0.7324299451445846
+  translation 6.647038693892407 -1.0007193480985523e-09 0.6961701130002744
   rotation 0 -1 0 4.7123890043591725
   name "wall(1315"
-  size 27.4 2.4 0.2
+  size 30.6 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 6.249121520955011 -1.0001153867731562e-09 -21.943904131171486
+  translation 6.580376805989836 -1.0000727542090106e-09 -22.393753290059422
   rotation 0 1 0 1.5707963220000003
   name "wall(13123"
   size 15.9 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 14.432411492120242 -1.000101175918441e-09 -13.934505883459174
+  translation 15.504357040818558 -9.999093293797858e-10 -17.205538702438112
   name "wall(1312"
-  size 15.9 2.4 0.2
+  size 17.099999999999998 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 22.254618151926593 -1.0001153867731562e-09 -22.204424402640733
+  translation 20.527249419994213 -1.0000976232047622e-09 -24.03975349060693
   name "wall(1311"
-  size 15.9 2.4 0.2
+  size 18.9 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
   translation 14.296785349750635 -1.0003249968802055e-09 20.5767634177167
@@ -1030,8 +933,8 @@ Shape {
   }
 }
 DEF MyBot1 Robot {
-  translation 28.000064924172616 -0.00044384959603896434 28.00022721503741
-  rotation 0.02467292041182877 -0.9996257928053566 -0.011811915873984663 -0.8936431567938427
+  translation 27.999999793742376 -0.00044264672009044354 27.99999984219033
+  rotation 0.02467235518677575 -0.9996258023728838 -0.01181228681948517 -0.8936434632449604
   children [
     Emitter {
       channel 1
@@ -1055,7 +958,7 @@ DEF MyBot1 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03200948840417
+        position 76.03201001946653
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1069,8 +972,8 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.044999975873086025 0.02521211518094611 -1.5428754946186893e-06
-        rotation -0.9999998918029602 0.0003806370644509492 -0.0002674125890963852 1.9316462206460536
+        translation -0.04499997587308602 0.025212115180126716 -1.5429881410051978e-06
+        rotation -0.9999998918030001 0.00038063692355777155 -0.0002674126410691264 1.931646751708349
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1095,13 +998,13 @@ DEF MyBot1 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 8.508718272372328e-08 9.106792005397045e-06 1.6093615268233668e-07
-        angularVelocity 7.368741363848149e-06 7.739216626515334e-07 -3.142366938216393e-06
+        linearVelocity 8.703688395813737e-08 -1.4272408698448543e-07 7.006002093074107e-08
+        angularVelocity 2.9737239611088903e-06 -4.875637904821796e-10 -3.6956354645511137e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03204419382176
+        position 76.03204472494872
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1115,16 +1018,16 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499998975353129 0.025212064463307256 -1.543260828543519e-06
-        rotation -0.9999999132084056 -0.0003814768182656989 0.0001675070697647492 2.3290007271017763
+        translation 0.044999989753531276 0.025212064462487558 -1.5433734616981124e-06
+        rotation -0.9999999132084254 -0.00038147673019648076 0.00016750715193260328 2.3290012582286885
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 7.606985022357972e-09 9.446074530204022e-06 1.3843804738603698e-07
-        angularVelocity 5.1466030680348915e-06 7.749247727379297e-07 -3.7998795486366517e-07
+        linearVelocity 8.700985290811891e-08 -1.4267980269262067e-07 7.003722072675355e-08
+        angularVelocity 2.973742420559583e-06 -1.3965720391190415e-09 -3.6956639335986765e-06
       }
     }
     DistanceSensor {
@@ -1228,12 +1131,12 @@ DEF MyBot1 Robot {
     0, 100, 30
   ]
   cpuConsumption 5
-  linearVelocity 8.435945726100906e-08 9.269205474182754e-06 2.5732025654469015e-07
-  angularVelocity 6.2563255196619745e-06 7.743205523754153e-07 -1.759436135692873e-06
+  linearVelocity 1.1654478832977865e-07 -1.415371821167459e-07 9.374549854061885e-08
+  angularVelocity 1.864282764893088e-06 -9.376261669618486e-10 -2.3164951303659204e-06
 }
 DEF MyBot2 Robot {
-  translation 28.00000000536285 -0.00044385197927634956 -25.000000011710167
-  rotation 0.0018735840654176394 -0.9999283920420909 -0.011819495372834393 -2.8275165295627733
+  translation 28.999999951103824 -0.0004426479879969039 -28.99999974780482
+  rotation 0.0018735368659504124 -0.9999283922009147 -0.011819489418161985 -2.8275241532973845
   children [
     Emitter {
       name "emitter2"
@@ -1258,7 +1161,7 @@ DEF MyBot2 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199382336342
+        position 76.0319943543041
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1272,8 +1175,8 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499995669495854 0.025212115599189008 -1.4987121862684058e-06
-        rotation -0.9999998918133064 0.00038067411109308987 -0.00026732114835130644 1.9316352084314181
+        translation -0.04499995669495851 0.025212115598393252 -1.4988248070696674e-06
+        rotation -0.9999998918133463 0.00038067397024884496 -0.00026732120033818235 1.9316357393720418
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1298,13 +1201,13 @@ DEF MyBot2 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 3.382537561765928e-08 9.284773994388614e-06 -1.0181788215408134e-07
-        angularVelocity -4.3286537857857985e-06 -1.0034415115599215e-09 -1.4055673998233327e-06
+        linearVelocity 3.461271686923569e-08 -1.4268474082251435e-07 -1.063180505980577e-07
+        angularVelocity -4.5123410677932955e-06 -3.393499151512425e-09 -1.4653361901111466e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03196417789665
+        position 76.03196470886355
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1318,16 +1221,16 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997063249231 0.02521206487374619 -1.4988414668379318e-06
-        rotation -0.9999999132145903 -0.0003814926067599053 0.00016743417457849304 2.3289253716643055
+        translation 0.04499997063249224 0.025212064872950326 -1.4989540662640663e-06
+        rotation -0.9999999132146101 -0.0003814925187302536 0.0001674342567321184 2.328925902631159
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 3.24994966681371e-08 9.284767028960452e-06 -1.0218435209424103e-07
-        angularVelocity -4.328505396467551e-06 -2.0616231426267787e-09 -1.4062587696249958e-06
+        linearVelocity 3.4561365330920474e-08 -1.4273440193343868e-07 -1.061626681932458e-07
+        angularVelocity -4.512484628204794e-06 -4.29970704177505e-09 -1.4653788435200727e-06
       }
     }
     DistanceSensor {
@@ -1427,8 +1330,8 @@ DEF MyBot2 Robot {
   }
   controller "unmovingrobot2"
   cpuConsumption 0.5
-  linearVelocity 4.3310818560030244e-08 9.27835559914328e-06 -1.3354287477865858e-07
-  angularVelocity -2.6480615194650935e-06 -1.529844508105734e-09 -8.599953109015185e-07
+  linearVelocity 4.605655490141454e-08 -1.4154443209687978e-07 -1.4236568349484007e-07
+  angularVelocity -2.828982592754405e-06 -3.8507650276540355e-09 -9.185120058912379e-07
 }
 DEF DOUBLE_WINDOW Transform {
   translation 12 0 -30
@@ -1444,8 +1347,8 @@ DEF DOUBLE_WINDOW Transform {
   ]
 }
 DEF MyBot3 Robot {
-  translation -26.00000000999591 -0.00044390968249331114 -27.000000008700805
-  rotation -0.005357329960908197 -0.9999157845176658 -0.011820443651192886 2.2902701139160535
+  translation -25.999999803303837 -0.0004427057089784886 -26.99999983210443
+  rotation -0.005357328241038177 -0.9999157845985216 -0.011820437590911692 2.2902699651971172
   children [
     Emitter {
       name "emitter3"
@@ -1470,7 +1373,7 @@ DEF MyBot3 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199111670018
+        position 76.0319916476497
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1484,8 +1387,8 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.0449999563398114 0.02521211546480554 1.5101777441797303e-06
-        rotation -0.9999998919107023 0.0003845169167756686 -0.00026139113308913225 1.9329359693903996
+        translation -0.04499995633981136 0.02521211546560734 1.5100651215739361e-06
+        rotation -0.999999891910742 0.00038451677689602186 -0.00026139118725228316 1.9329365003398622
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1510,13 +1413,13 @@ DEF MyBot3 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity -8.019895485862187e-08 9.284647458510394e-06 -7.118420560332006e-08
-        angularVelocity -2.9979665535019556e-06 1.6468858976973929e-10 3.4224424455809542e-06
+        linearVelocity -8.399216877995286e-08 -1.4272084229112838e-07 -7.361861677712923e-08
+        angularVelocity -3.1252908684857957e-06 -1.4212071570387993e-10 3.566447579527854e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.0319385988353
+        position 76.03193912978762
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1530,16 +1433,16 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997016563733 0.025212064860961836 1.5106969839666801e-06
-        rotation -0.9999999132624287 -0.0003838845883368025 0.0001615789523176294 2.3302035779072705
+        translation 0.04499997016563727 0.025212064861763913 1.5105843876374742e-06
+        rotation -0.9999999132624485 -0.0003838845016679267 0.00016157903580532932 2.3302041088595447
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity -8.109690148827781e-08 9.284679359110713e-06 -7.01440254986441e-08
-        angularVelocity -2.9985060279349386e-06 -8.946162044158057e-10 3.4219909736248577e-06
+        linearVelocity -8.397760891116587e-08 -1.4266525091950765e-07 -7.360475247110689e-08
+        angularVelocity -3.1253016445608095e-06 -1.051654388081225e-09 3.566464956848e-06
       }
     }
     DistanceSensor {
@@ -1638,8 +1541,8 @@ DEF MyBot3 Robot {
     mass 0.5
   }
   controller "unmovingrobot3"
-  linearVelocity -1.0555200610828113e-07 9.278262394997706e-06 -9.246989115005213e-08
-  angularVelocity -1.8340018918233316e-06 -3.5884971862239485e-10 2.0932202454427143e-06
+  linearVelocity -1.1244882156601446e-07 -1.415143033796389e-07 -9.852717975599594e-08
+  angularVelocity -1.9590435802242277e-06 -5.913910066766206e-10 2.235154876557425e-06
 }
 DEF TRAIL Shape {
   appearance Appearance {
@@ -1690,16 +1593,26 @@ DEF Supervisior1 Robot {
   cpuConsumption 0.5
 }
 DEF PIONEER_3AT Pioneer3at {
-  hidden position_0_0 2353.4361562855493
-  hidden position_0_1 2334.989949040992
-  hidden position_0_2 2378.5523447886494
-  hidden position_0_3 2358.1190773762387
-  hidden rotation_8 1 0 0 4.435997765993766
-  hidden rotation_9 -1 0 0 1.502854051285856
-  hidden rotation_10 -1 0 0 1.4866460282227576
-  hidden rotation_11 1 0 0 3.890428386861546
-  translation 23.985458050004848 0.10761013397850827 -24.001294175723633
-  rotation -0.00041454974019545165 0.9999998388069741 0.0003879878073710103 1.5035255076520961
+  hidden position_0_0 3320.7956290594484
+  hidden position_0_1 3381.5031059125404
+  hidden position_0_2 3416.13421642521
+  hidden position_0_3 3483.5678313838484
+  hidden linearVelocity_0 0.0009416658810555194 1.6500126090902223e-06 0.289468938108116
+  hidden angularVelocity_0 0.0010245335162643778 0.0004373838264615495 -0.0011250809137393293
+  hidden rotation_8 1 0 0 4.68706229775094
+  hidden linearVelocity_8 0.0008003894993803914 0.00011247198201336415 0.28898581840918175
+  hidden angularVelocity_8 2.373222653725142 -0.0003508456640437318 -0.007425641449812975
+  hidden rotation_9 -1 0 0 5.007249931022791
+  hidden linearVelocity_9 0.0007927081529256159 -0.0001028546484634333 0.28938938877032433
+  hidden angularVelocity_9 2.3738309193240243 -0.00034990922114285937 -0.007427994483192166
+  hidden rotation_10 1 0 0 3.940243327027935
+  hidden linearVelocity_10 0.0009201348100401287 -1.5913534329530496e-05 0.289583177873507
+  hidden angularVelocity_10 2.6367373910538263 -0.00044005872858325526 -0.008129109408757553
+  hidden rotation_11 -1 0 0 3.15134094278181
+  hidden linearVelocity_11 0.0009091843821967514 1.037739503663242e-05 0.2888981135891069
+  hidden angularVelocity_11 2.637408068968224 -0.00043860047538154374 -0.00813003224833509
+  translation 26.86561606084556 0.1076838070075216 -5.052387926711128
+  rotation 0.00017681101663059355 0.9999998868558764 0.00044161759345378806 -3.1389362340124687
   controller "ros"
   controllerArgs "--name=pioneer3at"
   extensionSlot [

@@ -36,6 +36,7 @@ receiver = wb_robot_get_device('receiver');
 wb_receiver_enable(receiver, TIME_STEPEPUCK);
 epuck = wb_supervisor_node_get_from_def('PIONEER_3AT');
 trans = wb_supervisor_node_get_field(epuck, 'translation');
+pioneer_rotation = wb_supervisor_node_get_field(epuck, 'rotation');
 node = wb_supervisor_node_get_from_def('MyBot3.Radar');
 yellowboxsize = wb_supervisor_node_get_from_def('YELLOW_BOX.Shape.geometryBox');
 yellowboxsize_field = wb_supervisor_node_get_field(yellowboxsize, 'size');
@@ -72,6 +73,7 @@ wb_supervisor_field_set_sf_vec3f(trans_field1, m.pos_Beacon1);
 wb_supervisor_field_set_sf_vec3f(trans_field2, m.pos_Beacon2);
 wb_supervisor_field_set_sf_vec3f(trans_field3, m.pos_Beacon3);
 wb_supervisor_field_set_sf_vec3f(trans, m.pos_Robot);
+wb_supervisor_field_set_sf_rotation(pioneer_rotation, m.rotation_Robot);
 % set the transmitted power 
 wb_supervisor_field_set_sf_float(transmittedPower_field, m.transmittedPower);
 
