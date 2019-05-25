@@ -5,161 +5,116 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.43940340786977744 0.7976486369370783 0.41313593059046216 1.734505965271054
-  position 74.47882455162402 103.71889856378903 -1.124119086026341
+  orientation -0.38532585379023626 0.8068570872334822 0.4477785470318186 1.9277813443886347
+  position 189.83865344359967 256.52487523021784 -14.306662332706594
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
-  size 60 60
+  translation 30 0 0
+  rotation 0.7071067811865475 0.7071067811865475 0 0
+  size 120 60
   tileSize 1 1
   appearance ThreadMetalPlate {
   }
 }
-Wall {
-  translation 22.75095703781688 4.263256414560601e-14 -20.52588905641701
-  name "wall(14)"
-  size 14 2.4 0.2
+SolidTorus {
+  translation 64.93577802139102 -1.0942358130705543e-12 4.581355359919176
+  name "torus(3)"
 }
-DEF TREE Solid {
-  translation 28.89193898219605 1.1839395514004166e-12 -15.224773678242421
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  name "solid(13)"
+DEF OUT_WALL Wall {
+  translation 58.204489205248386 -2.9416469260468148e-12 5.555860459680742
+  rotation 0 1 0 1.5707998847994753
+  name "outwall6(7)"
+  size 13 2.4 0.2
 }
-DEF TREE Solid {
-  translation 29.38328245186393 1.1057798504668056e-12 -27.371647210801477
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
+DEF OUT_WALL Wall {
+  translation 90.01610721073573 -5.115907697472721e-13 0.02521955938559728
+  rotation 0 -1 0 4.712385326405865
+  name "outwall3"
+  size 60 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 38.11850114797957 -1.9895196601282805e-12 4.9489028097222025
+  rotation 0 -1 0 4.712385326405865
+  name "outwall4"
+  size 50 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 58.53885349408546 -2.0463630789890885e-12 -20.116021857576317
+  rotation 0 1 0 3.639545706734746e-06
+  name "outwall6"
+  size 41 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 79.11112601391267 -3.069544618483633e-12 0.5995430799751702
+  rotation 0 1 0 1.5707999615457071
+  name "outwall6(1)"
+  size 41 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 64.66909011208931 -3.367972567502875e-12 21.09675680699851
+  rotation 0 -1 0 6.283181686841351
+  name "outwall6(2)"
+  size 29 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 71.66121731166321 -2.9416469260468148e-12 2.171535761005348
+  rotation 0 1 0 4.712392567158649
+  name "outwall6(3)"
+  size 20 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 64.77492156143019 -2.9416469260468148e-12 12.071773095761873
+  rotation 0 -1 0 3.1415890812005243
+  name "outwall6(6)"
+  size 13 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 50.02370638457367 -2.9416469260468148e-12 6.580572468498337
+  rotation 0 1 0 4.712392567158649
+  name "outwall6(5)"
+  size 29 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 61.159057737052066 -2.8705926524708048e-12 -7.735770799816559
+  rotation 0 1 0 3.141596206799475
+  name "outwall6(4)"
+  size 21 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 59.87835135727737 -5.115907697472721e-13 -29.855079565529415
+  rotation 0 -1 0 6.283181648405866
+  name "outwall2"
+  size 60 2.4 0.2
+}
+DEF YELLOW_BOX Solid {
+  translation -1.456749798847497 1.2299999999997016 3.155366814255416
+  rotation 0 0.9999999999999999 0 3.142388812563314
   children [
-    PottedTree {
+    DEF Shape Shape {
+      appearance DEF PBR PBRAppearance {
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF geometryBox Box {
+        size 0.30000000000000004 2.6999999999999997 35
+      }
     }
   ]
-  name "solid(12)"
+  name "YELLOW_BOX"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE geometryBox
+  }
 }
-DEF TREE Solid {
-  translation 29.2498480865009 1.1839395514004166e-12 -25.240366381720218
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(9)"
-}
-DEF TREE Solid {
-  translation 24.489622479827506 1.1555178419700126e-12 -29.27081452695333
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(10)"
-}
-DEF TREE Solid {
-  translation 29.315237398904305 1.1839395514004166e-12 -29.164363932616208
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(11)"
-}
-DEF TREE Solid {
-  translation 22.726601057852463 8.926170297387755e-13 -29.30529719051825
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(3)"
-}
-DEF TREE Solid {
-  translation 17.22571045899442 1.1981504061156186e-12 -29.46482327637598
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(4)"
-}
-DEF TREE Solid {
-  translation 15.348261977327612 1.1768341240428156e-12 -29.552400328544955
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(6)"
-}
-DEF TREE Solid {
-  translation 25.969017688696457 1.1839395514004166e-12 -29.349104315484997
-  rotation 0 -0.9999999999999999 0 5.497787326359172
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(7)"
-}
-DEF TREE Solid {
-  translation 13.799800932581542 1.1839395514004166e-12 -29.451850495661464
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(8)"
-}
-DEF TREE Solid {
-  translation 27.62553588846127 1.1697286966852146e-12 -29.39846814582073
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(2)"
-}
-DEF TREE Solid {
-  translation 19.113304939263735 1.0667e-12 -29.4519526116953
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-    PottedTree {
-      name "potted tree(1)"
-    }
-    PottedTree {
-      name "potted tree(2)"
-    }
-    PottedTree {
-      name "potted tree(3)"
-    }
-    PottedTree {
-      name "potted tree(4)"
-    }
-  ]
-  name "solid(1)"
-}
-DEF TREE Solid {
-  translation 20.970201339910542 1.102227136788005e-12 -29.434055941198316
-  rotation 0 1 0 0.785398
-  scale 1.7 1.7 1.7
-  children [
-    PottedTree {
-    }
-  ]
-  name "solid(5)"
+SolidRoundedBox {
+  translation -17.7943406357252 -3.410605131648481e-13 -26.48373355845466
 }
 DEF OFFICES Transform {
   rotation 0 1 0 3.14159
@@ -760,40 +715,7 @@ DEF OFFICES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -2 0 0
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box(1)"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box(2)"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box(3)"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box(4)"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box(5)"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box(6)"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box(14)"
-    }
-  ]
-}
-DEF BOXES Transform {
-  translation -7 0 0
+  translation 2 0 10
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -826,73 +748,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -12 0 0
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box9"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box10"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box11"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box12"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box13"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box14"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box15"
-    }
-  ]
-}
-DEF BOXES Transform {
-  translation -12 0 3
-  children [
-    WoodenBox {
-      translation 26.7873 0.89 9.13591
-      name "wooden box(16"
-    }
-    WoodenBox {
-      translation 25.3406 0.3 9.13625
-      name "wooden box(17"
-    }
-    WoodenBox {
-      translation 25.8306 0.91 9.13625
-      name "wooden box(18"
-    }
-    WoodenBox {
-      translation 24.8506 0.9 9.13625
-      name "wooden box(19"
-    }
-    WoodenBox {
-      translation 24.3706 0.3 9.13625
-      name "wooden box20"
-    }
-    WoodenBox {
-      translation 26.3006 0.3 9.13625
-      name "wooden box21"
-    }
-    WoodenBox {
-      translation 27.317 0.3 9.14677
-      name "wooden box22"
-    }
-  ]
-}
-DEF BOXES Transform {
-  translation -7 0 3
+  translation -8 0 10
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -925,7 +781,7 @@ DEF BOXES Transform {
   ]
 }
 DEF BOXES Transform {
-  translation -2 0 3
+  translation -2 0 10
   children [
     WoodenBox {
       translation 26.7873 0.89 9.13591
@@ -957,393 +813,49 @@ DEF BOXES Transform {
     }
   ]
 }
-DEF KITCHEN Transform {
-  translation 27.9 0 21.8
-  rotation 0 1 0 4.71239
-  children [
-    Cabinet {
-      hidden translation_6 1.2163781093477155e-10 0.6897927782151899 0.6999999969262234
-      hidden rotation_6 -0.9992243963011038 6.499088935406704e-10 -0.03937773275208296 -9.532173726694967e-05
-      hidden position_6_0 0.002544531255136047
-      hidden translation_7 6.580328328342766e-07 0 0.0005117583750259362
-      hidden rotation_7 0 1 0 0.0025716529404744355
-      translation 1 0.83 -2.15
-      depth 0.7
-      outerThickness 0.02
-      rowsHeights [
-        0.2, 0.2, 0.2, 0.2, 0.2, 0.34
-      ]
-      columnsWidths [
-        0.4
-      ]
-      layout [
-        "LeftSidedDoor (1, 1, 1, 6, 1.5)"
-        "Shelf (1,2, 1, 0)"
-        "Shelf (1,3, 1, 0)"
-        "Shelf (1,4, 1, 0)"
-        "Shelf (1,5, 1, 0)"
-        "Shelf (1,6, 1, 0)"
-      ]
-      handle CabinetHandle {
-        translation -0.3 0 0
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    Cabinet {
-      hidden translation_6 -1.2155609852015914e-10 1.074798357741644 0.669999997316971
-      hidden rotation_6 0.9989771081797357 2.4177950470755056e-09 -0.04521877190783315 9.111003390754482e-05
-      hidden position_6_0 -0.002660168002736757
-      hidden translation_7 -7.911127792026296e-07 0 0.0005885138477404568
-      hidden rotation_7 0 -1 0 0.002688508710732411
-      hidden translation_10 -1.2155609852015914e-10 1.7447983577443644 0.6699999973169746
-      hidden rotation_10 0.9989771168046402 2.4176013131925584e-09 -0.045218581365277295 9.111002891192757e-05
-      hidden position_10_0 -0.002660167537170861
-      hidden translation_11 -7.91112506254299e-07 0 0.0005885137461170078
-      hidden rotation_11 0 -1 0 0.0026885082295614302
-      translation -1.65 0.15 0.11
-      rotation 0 1 0 1.5708
-      name "cabinet(1)"
-      depth 0.67
-      outerThickness 0.02
-      rowsHeights [
-        0.68, 0.25, 0.25, 0.25, 0.25, 0.34
-      ]
-      columnsWidths [
-        0.44
-      ]
-      layout [
-        "RightSidedDoor (1, 2, 1, 3, 1.5)"
-        "RightSidedDoor (1, 5, 1, 2, 1.5)"
-        "Shelf (1,2, 1, 0)"
-        "Shelf (1,3, 1, 0)"
-        "Shelf (1,4, 1, 0)"
-        "Shelf (1,5, 1, 0)"
-        "Shelf (1,6, 1, 0)"
-      ]
-      handle CabinetHandle {
-        translation -0.15 0 0
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    Cabinet {
-      hidden translation_6 -0.44000000006634465 0.339825231341655 0.4999999989252295
-      hidden rotation_6 0.9981150656881193 2.27634620429983e-09 -0.06137031567786762 6.71104807908946e-05
-      hidden position_6_0 -0.0019584775778315805
-      hidden translation_7 -4.2880291359348455e-07 0 0.00043327789192059205
-      hidden rotation_7 0 -1 0 0.0019793429285540898
-      hidden translation_10 6.645706207564217e-11 0.339825231336333 0.49999999892522595
-      hidden rotation_10 -0.998108219216075 2.2961819281256637e-09 -0.06148156417427655 -6.711095229840026e-05
-      hidden position_10_0 0.001958868107066546
-      hidden translation_11 4.289739320151309e-07 0 0.0004333642848901816
-      hidden rotation_11 0 1 0 0.0019797376289613987
-      hidden translation_14 0.44000000006644413 0.3398252313427359 0.49999999892522595
-      hidden rotation_14 -0.9981082133424141 2.2730220332413298e-09 -0.06148165952878958 -6.711093926115384e-05
-      hidden position_14_0 0.0019588676483972187
-      hidden translation_15 4.289737330631649e-07 0 0.0004333641844896344
-      hidden rotation_15 0 1 0 0.001979737148922445
-      translation 0.1 1.4 -2.15
-      name "cabinet(2)"
-      outerThickness 0.02
-      rowsHeights [
-        0.21, 0.21, 0.22
-      ]
-      columnsWidths [
-        0.44, 0.44, 0.44
-      ]
-      layout [
-        "RightSidedDoor (1, 1, 1, 3, 1.5)"
-        "LeftSidedDoor (2, 1, 1, 3, 1.5)"
-        "LeftSidedDoor (3, 1, 1, 3, 1.5)"
-        "Shelf (1, 2, 3, 0)"
-        "Shelf (1, 3, 2, 0)"
-        "Shelf (1, 1, 0, 1)"
-        "Shelf (2, 1, 0, 3)"
-      ]
-      handle CabinetHandle {
-        translation -0.2 0 0
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    Cabinet {
-      hidden translation_6 -6.633982252424175e-11 0.3398252313527568 0.4999999989252295
-      hidden rotation_6 0.998115074162839 2.264422471481484e-09 -0.06137017784649459 6.711045692615101e-05
-      hidden position_6_0 -0.0019584770703700858
-      hidden translation_7 -4.2880269129907944e-07 0 0.00043327777966708066
-      hidden rotation_7 0 -1 0 0.001979342442361637
-      translation -1.647 1.4 -0.37
-      rotation 0 1 0 1.5708
-      name "cabinet(3)"
-      outerThickness 0.02
-      rowsHeights [
-        0.21, 0.21, 0.22
-      ]
-      columnsWidths [
-        0.44
-      ]
-      layout [
-        "RightSidedDoor (1, 1, 1, 3, 1.5)"
-        "Shelf (1, 2 ,1 , 0)"
-        "Shelf (1, 3 ,1 , 0)"
-      ]
-      handle CabinetHandle {
-        translation -0.2 0 0
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    Cabinet {
-      hidden translation_6 -0.06500000007011053 0.33982522852400465 0.49999999892614966
-      hidden rotation_6 0.9978447139228798 4.918922664401802e-09 -0.06561956184070494 6.713457481127564e-05
-      hidden position_6_0 -0.002083570692883091
-      hidden translation_7 -5.184158860249699e-07 0 0.0004923788382565938
-      hidden rotation_7 0 -1 0 0.002105759437301648
-      hidden translation_10 0.40499987296459494 0.3398252855582612 0.4999999678915401
-      hidden rotation_10 -0.9978371142099148 0.0006686913074555946 -0.06573162372225887 -6.691705347470701e-05
-      hidden position_10_0 -1.8259549059458738e-06
-      hidden translation_11 5.757764803548948e-07 0 -0.0005189041717013537
-      hidden rotation_11 0 -1 0 0.002219200673362095
-      hidden translation_14 -0.4700000000507565 0.3398252390058778 0.4999999989282635
-      hidden rotation_14 0.9988692388717777 1.744513709722171e-09 -0.04754201968485792 6.704374776684534e-05
-      hidden position_14_0 -0.001531700832839182
-      hidden translation_15 -2.0267681385965908e-07 0 0.00026185019569715607
-      hidden rotation_15 0 -1 0 0.0015480360672942828
-      translation -1.48 0.15 -0.79
-      rotation 0 1 0 1.5708
-      name "cabinet(4)"
-      outerThickness 0.02
-      rowsHeights [
-        0.21, 0.21, 0.22
-      ]
-      columnsWidths [
-        0.34, 0.47, 0.47
-      ]
-      layout [
-        "RightSidedDoor (2, 1, 1, 3, 1.5)"
-        "LeftSidedDoor (3, 1, 1, 3, 1.5)"
-        "RightSidedDoor (1, 1, 1, 3, 1.5)"
-        "Shelf (1, 2, 1, 0)"
-        "Shelf (1, 3, 1, 0)"
-        "Shelf (1, 1, 0, 3)"
-        "Shelf (2, 1, 0, 3)"
-      ]
-      handle CabinetHandle {
-        translation 0.1 0 0
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    Cabinet {
-      hidden translation_6 -0.04999999983729353 0.26979275204764186 0.699999996922724
-      hidden rotation_6 -0.9985931820939127 7.273058060010079e-09 -0.053025057053753225 -9.542071673706854e-05
-      hidden position_6_0 0.0033656803758447076
-      hidden translation_7 1.5541546402042528e-06 0 0.0009138078970488344
-      hidden rotation_7 0 1 0 0.003401487639845753
-      hidden translation_10 0.865000000129708 0.3397927729659187 0.699999996927275
-      hidden rotation_10 -0.9991066554296624 2.9368165282148386e-09 -0.04225980449734485 -9.534073518944363e-05
-      hidden position_10_0 0.0027245453757699014
-      hidden translation_11 8.110077534817517e-07 0 0.0005890577302330479
-      hidden rotation_11 0 0.9999999999999999 0 0.0027535747347575677
-      hidden translation_14 0.43499999987026783 0.33979277296397825 0.699999996927275
-      hidden rotation_14 0.9991066521942287 2.9344874718695067e-09 -0.042259880989428615 9.534073837202749e-05
-      hidden position_14_0 -0.0027245459486349897
-      hidden translation_15 -8.110080893519722e-07 0 0.000589057852329356
-      hidden rotation_15 0 -1 0 0.002753575292293453
-      hidden translation_18 -0.7000000000000206 0.14444546305550413 0.699999929812833
-      hidden rotation_18 -1 2.984140369062071e-13 -1.8585307816106795e-13 -0.00037204115548259786
-      hidden position_18_0 0.04193315663944635
-      hidden translation_19 0 0 0.5850102895982701
-      hidden translation_26 -0.6999995555618597 0.39447219841352477 0.6999999023328805
-      hidden rotation_26 0.9999996528695209 0.0008097603915098829 -0.00019633885550196907 0.00033268478136337984
-      hidden position_26_0 0.001009527028242669
-      hidden translation_27 0 0 0.4377458226195917
-      hidden translation_34 -0.700000000000081 0.589488917833628 0.6999999113323803
-      hidden rotation_34 -1 1.225119987754559e-10 5.112721796137075e-09 -0.00034889306428836393
-      hidden position_34_0 0.0021137017777118714
-      hidden translation_35 0 0 0.5452225989147067
-      hidden translation_42 -0.05000000000005045 0.589488918169654 0.6999999113327
-      hidden rotation_42 -1 6.968887212789024e-11 4.811923300438045e-09 -0.00034889191947300597
-      hidden position_42_0 0.0021136912308289484
-      hidden translation_43 0 0 0.5452164061001322
-      translation 0.12 0.15 -2.15
-      name "cabinet(5)"
-      depth 0.7
-      outerThickness 0.02
-      rowsHeights [
-        0.25, 0.25, 0.14
-      ]
-      columnsWidths [
-        0.76, 0.54, 0.43, 0.43
-      ]
-      layout [
-        "LeftSidedDoor (2, 1, 1, 2, 1.5)"
-        "LeftSidedDoor (4, 1, 1, 3, 1.5)"
-        "RightSidedDoor (3, 1, 1, 3, 1.5)"
-        "Drawer (1, 1, 1, 1, 3.5)"
-        "Drawer (1, 2, 1, 1, 3.5)"
-        "Drawer (1, 3, 1, 1, 3.5)"
-        "Drawer (2, 3, 1, 1, 3.5)"
-        "Shelf (1, 2, 1, 0)"
-        "Shelf (1, 3, 2, 0)"
-        "Shelf (3, 2, 2, 0)"
-        "Shelf (1, 1, 0, 3)"
-        "Shelf (2, 1, 0, 3)"
-        "Shelf (3, 1, 0, 1)"
-      ]
-      handle CabinetHandle {
-        handleLength 0.1
-        handleRadius 0.008
-        handleColor 0.427451 0.513725 0.533333
-      }
-    }
-    SolidBox {
-      translation 0.12 0.07 -1.55
-      size 2.2 0.16 0.2
-      appearance PBRAppearance {
-        baseColor 0.8 0.8 0.8
-        roughness 0.5
-        metalness 0
-        textureTransform TextureTransform {
-          scale 4 4
-        }
-      }
-    }
-    SolidBox {
-      translation -1.08 0.07 -0.65
-      rotation 0 1 0 1.5708
-      name "box(1)"
-      size 2 0.16 0.2
-      appearance PBRAppearance {
-        baseColor 0.8 0.8 0.8
-        roughness 0.5
-        metalness 0
-        textureTransform TextureTransform {
-          scale 4 4
-        }
-      }
-    }
-    SolidBox {
-      translation 1.12 0.07 -1.9
-      rotation 0 -1 0 4.71239
-      name "box(2)"
-      size 0.5 0.16 0.2
-      appearance PBRAppearance {
-        roughness 0.5
-        metalness 0
-        textureTransform TextureTransform {
-          scale 4 4
-        }
-      }
-    }
-    SolidBox {
-      translation -1.415 0.07 0.25
-      rotation 0 -1 0 6.28318
-      name "box(3)"
-      size 0.47 0.16 0.2
-      appearance PBRAppearance {
-        baseColor 0.8 0.8 0.8
-        roughness 0.5
-        metalness 0
-        textureTransform TextureTransform {
-          scale 4 4
-        }
-      }
-    }
-    Fridge {
-      hidden position_0_0 -3.383839556348187e-07
-      hidden position_0_1 1.1228728499672286e-06
-      hidden rotation_1 0 -0.9999999999999999 0 3.897159347123516e-07
-      hidden rotation_2 0 1 0 1.3460623968406233e-06
-      translation 1.57 0 -1.8
-      rotation 0 1 0 4.71239
-    }
-    Worktop {
-      translation -1.31 0.86 -0.345
-      rotation 0 1 0 4.71239
-      size 0.43 0.06 0.7
-    }
-    Worktop {
-      translation -1.531 0.86 -0.78
-      rotation 0 1 0 4.71239
-      name "worktop(1)"
-      size 0.44 0.06 0.237
-    }
-    Worktop {
-      translation -1.003 0.86 -0.780001
-      rotation 0 1 0 4.71239
-      name "worktop(2)"
-      size 0.442 0.06 0.085
-    }
-    Worktop {
-      translation -1.306 0.86 -1.22
-      rotation 0 -1 0 1.5708
-      name "worktop(3)"
-      size 0.44 0.06 0.69
-    }
-    Worktop {
-      translation -0.435 0.86 -1.79
-      name "worktop(4)"
-      size 2.43 0.06 0.7
-    }
-    Sink {
-      translation -1.33 0.87 -0.78
-      rotation 0 1 0 4.71239
-    }
-    HotPlate {
-      translation -1.14971 0.86 -1.62912
-      rotation 0 -1 0 5.49779
-    }
-    Oven {
-      hidden position_0_0 -5.89478177806611e-37
-      translation -1.24 0.51 0.11
-    }
-  ]
-}
-DEF INTERNAL_WINDOW Window {
-  translation -11.283624405978252 -1.5987211554602254e-14 -0.9089969314674011
-  rotation 0 -1 0 3.141591686718346
-  name "window(4)"
-  size 0.9 2.7 0.2
-}
-DEF INTERNAL_WINDOW Window {
-  translation -7.764715143088619 -1.4210854715202004e-14 -0.9394903033116844
-  rotation 0 -1 0 3.141591686718346
-  name "window(3)"
-  size 0.9 2.7 0.2
-}
-DEF INTERNAL_WINDOW Window {
-  translation -9.547060928142615 -1.2434497875801753e-14 -0.9229028115136266
-  rotation 0 -1 0 3.141591686718346
-  name "window(2)"
-  size 0.9 2.7 0.2
-}
-DEF INTERNAL_WINDOW Window {
-  translation -10.424088153855532 -1.4210854715202004e-14 -0.9263832371812324
-  rotation 0 -1 0 3.141591686718346
-  name "window(1)"
-  size 0.9 2.7 0.2
-}
 DEF INTERNAL_WALL Wall {
   translation -20.841722096896945 1.7763568394002505e-15 -0.895663661597073
   name "wall(7)"
   size 18.2 2.7 0.2
 }
-DEF INTERNAL_WINDOW Window {
-  translation -8.661028945763917 3.197442310920451e-14 -0.9265567823689587
-  rotation 0 -1 0 3.141591686718346
-  size 0.9 2.7 0.2
+DEF INTERNAL_WALL Wall {
+  translation 22.445573508205836 -1.0006980318164795e-09 -0.33897846323278014
+  rotation 0 1 0 1.5707963220000003
+  name "wall(13)17"
+  size 27.4 2.4 0.2
 }
 DEF INTERNAL_WALL Wall {
-  translation 18.841850244600412 -1.0004599999999999e-09 20.10700920905251
-  name "wall(13)"
-  size 22.5 2.4 0.2
+  translation 14.721685620655403 -1.0006838209617643e-09 8.116175895844844
+  rotation 0 -1 0 4.7123890043591725
+  name "wall(1316"
+  size 25.099999999999998 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 6.426275502676432 -1.0007122426711947e-09 -0.7324299451445846
+  rotation 0 -1 0 4.7123890043591725
+  name "wall(1315"
+  size 27.4 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 6.249121520955011 -1.0001153867731562e-09 -21.943904131171486
+  rotation 0 1 0 1.5707963220000003
+  name "wall(13123"
+  size 15.9 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 14.432411492120242 -1.000101175918441e-09 -13.934505883459174
+  name "wall(1312"
+  size 15.9 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 22.254618151926593 -1.0001153867731562e-09 -22.204424402640733
+  name "wall(1311"
+  size 15.9 2.4 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 14.296785349750635 -1.0003249968802055e-09 20.5767634177167
+  name "wall(14)"
+  size 31.299999999999997 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
   translation -30 0 0
@@ -1352,9 +864,15 @@ DEF EXTERNAL_WALL Wall {
   size 60 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
-  translation 30 0 0
+  translation 29.840857291770405 -5.115907697472721e-13 -4.748827247581081
   rotation 0 1 0 1.5708
-  name "wall(11)"
+  name "wall(14)44"
+  size 51 2.4 0.2
+}
+DEF OUT_WALL Wall {
+  translation 60.23640877327777 -5.115907697472721e-13 29.96804236086333
+  rotation 0 -1 0 6.283181648405866
+  name "outwall1"
   size 60 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
@@ -1390,16 +908,6 @@ DEF DOUBLE_WINDOW Transform {
 }
 DEF DOUBLE_WINDOW Transform {
   translation 12 0 30
-  children [
-    Window {
-      translation -0.4 0 0
-      name "window(17)"
-    }
-    Window {
-      translation 0.4 0 0
-      name "window(18)"
-    }
-  ]
 }
 DEF DOUBLE_WINDOW Transform {
   translation 24 0 30
@@ -1430,9 +938,9 @@ DEF EXTERNAL_WALL Wall {
   size 10.4 2.4 0.2
 }
 DEF EXTERNAL_WALL Wall {
-  translation 0 0 30
+  translation 0.7995902474737342 -2.5579538487363607e-13 29.963116458244034
   name "wall(5)"
-  size 22.4 2.4 0.2
+  size 24 2.4 0.2
 }
 DEF DOUBLE_WINDOW Transform {
   translation -12 0 -30
@@ -1521,32 +1029,9 @@ Shape {
     ]
   }
 }
-DEF YELLOW_BOX Solid {
-  translation 7.575177875154338 1.2299999999997016 14.566063051090254
-  rotation 0 0.9999999999999999 0 3.142388812563314
-  children [
-    DEF Shape Shape {
-      appearance DEF PBR PBRAppearance {
-        roughness 0.03934117200000009
-        metalness 0
-      }
-      geometry DEF geometryBox Box {
-        size 0.30000000000000004 2.6999999999999997 11
-      }
-    }
-  ]
-  name "YELLOW_BOX"
-  boundingObject Shape {
-    appearance PBRAppearance {
-      roughness 1.1102230246251565e-16
-      metalness 0
-    }
-    geometry USE geometryBox
-  }
-}
 DEF MyBot1 Robot {
-  translation 28.00000001002064 -0.0004438506198870887 28.000000008215313
-  rotation 0.02466988431209989 -0.9996258632696391 -0.011812294038690992 -0.8937219283946756
+  translation 28.000064924172616 -0.00044384959603896434 28.00022721503741
+  rotation 0.02467292041182877 -0.9996257928053566 -0.011811915873984663 -0.8936431567938427
   children [
     Emitter {
       channel 1
@@ -1570,7 +1055,7 @@ DEF MyBot1 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03200938840291
+        position 76.03200948840417
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1584,8 +1069,8 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.044999975873086066 0.025212115181100395 -1.5428542828351525e-06
-        rotation -0.9999998918029527 0.0003806370909817284 -0.00026741257930969876 1.9316461206448068
+        translation -0.044999975873086025 0.02521211518094611 -1.5428754946186893e-06
+        rotation -0.9999998918029602 0.0003806370644509492 -0.0002674125890963852 1.9316462206460536
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1610,13 +1095,13 @@ DEF MyBot1 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 8.316162383273e-08 9.284040834171713e-06 6.77858342597192e-08
-        angularVelocity 2.8527693943876325e-06 4.022310181221132e-11 -3.5471282585260423e-06
+        linearVelocity 8.508718272372328e-08 9.106792005397045e-06 1.6093615268233668e-07
+        angularVelocity 7.368741363848149e-06 7.739216626515334e-07 -3.142366938216393e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03204373980996
+        position 76.03204419382176
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1630,16 +1115,16 @@ DEF MyBot1 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.044999989753531276 0.02521206446400789 -1.5431645487759673e-06
-        rotation -0.9999999132083887 -0.00038147689354802404 0.00016750699952696046 2.3290002730900197
+        translation 0.04499998975353129 0.025212064463307256 -1.543260828543519e-06
+        rotation -0.9999999132084056 -0.0003814768182656989 0.0001675070697647492 2.3290007271017763
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 8.401088865282595e-08 9.284068435138598e-06 6.670532345625089e-08
-        angularVelocity 2.853331474170703e-06 -1.0186436186051277e-09 -3.5467043138231036e-06
+        linearVelocity 7.606985022357972e-09 9.446074530204022e-06 1.3843804738603698e-07
+        angularVelocity 5.1466030680348915e-06 7.749247727379297e-07 -3.7998795486366517e-07
       }
     }
     DistanceSensor {
@@ -1743,12 +1228,12 @@ DEF MyBot1 Robot {
     0, 100, 30
   ]
   cpuConsumption 5
-  linearVelocity 1.0941985791693142e-07 9.277639917798195e-06 8.800178383302615e-08
-  angularVelocity 1.7456186867896137e-06 -4.834777734001208e-10 -2.1700511231810724e-06
+  linearVelocity 8.435945726100906e-08 9.269205474182754e-06 2.5732025654469015e-07
+  angularVelocity 6.2563255196619745e-06 7.743205523754153e-07 -1.759436135692873e-06
 }
 DEF MyBot2 Robot {
-  translation 28.00000000530827 -0.00044385188854729335 -25.000000011533704
-  rotation 0.001873623896930305 -0.9999283919667697 -0.011819495430986898 -2.827509956575774
+  translation 28.00000000536285 -0.00044385197927634956 -25.000000011710167
+  rotation 0.0018735840654176394 -0.9999283920420909 -0.011819495372834393 -2.8275165295627733
   children [
     Emitter {
       name "emitter2"
@@ -1773,7 +1258,7 @@ DEF MyBot2 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199354680757
+        position 76.03199382336342
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1787,8 +1272,8 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499995669495856 0.025212115599603478 -1.4986535244572929e-06
-        rotation -0.9999998918132859 0.0003806741844559201 -0.0002673211212724269 1.9316349318755979
+        translation -0.04499995669495854 0.025212115599189008 -1.4987121862684058e-06
+        rotation -0.9999998918133064 0.00038067411109308987 -0.00026732114835130644 1.9316352084314181
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -1813,13 +1298,13 @@ DEF MyBot2 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 3.3834254695164915e-08 9.284053241160766e-06 -1.0184337413197949e-07
-        angularVelocity -4.32969053785308e-06 -1.0038246551612203e-09 -1.4059289815744352e-06
+        linearVelocity 3.382537561765928e-08 9.284773994388614e-06 -1.0181788215408134e-07
+        angularVelocity -4.3286537857857985e-06 -1.0034415115599215e-09 -1.4055673998233327e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03196390089752
+        position 76.03196417789665
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1833,16 +1318,16 @@ DEF MyBot2 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997063249231 0.025212064874161357 -1.498782725052272e-06
-        rotation -0.9999999132145799 -0.00038149265268393857 0.0001674341317199144 2.3289250946651987
+        translation 0.04499997063249231 0.02521206487374619 -1.4988414668379318e-06
+        rotation -0.9999999132145903 -0.0003814926067599053 0.00016743417457849304 2.3289253716643055
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 3.250835405019928e-08 9.284045719850372e-06 -1.0220982841712045e-07
-        angularVelocity -4.329541981998959e-06 -2.0618481370469816e-09 -1.4066204594895143e-06
+        linearVelocity 3.24994966681371e-08 9.284767028960452e-06 -1.0218435209424103e-07
+        angularVelocity -4.328505396467551e-06 -2.0616231426267787e-09 -1.4062587696249958e-06
       }
     }
     DistanceSensor {
@@ -1942,8 +1427,8 @@ DEF MyBot2 Robot {
   }
   controller "unmovingrobot2"
   cpuConsumption 0.5
-  linearVelocity 4.332590234595617e-08 9.277635034057106e-06 -1.3358727835345072e-07
-  angularVelocity -2.6491010610035267e-06 -1.5301529965467845e-09 -8.603456915141125e-07
+  linearVelocity 4.3310818560030244e-08 9.27835559914328e-06 -1.3354287477865858e-07
+  angularVelocity -2.6480615194650935e-06 -1.529844508105734e-09 -8.599953109015185e-07
 }
 DEF DOUBLE_WINDOW Transform {
   translation 12 0 -30
@@ -1959,8 +1444,8 @@ DEF DOUBLE_WINDOW Transform {
   ]
 }
 DEF MyBot3 Robot {
-  translation -26.000000009857963 -0.00044390959092639737 -27.000000008580308
-  rotation -0.00535732219822031 -0.9999157845583927 -0.011820443724260167 2.290271208247849
+  translation -26.00000000999591 -0.00044390968249331114 -27.000000008700805
+  rotation -0.005357329960908197 -0.9999157845176658 -0.011820443651192886 2.2902701139160535
   children [
     Emitter {
       name "emitter3"
@@ -1985,7 +1470,7 @@ DEF MyBot3 Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03199083998598
+        position 76.03199111670018
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -1999,8 +1484,8 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation -0.04499995633981144 0.025212115464387647 1.5102364395434852e-06
-        rotation -0.9999998919106816 0.0003845169896765646 -0.0002613911048609925 1.9329356926762273
+        translation -0.0449999563398114 0.02521211546480554 1.5101777441797303e-06
+        rotation -0.9999998919107023 0.0003845169167756686 -0.00026139113308913225 1.9329359693903996
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -2025,13 +1510,13 @@ DEF MyBot3 Robot {
           density -1
           mass 0.05
         }
-        linearVelocity -8.021907157816733e-08 9.283926503300032e-06 -7.120199706385593e-08
-        angularVelocity -2.9986897408724382e-06 1.642669574854001e-10 3.4232611043618544e-06
+        linearVelocity -8.019895485862187e-08 9.284647458510394e-06 -7.118420560332006e-08
+        angularVelocity -2.9979665535019556e-06 1.6468858976973929e-10 3.4224424455809542e-06
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 76.03193832205598
+        position 76.0319385988353
         axis -1 0 0
         anchor 0 0.025 0
       }
@@ -2045,16 +1530,16 @@ DEF MyBot3 Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499997016563732 0.0252120648605437 1.5107556791369727e-06
-        rotation -0.9999999132624185 -0.00038388463351629555 0.00016157890879644744 2.3302033011279764
+        translation 0.04499997016563733 0.025212064860961836 1.5106969839666801e-06
+        rotation -0.9999999132624287 -0.0003838845883368025 0.0001615789523176294 2.3302035779072705
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity -8.111702771965154e-08 9.283958356595397e-06 -7.016178420028188e-08
-        angularVelocity -2.999229207105215e-06 -8.949259919375503e-10 3.422809570713457e-06
+        linearVelocity -8.109690148827781e-08 9.284679359110713e-06 -7.01440254986441e-08
+        angularVelocity -2.9985060279349386e-06 -8.946162044158057e-10 3.4219909736248577e-06
       }
     }
     DistanceSensor {
@@ -2153,8 +1638,8 @@ DEF MyBot3 Robot {
     mass 0.5
   }
   controller "unmovingrobot3"
-  linearVelocity -1.055870182625987e-07 9.27754188143748e-06 -9.250072095988821e-08
-  angularVelocity -1.834722907064878e-06 -3.592139038687631e-10 2.09403947628512e-06
+  linearVelocity -1.0555200610828113e-07 9.278262394997706e-06 -9.246989115005213e-08
+  angularVelocity -1.8340018918233316e-06 -3.5884971862239485e-10 2.0932202454427143e-06
 }
 DEF TRAIL Shape {
   appearance Appearance {
@@ -2205,16 +1690,16 @@ DEF Supervisior1 Robot {
   cpuConsumption 0.5
 }
 DEF PIONEER_3AT Pioneer3at {
-  hidden position_0_0 5492.979070463523
-  hidden position_0_1 5669.172950622641
-  hidden position_0_2 5559.28486360798
-  hidden position_0_3 5755.05562026434
-  hidden rotation_8 1 0 0 1.291139524378058
-  hidden rotation_9 0.9999999999999999 0 0 4.2777106935129545
-  hidden rotation_10 1 0 0 4.32492116105525
-  hidden rotation_11 -1 0 0 3.526698010914418
-  translation 24.006820121450023 0.10761013136048504 -23.99991783376207
-  rotation 0.000387814553433933 0.9999998497628254 0.0003873941127980136 -1.5707976287644467
+  hidden position_0_0 2353.4361562855493
+  hidden position_0_1 2334.989949040992
+  hidden position_0_2 2378.5523447886494
+  hidden position_0_3 2358.1190773762387
+  hidden rotation_8 1 0 0 4.435997765993766
+  hidden rotation_9 -1 0 0 1.502854051285856
+  hidden rotation_10 -1 0 0 1.4866460282227576
+  hidden rotation_11 1 0 0 3.890428386861546
+  translation 23.985458050004848 0.10761013397850827 -24.001294175723633
+  rotation -0.00041454974019545165 0.9999998388069741 0.0003879878073710103 1.5035255076520961
   controller "ros"
   controllerArgs "--name=pioneer3at"
   extensionSlot [
@@ -2256,6 +1741,7 @@ DEF PIONEER_3AT Pioneer3at {
     }
     SickLms291 {
       translation 0 0.23 -0.136
+      rotation 0 1 0 6.28318525556045
       noise 0.1
     }
     GPS {
@@ -2263,4 +1749,15 @@ DEF PIONEER_3AT Pioneer3at {
     InertialUnit {
     }
   ]
+}
+SolidTorus {
+  translation -24.704992292002316 -1.0516032489249483e-12 -7.615645548699751
+}
+SolidTorus {
+  translation -24.298614082938528 -7.247535904753022e-13 5.894821041662505
+  name "torus(1)"
+}
+SolidTorus {
+  translation -15.099835737317974 -6.963318810448982e-13 24.913351074303673
+  name "torus(2)"
 }

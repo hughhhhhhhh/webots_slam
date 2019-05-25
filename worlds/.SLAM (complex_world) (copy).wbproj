@@ -8,5 +8,4 @@ selectionDisabled: 0
 viewpointLocked: 0
 orthographicViewHeight: 1
 textFiles: 1 "controllers/matlab_supervisor/matlab_supervisor.m" "controllers/unmovingrobot2/unmovingrobot2.c"
-globalOptionalRendering: RadarFrustums::DistanceSensorRays
 renderingDevicePerspectives: Pioneer 3-AT:camera;1;1;0;0
