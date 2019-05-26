@@ -1,0 +1,2261 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+  info [
+    "Example use of a Radar device."
+  ]
+}
+Viewpoint {
+  orientation -0.5347683034027757 0.6634297538218817 0.5233391093923272 1.9500889412548208
+  position 33.76946072625714 121.78452810746673 -0.37799960149463263
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 60 60
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
+}
+DEF TREE Solid {
+  translation 28.89193898219605 1.1839395514004166e-12 -15.224773678242421
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  name "solid(13)"
+}
+DEF TREE Solid {
+  translation 29.38328245186393 1.1057798504668056e-12 -27.371647210801477
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(12)"
+}
+DEF TREE Solid {
+  translation 29.2498480865009 1.1839395514004166e-12 -25.240366381720218
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(9)"
+}
+DEF TREE Solid {
+  translation 24.489622479827506 1.1555178419700126e-12 -29.27081452695333
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(10)"
+}
+DEF TREE Solid {
+  translation 29.315237398904305 1.1839395514004166e-12 -29.164363932616208
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(11)"
+}
+DEF TREE Solid {
+  translation 22.726601057852463 8.926170297387755e-13 -29.30529719051825
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(3)"
+}
+DEF TREE Solid {
+  translation 17.22571045899442 1.1981504061156186e-12 -29.46482327637598
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(4)"
+}
+DEF TREE Solid {
+  translation 15.348261977327612 1.1768341240428156e-12 -29.552400328544955
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(6)"
+}
+DEF TREE Solid {
+  translation 25.969017688696457 1.1839395514004166e-12 -29.349104315484997
+  rotation 0 -0.9999999999999999 0 5.497787326359172
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(7)"
+}
+DEF TREE Solid {
+  translation 13.799800932581542 1.1839395514004166e-12 -29.451850495661464
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(8)"
+}
+DEF TREE Solid {
+  translation 27.62553588846127 1.1697286966852146e-12 -29.39846814582073
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(2)"
+}
+DEF TREE Solid {
+  translation 19.113304939263735 1.0667e-12 -29.4519526116953
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+    PottedTree {
+      name "potted tree(1)"
+    }
+    PottedTree {
+      name "potted tree(2)"
+    }
+    PottedTree {
+      name "potted tree(3)"
+    }
+    PottedTree {
+      name "potted tree(4)"
+    }
+  ]
+  name "solid(1)"
+}
+DEF TREE Solid {
+  translation 20.970201339910542 1.102227136788005e-12 -29.434055941198316
+  rotation 0 1 0 0.785398
+  scale 1.7 1.7 1.7
+  children [
+    PottedTree {
+    }
+  ]
+  name "solid(5)"
+}
+DEF OFFICES Transform {
+  rotation 0 1 0 3.14159
+  children [
+    Panel {
+      translation 28.4604 0 -24.5373
+      name "panel(35)"
+    }
+    Panel {
+      translation 28.4604 0 -17.2973
+      name "panel(36)"
+    }
+    Panel {
+      translation 28.4604 0 -10.2573
+      name "panel(37)"
+    }
+    Panel {
+      translation 27.0304 0 -24.5573
+      name "panel(38)"
+    }
+    Panel {
+      translation 27.0304 0 -17.2873
+      name "panel(39)"
+    }
+    Panel {
+      translation 27.0304 0 -10.2573
+      name "panel(40)"
+    }
+    Panel {
+      translation 27.0774 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(41)"
+    }
+    Panel {
+      translation 27.0774 0 -15.6551
+      rotation 0 1 0 1.5708
+      name "panel(42)"
+    }
+    Panel {
+      translation 27.0774 0 -17.7651
+      rotation 0 1 0 1.5708
+      name "panel(43)"
+    }
+    Panel {
+      translation 27.0774 0 -22.8751
+      rotation 0 1 0 1.5708
+      name "panel(44)"
+    }
+    Panel {
+      translation 27.0774 0 -24.9451
+      rotation 0 1 0 1.5708
+      name "panel(45)"
+    }
+    Panel {
+      translation 24.2974 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(46)"
+    }
+    Panel {
+      translation 24.2974 0 -15.6951
+      rotation 0 1 0 1.5708
+      name "panel(47)"
+    }
+    Panel {
+      translation 24.2974 0 -17.8051
+      rotation 0 1 0 1.5708
+      name "panel(48)"
+    }
+    Panel {
+      translation 24.2974 0 -22.8551
+      rotation 0 1 0 1.5708
+      name "panel(49)"
+    }
+    Panel {
+      translation 24.2974 0 -25.0151
+      rotation 0 1 0 1.5708
+      name "panel(50)"
+    }
+    Panel {
+      translation 21.2474 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(51)"
+    }
+    Panel {
+      translation 21.2474 0 -15.6951
+      rotation 0 1 0 1.5708
+      name "panel(52)"
+    }
+    Panel {
+      translation 21.2474 0 -17.7551
+      rotation 0 1 0 1.5708
+      name "panel(53)"
+    }
+    Panel {
+      translation 21.2474 0 -22.8651
+      rotation 0 1 0 1.5708
+      name "panel(54)"
+    }
+    Panel {
+      translation 21.27941328705038 -3.552713678800501e-15 -19.54699077672662
+      rotation 0 1 0 1.5708
+      name "panel(72)"
+    }
+    Panel {
+      translation 21.331013210072776 0 -21.225957180431337
+      rotation 0 1 0 1.5708
+      name "panel(73)"
+    }
+    Panel {
+      translation 21.242538389055508 -1.4566126083082054e-13 -12.525967859818088
+      rotation 0 1 0 1.5708
+      name "panel(23)"
+    }
+    Panel {
+      translation 21.243462812112455 -8.881784197001252e-14 -14.137965874591316
+      rotation 0 1 0 1.5708
+      name "panel(71)"
+    }
+    Panel {
+      translation 21.2474 0 -24.8851
+      rotation 0 1 0 1.5708
+      name "panel(55)"
+    }
+    Panel {
+      translation 21.2474 0 -26.6151
+      rotation 0 1 0 1.5708
+      name "panel(56)"
+    }
+    Panel {
+      translation 21.2474 0 -28.2551
+      rotation 0 1 0 1.5708
+      name "panel(57)"
+    }
+    Panel {
+      translation 25.5604 0 -24.5873
+      name "panel(58)"
+    }
+    Panel {
+      translation 25.5604 0 -17.3073
+      name "panel(59)"
+    }
+    Panel {
+      translation 25.5604 0 -10.2573
+      name "panel(60)"
+    }
+    Panel {
+      translation 24.1004 0 -24.5973
+      name "panel(61)"
+    }
+    Panel {
+      translation 24.1004 0 -17.3373
+      name "panel(62)"
+    }
+    Panel {
+      translation 24.1004 0 -10.2573
+      name "panel(63)"
+    }
+    Panel {
+      translation 22.5504 0 -24.5873
+      name "panel(64)"
+    }
+    Panel {
+      translation 22.5504 0 -17.3273
+      name "panel(65)"
+    }
+    Panel {
+      translation 22.5504 0 -10.2573
+      name "panel(66)"
+    }
+    Panel {
+      translation 20.9704 0 -10.2573
+      name "panel(67)"
+    }
+    Panel {
+      translation 20.9704 0 -24.5773
+      name "panel(68)"
+    }
+    Panel {
+      translation 20.9704 0 -17.3573
+      name "panel(69)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -16.5637
+      name "wooden chair(15)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -23.9137
+      name "wooden chair(16)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -18.1537
+      rotation 0 1 0 3.14159
+      name "wooden chair(17)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -25.1237
+      rotation 0 1 0 3.14159
+      name "wooden chair(18)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -23.8937
+      name "wooden chair(19)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -18.0837
+      rotation 0 1 0 3.14159
+      name "wooden chair(20)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -11.1637
+      rotation 0 1 0 3.14159
+      name "wooden chair(21)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -25.2037
+      rotation 0 1 0 3.14159
+      name "wooden chair(22)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -23.8537
+      name "wooden chair(23)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -16.5637
+      name "wooden chair(24)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -18.0537
+      rotation 0 1 0 3.14159
+      name "wooden chair(25)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -11.1037
+      rotation 0 1 0 3.14159
+      name "wooden chair(26)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -25.0837
+      rotation 0 1 0 3.14159
+      name "wooden chair(27)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -16.5637
+      name "wooden chair(28)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -11.1937
+      rotation 0 1 0 3.14159
+      name "wooden chair(29)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(15)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -25.5337
+      rotation 0 1 0 6.28319
+      name "desk(16)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -11.5037
+      rotation 0 1 0 6.28319
+      name "desk(17)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -23.5237
+      rotation 0 1 0 6.28319
+      name "desk(18)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(19)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(20)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -11.5337
+      rotation 0 1 0 6.28319
+      name "desk(21)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(22)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -11.5737
+      rotation 0 1 0 6.28319
+      name "desk(23)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -25.5537
+      rotation 0 1 0 6.28319
+      name "desk(24)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -18.5337
+      rotation 0 1 0 6.28319
+      name "desk(25)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(26)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -23.4937
+      rotation 0 1 0 6.28319
+      name "desk(27)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -23.5337
+      rotation 0 1 0 6.28319
+      name "desk(28)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -25.4837
+      rotation 0 1 0 6.28319
+      name "desk(29)"
+    }
+  ]
+}
+DEF OFFICES Transform {
+  translation 0 0 -40
+  rotation 0 1 0 3.14159
+  children [
+    Panel {
+      translation 28.4604 0 -24.5373
+      name "panel(1)"
+    }
+    Panel {
+      translation 28.4604 0 -17.2973
+      name "panel(2)"
+    }
+    Panel {
+      translation 28.4604 0 -10.2573
+      name "panel(3)"
+    }
+    Panel {
+      translation 27.0304 0 -24.5573
+      name "panel(4)"
+    }
+    Panel {
+      translation 27.0304 0 -17.2873
+      name "panel(5)"
+    }
+    Panel {
+      translation 27.0304 0 -10.2573
+      name "panel(6)"
+    }
+    Panel {
+      translation 27.0774 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(7)"
+    }
+    Panel {
+      translation 27.0774 0 -15.6551
+      rotation 0 1 0 1.5708
+      name "panel(8)"
+    }
+    Panel {
+      translation 27.0774 0 -17.7651
+      rotation 0 1 0 1.5708
+      name "panel(9)"
+    }
+    Panel {
+      translation 27.0774 0 -22.8751
+      rotation 0 1 0 1.5708
+      name "panel(10)"
+    }
+    Panel {
+      translation 24.2974 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(12)"
+    }
+    Panel {
+      translation 24.2974 0 -15.6951
+      rotation 0 1 0 1.5708
+      name "panel(13)"
+    }
+    Panel {
+      translation 24.2974 0 -17.8051
+      rotation 0 1 0 1.5708
+      name "panel(14)"
+    }
+    Panel {
+      translation 24.2974 0 -22.8551
+      rotation 0 1 0 1.5708
+      name "panel(15)"
+    }
+    Panel {
+      translation 21.2474 0 -10.6551
+      rotation 0 1 0 1.5708
+      name "panel(17)"
+    }
+    Panel {
+      translation 21.3952621435841 -9.947598300641403e-14 -15.729109202722
+      rotation 0 1 0 1.5708
+      name "panel(18)"
+    }
+    Panel {
+      translation 21.31044627075896 -9.947598300641403e-14 -14.04973964987817
+      rotation 0 1 0 1.5708
+      name "panel(21)"
+    }
+    Panel {
+      translation 21.296215948418833 -9.237055564881302e-14 -12.31909108621101
+      rotation 0 1 0 1.5708
+      name "panel(22)"
+    }
+    Panel {
+      translation 21.2474 0 -17.7551
+      rotation 0 1 0 1.5708
+      name "panel(19)"
+    }
+    Panel {
+      translation 21.181637678529647 1.0658141036401503e-14 -22.679400631189946
+      rotation 0 1 0 1.5708
+      name "panel(20)"
+    }
+    Panel {
+      translation 21.187549941856076 7.105427357601002e-15 -21.115898284791456
+      rotation 0 1 0 1.5708
+      name "panel(11)2"
+    }
+    Panel {
+      translation 21.20323799951621 2.2382096176443156e-13 -19.58767785752691
+      rotation 0 1 0 1.5708
+      name "panel(16)1"
+    }
+    Panel {
+      translation 25.5604 0 -24.5873
+      name "panel(24)"
+    }
+    Panel {
+      translation 25.5604 0 -17.3073
+      name "panel(25)"
+    }
+    Panel {
+      translation 25.5604 0 -10.2573
+      name "panel(26)"
+    }
+    Panel {
+      translation 24.1004 0 -24.5973
+      name "panel(27)"
+    }
+    Panel {
+      translation 24.1004 0 -17.3373
+      name "panel(28)"
+    }
+    Panel {
+      translation 24.1004 0 -10.2573
+      name "panel(29)"
+    }
+    Panel {
+      translation 22.5504 0 -24.5873
+      name "panel(30)"
+    }
+    Panel {
+      translation 22.5504 0 -17.3273
+      name "panel(31)"
+    }
+    Panel {
+      translation 22.5504 0 -10.2573
+      name "panel(32)"
+    }
+    Panel {
+      translation 20.9704 0 -10.2573
+      name "panel(33)"
+    }
+    Panel {
+      translation 20.9704 0 -24.5773
+      name "panel(34)"
+    }
+    Panel {
+      translation 20.9704 0 -17.3573
+      name "panel(70)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -16.5637
+      name "wooden chair(1)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -23.9137
+      name "wooden chair(2)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -18.1537
+      rotation 0 1 0 3.14159
+      name "wooden chair(3)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -23.8937
+      name "wooden chair(5)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -18.0837
+      rotation 0 1 0 3.14159
+      name "wooden chair(6)"
+    }
+    WoodenChair {
+      translation 28.2877 7.10543e-15 -11.1637
+      rotation 0 1 0 3.14159
+      name "wooden chair(7)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -23.8537
+      name "wooden chair(9)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -16.5637
+      name "wooden chair(10)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -18.0537
+      rotation 0 1 0 3.14159
+      name "wooden chair(11)"
+    }
+    WoodenChair {
+      translation 25.7177 7.10543e-15 -11.1037
+      rotation 0 1 0 3.14159
+      name "wooden chair(12)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -16.5637
+      name "wooden chair(14)"
+    }
+    WoodenChair {
+      translation 22.9577 7.10543e-15 -11.1937
+      rotation 0 1 0 3.14159
+      name "wooden chair(30)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(1)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -11.5037
+      rotation 0 1 0 6.28319
+      name "desk(3)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -23.5237
+      rotation 0 1 0 6.28319
+      name "desk(4)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(5)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(6)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -11.5337
+      rotation 0 1 0 6.28319
+      name "desk(7)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -16.1837
+      rotation 0 1 0 6.28319
+      name "desk(8)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -11.5737
+      rotation 0 1 0 6.28319
+      name "desk(9)"
+    }
+    Desk {
+      translation 28.2877 7.10543e-15 -18.5337
+      rotation 0 1 0 6.28319
+      name "desk(11)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -18.4537
+      rotation 0 1 0 6.28319
+      name "desk(12)"
+    }
+    Desk {
+      translation 25.6977 7.10543e-15 -23.4937
+      rotation 0 1 0 6.28319
+      name "desk(13)"
+    }
+    Desk {
+      translation 22.9277 7.10543e-15 -23.5337
+      rotation 0 1 0 6.28319
+      name "desk(14)"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -2 0 0
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box(1)"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box(2)"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box(3)"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box(4)"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box(5)"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box(6)"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box(14)"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -7 0 0
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box(7)"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box(8)"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box(9)"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box(10)"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box(11)"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box(12)"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box(13)"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -12 0 0
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box9"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box10"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box11"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box12"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box13"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box14"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box15"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -12 0 3
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box(16"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box(17"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box(18"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box(19"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box20"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box21"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box22"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -7 0 3
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box(10)23"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box(10)24"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box25"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box(10)26"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box(10)27"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box(10)28"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box(10)29"
+    }
+  ]
+}
+DEF BOXES Transform {
+  translation -2 0 3
+  children [
+    WoodenBox {
+      translation 26.7873 0.89 9.13591
+      name "wooden box(10)30"
+    }
+    WoodenBox {
+      translation 25.3406 0.3 9.13625
+      name "wooden box(10)31"
+    }
+    WoodenBox {
+      translation 25.8306 0.91 9.13625
+      name "wooden box(10)32"
+    }
+    WoodenBox {
+      translation 24.8506 0.9 9.13625
+      name "wooden box(10)33"
+    }
+    WoodenBox {
+      translation 24.3706 0.3 9.13625
+      name "wooden box(10)34"
+    }
+    WoodenBox {
+      translation 26.3006 0.3 9.13625
+      name "wooden box(10)35"
+    }
+    WoodenBox {
+      translation 27.317 0.3 9.14677
+      name "wooden box(10)36"
+    }
+  ]
+}
+DEF KITCHEN Transform {
+  translation 27.9 0 21.8
+  rotation 0 1 0 4.71239
+  children [
+    Cabinet {
+      hidden translation_6 1.21950449738506e-10 0.6897928194670598 0.6999999969258468
+      hidden rotation_6 -0.9992243926140844 3.3084501638453e-10 -0.03937782631144553 -9.530242968701733e-05
+      hidden position_6_0 0.002470623414117442
+      hidden translation_7 6.2075338014278e-07 0 0.0004970507619127029
+      hidden rotation_7 0 1 0 0.002497745099461329
+      translation 1 0.83 -2.15
+      depth 0.7
+      outerThickness 0.02
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2, 0.34
+      ]
+      columnsWidths [
+        0.4
+      ]
+      layout [
+        "LeftSidedDoor (1, 1, 1, 6, 1.5)"
+        "Shelf (1,2, 1, 0)"
+        "Shelf (1,3, 1, 0)"
+        "Shelf (1,4, 1, 0)"
+        "Shelf (1,5, 1, 0)"
+        "Shelf (1,6, 1, 0)"
+      ]
+      handle CabinetHandle {
+        translation -0.3 0 0
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    Cabinet {
+      hidden translation_6 -1.2169110163995356e-10 1.0747983979177749 0.6699999973168431
+      hidden rotation_6 0.9989771012662882 2.664362485953961e-09 -0.04521892464006538 9.109149660878983e-05
+      hidden position_6_0 -0.00258289525716517
+      hidden translation_7 -7.462902304467001e-07 0 0.0005715989031260954
+      hidden rotation_7 0 -1 0 0.00261123596513273
+      hidden translation_10 -1.2168754892627476e-10 1.7447983979252901 0.6699999973168431
+      hidden rotation_10 0.9989771083920793 2.6686125956597047e-09 -0.045218767216722314 9.1091484327516e-05
+      hidden position_10_0 -0.0025828947892953488
+      hidden translation_11 -7.462899640486853e-07 0 0.0005715988009982984
+      hidden rotation_11 0 -1 0 0.0026112354816275564
+      translation -1.65 0.15 0.11
+      rotation 0 1 0 1.5708
+      name "cabinet(1)"
+      depth 0.67
+      outerThickness 0.02
+      rowsHeights [
+        0.68, 0.25, 0.25, 0.25, 0.25, 0.34
+      ]
+      columnsWidths [
+        0.44
+      ]
+      layout [
+        "RightSidedDoor (1, 2, 1, 3, 1.5)"
+        "RightSidedDoor (1, 5, 1, 2, 1.5)"
+        "Shelf (1,2, 1, 0)"
+        "Shelf (1,3, 1, 0)"
+        "Shelf (1,4, 1, 0)"
+        "Shelf (1,5, 1, 0)"
+        "Shelf (1,6, 1, 0)"
+      ]
+      handle CabinetHandle {
+        translation -0.15 0 0
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    Cabinet {
+      hidden translation_6 -0.4400000000665685 0.3398252660607577 0.4999999989246504
+      hidden rotation_6 0.998115050209282 2.400909227861971e-09 -0.06137056742219796 6.709681442091979e-05
+      hidden position_6_0 -0.00190158804535283
+      hidden translation_7 -4.0450816232717735e-07 0 0.0004208247969609737
+      hidden rotation_7 0 -1 0 0.0019224533960152288
+      hidden translation_10 6.66844357510854e-11 0.33982526604495256 0.49999999892464686
+      hidden rotation_10 -0.9981082082950353 2.414128753237108e-09 -0.06148174146911172 -6.709730750938387e-05
+      hidden position_10_0 0.0019019672016365365
+      hidden translation_11 4.046694787596117e-07 0 0.0004209087004057243
+      hidden rotation_11 0 1 0 0.0019228367234364026
+      hidden translation_14 0.4400000000666644 0.3398252660541792 0.49999999892464686
+      hidden rotation_14 -0.9981082008393064 2.4058561983856915e-09 -0.06148186250694295 -6.709728865719186e-05
+      hidden position_14_0 0.0019019667540219967
+      hidden translation_15 4.046692902437421e-07 0 0.00042090860242505445
+      hidden rotation_15 0 0.9999999999999999 0 0.0019228362545971435
+      translation 0.1 1.4 -2.15
+      name "cabinet(2)"
+      outerThickness 0.02
+      rowsHeights [
+        0.21, 0.21, 0.22
+      ]
+      columnsWidths [
+        0.44, 0.44, 0.44
+      ]
+      layout [
+        "RightSidedDoor (1, 1, 1, 3, 1.5)"
+        "LeftSidedDoor (2, 1, 1, 3, 1.5)"
+        "LeftSidedDoor (3, 1, 1, 3, 1.5)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 2, 0)"
+        "Shelf (1, 1, 0, 1)"
+        "Shelf (2, 1, 0, 3)"
+      ]
+      handle CabinetHandle {
+        translation -0.2 0 0
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    Cabinet {
+      hidden translation_6 -6.656364348600619e-11 0.33982526606749697 0.4999999989246504
+      hidden rotation_6 0.9981150555651821 2.390188146313537e-09 -0.06137048031515885 6.709679991863416e-05
+      hidden position_6_0 -0.001901587554183552
+      hidden translation_7 -4.045079532999374e-07 0 0.0004208246882738095
+      hidden rotation_7 0 -1 0 0.00192245292615848
+      translation -1.647 1.4 -0.37
+      rotation 0 1 0 1.5708
+      name "cabinet(3)"
+      outerThickness 0.02
+      rowsHeights [
+        0.21, 0.21, 0.22
+      ]
+      columnsWidths [
+        0.44
+      ]
+      layout [
+        "RightSidedDoor (1, 1, 1, 3, 1.5)"
+        "Shelf (1, 2 ,1 , 0)"
+        "Shelf (1, 3 ,1 , 0)"
+      ]
+      handle CabinetHandle {
+        translation -0.2 0 0
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    Cabinet {
+      hidden translation_6 -0.0650000000699329 0.3398252632654908 0.4999999989262385
+      hidden rotation_6 0.9978446997765682 6.082230813946748e-09 -0.06561977695642025 6.71208571962835e-05
+      hidden position_6_0 -0.002023043342890561
+      hidden translation_7 -4.890418147940334e-07 0 0.00047822606112964215
+      hidden rotation_7 0 -1 0 0.0020452320877227073
+      hidden translation_10 0.4049998410127067 0.33982533966627315 0.4999999665147783
+      hidden rotation_10 -0.9978503871642902 0.0008506937132139006 -0.06552771288761801 -6.689651920818696e-05
+      hidden position_10_0 -1.942454987899254e-06
+      hidden translation_11 5.75836934330054e-07 0 -0.0005189314122659351
+      hidden rotation_11 0 -1 0 0.0022193171734709023
+      hidden translation_14 -0.4700000000506357 0.3398252736475881 0.49999999892863656
+      hidden rotation_14 0.998869237237253 2.2560982296101252e-09 -0.04754205402660413 6.703025437369028e-05
+      hidden position_14_0 -0.0014872162772818622
+      hidden translation_15 -1.9119588751115302e-07 0 0.00025432564188402067
+      hidden rotation_15 0 -1 0 0.001503551511748119
+      translation -1.48 0.15 -0.79
+      rotation 0 1 0 1.5708
+      name "cabinet(4)"
+      outerThickness 0.02
+      rowsHeights [
+        0.21, 0.21, 0.22
+      ]
+      columnsWidths [
+        0.34, 0.47, 0.47
+      ]
+      layout [
+        "RightSidedDoor (2, 1, 1, 3, 1.5)"
+        "LeftSidedDoor (3, 1, 1, 3, 1.5)"
+        "RightSidedDoor (1, 1, 1, 3, 1.5)"
+        "Shelf (1, 2, 1, 0)"
+        "Shelf (1, 3, 1, 0)"
+        "Shelf (1, 1, 0, 3)"
+        "Shelf (2, 1, 0, 3)"
+      ]
+      handle CabinetHandle {
+        translation 0.1 0 0
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    Cabinet {
+      hidden translation_6 -0.04999999983742853 0.2697927935562714 0.6999999969227524
+      hidden rotation_6 -0.9985931628352956 8.704800542959855e-09 -0.053025419739975356 -9.540101678793532e-05
+      hidden position_6_0 0.003267891198759375
+      hidden translation_7 1.4660786235021206e-06 0 0.0008875369822769874
+      hidden rotation_7 0 1 0 0.003303698462806811
+      hidden translation_10 0.8650000001296263 0.33979281427105845 0.6999999969278292
+      hidden rotation_10 -0.9991066511756206 3.5384073785740377e-09 -0.042259905071314004 -9.532134627888442e-05
+      hidden position_10_0 0.0026454039473289407
+      hidden translation_11 7.65058826041054e-07 0 0.0005721274625110588
+      hidden rotation_11 0 1 0 0.002674433306232325
+      hidden translation_14 0.43499999987034954 0.33979281426365515 0.6999999969278292
+      hidden rotation_14 0.9991066486956292 3.5325833837012837e-09 -0.04225996370311201 9.532135746601441e-05
+      hidden position_14_0 -0.0026454045128645096
+      hidden translation_15 -7.650591480057312e-07 0 0.0005721275830394314
+      hidden rotation_15 0 -0.9999999999999999 0 0.0026744338565215862
+      hidden translation_18 -0.700000000000017 0.14444562254170298 0.6999999295179116
+      hidden rotation_18 -1 2.985327998022194e-13 -2.0830242720574783e-13 -0.00037189314934860026
+      hidden position_18_0 0.04069708520322499
+      hidden translation_19 0 0 0.5837742181620488
+      hidden translation_26 -0.6999995523348375 0.39447236747842307 0.6999999024184866
+      hidden rotation_26 0.9999996382465743 0.0008162326269663796 -0.0002393136416137413 0.00033257784844486506
+      hidden position_26_0 0.0010100166647139376
+      hidden translation_27 0 0 0.437746312256063
+      hidden translation_34 -0.7000000000000774 0.5894889834135905 0.6999999113776489
+      hidden rotation_34 -1 1.0438997938304379e-10 6.030953497179414e-09 -0.0003488391855958072
+      hidden position_34_0 0.0021136820038131225
+      hidden translation_35 0 0 0.545222579140808
+      hidden translation_42 -0.050000000000046896 0.5894889838733083 0.699999911378022
+      hidden rotation_42 -1 7.765625377358705e-11 5.9392197129019546e-09 -0.000348837867162477
+      hidden position_42_0 0.0021136714565121303
+      hidden translation_43 0 0 0.5452163863258154
+      translation 0.12 0.15 -2.15
+      name "cabinet(5)"
+      depth 0.7
+      outerThickness 0.02
+      rowsHeights [
+        0.25, 0.25, 0.14
+      ]
+      columnsWidths [
+        0.76, 0.54, 0.43, 0.43
+      ]
+      layout [
+        "LeftSidedDoor (2, 1, 1, 2, 1.5)"
+        "LeftSidedDoor (4, 1, 1, 3, 1.5)"
+        "RightSidedDoor (3, 1, 1, 3, 1.5)"
+        "Drawer (1, 1, 1, 1, 3.5)"
+        "Drawer (1, 2, 1, 1, 3.5)"
+        "Drawer (1, 3, 1, 1, 3.5)"
+        "Drawer (2, 3, 1, 1, 3.5)"
+        "Shelf (1, 2, 1, 0)"
+        "Shelf (1, 3, 2, 0)"
+        "Shelf (3, 2, 2, 0)"
+        "Shelf (1, 1, 0, 3)"
+        "Shelf (2, 1, 0, 3)"
+        "Shelf (3, 1, 0, 1)"
+      ]
+      handle CabinetHandle {
+        handleLength 0.1
+        handleRadius 0.008
+        handleColor 0.427451 0.513725 0.533333
+      }
+    }
+    SolidBox {
+      translation 0.12 0.07 -1.55
+      size 2.2 0.16 0.2
+      appearance PBRAppearance {
+        baseColor 0.8 0.8 0.8
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 4 4
+        }
+      }
+    }
+    SolidBox {
+      translation -1.08 0.07 -0.65
+      rotation 0 1 0 1.5708
+      name "box(1)"
+      size 2 0.16 0.2
+      appearance PBRAppearance {
+        baseColor 0.8 0.8 0.8
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 4 4
+        }
+      }
+    }
+    SolidBox {
+      translation 1.12 0.07 -1.9
+      rotation 0 -1 0 4.71239
+      name "box(2)"
+      size 0.5 0.16 0.2
+      appearance PBRAppearance {
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 4 4
+        }
+      }
+    }
+    SolidBox {
+      translation -1.415 0.07 0.25
+      rotation 0 -1 0 6.28318
+      name "box(3)"
+      size 0.47 0.16 0.2
+      appearance PBRAppearance {
+        baseColor 0.8 0.8 0.8
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 4 4
+        }
+      }
+    }
+    Fridge {
+      hidden position_0_0 -3.3831817463677827e-07
+      hidden position_0_1 1.1227256666758688e-06
+      hidden rotation_1 0 -1 0 3.897159347123516e-07
+      hidden rotation_2 0 1 0 1.345732439145547e-06
+      translation 1.57 0 -1.8
+      rotation 0 1 0 4.71239
+    }
+    Worktop {
+      translation -1.31 0.86 -0.345
+      rotation 0 1 0 4.71239
+      size 0.43 0.06 0.7
+    }
+    Worktop {
+      translation -1.531 0.86 -0.78
+      rotation 0 1 0 4.71239
+      name "worktop(1)"
+      size 0.44 0.06 0.237
+    }
+    Worktop {
+      translation -1.003 0.86 -0.780001
+      rotation 0 1 0 4.71239
+      name "worktop(2)"
+      size 0.442 0.06 0.085
+    }
+    Worktop {
+      translation -1.306 0.86 -1.22
+      rotation 0 -1 0 1.5708
+      name "worktop(3)"
+      size 0.44 0.06 0.69
+    }
+    Worktop {
+      translation -0.435 0.86 -1.79
+      name "worktop(4)"
+      size 2.43 0.06 0.7
+    }
+    Sink {
+      translation -1.33 0.87 -0.78
+      rotation 0 1 0 4.71239
+    }
+    HotPlate {
+      translation -1.14971 0.86 -1.62912
+      rotation 0 -1 0 5.49779
+    }
+    Oven {
+      hidden position_0_0 -5.798395053503131e-37
+      translation -1.24 0.51 0.11
+    }
+  ]
+}
+DEF INTERNAL_WINDOW Window {
+  translation -11.283624405978252 -1.5987211554602254e-14 -0.9089969314674011
+  rotation 0 -1 0 3.141591686718346
+  name "window(4)"
+  size 0.9 2.7 0.2
+}
+DEF INTERNAL_WINDOW Window {
+  translation -7.764715143088619 -1.4210854715202004e-14 -0.9394903033116844
+  rotation 0 -1 0 3.141591686718346
+  name "window(3)"
+  size 0.9 2.7 0.2
+}
+DEF INTERNAL_WINDOW Window {
+  translation -9.547060928142615 -1.2434497875801753e-14 -0.9229028115136266
+  rotation 0 -1 0 3.141591686718346
+  name "window(2)"
+  size 0.9 2.7 0.2
+}
+DEF INTERNAL_WINDOW Window {
+  translation -10.424088153855532 -1.4210854715202004e-14 -0.9263832371812324
+  rotation 0 -1 0 3.141591686718346
+  name "window(1)"
+  size 0.9 2.7 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation -20.841722096896945 1.7763568394002505e-15 -0.895663661597073
+  name "wall(7)"
+  size 18.2 2.7 0.2
+}
+DEF INTERNAL_WINDOW Window {
+  translation -8.661028945763917 3.197442310920451e-14 -0.9265567823689587
+  rotation 0 -1 0 3.141591686718346
+  size 0.9 2.7 0.2
+}
+DEF INTERNAL_WALL Wall {
+  translation 18.841850244600412 -1.0004599999999999e-09 20.10700920905251
+  name "wall(13)"
+  size 22.5 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation -30 0 0
+  rotation 0 1 0 1.5708
+  name "wall(12)"
+  size 60 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 30 0 0
+  rotation 0 1 0 1.5708
+  name "wall(11)"
+  size 60 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation -27.45 0 30
+  name "wall(10)"
+  size 5.3 2.4 0.2
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -24 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(21)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(22)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -12 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(19)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(20)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 12 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(17)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(18)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 24 0 30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(15)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(16)"
+    }
+  ]
+}
+DEF EXTERNAL_WALL Wall {
+  translation -18 0 30
+  name "wall(8)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 27.45 0 30
+  name "wall(9)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 18 0 30
+  name "wall(6)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 0 0 30
+  name "wall(5)"
+  size 22.4 2.4 0.2
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -12 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(11)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(12)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation -24 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(13)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(14)"
+    }
+  ]
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 24 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(7)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(8)"
+    }
+  ]
+}
+DEF EXTERNAL_WALL Wall {
+  translation -27.45 0 -30
+  name "wall(4)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 27.45 0 -30
+  name "wall(3)"
+  size 5.3 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation -18 0 -30
+  name "wall(2)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 18 0 -30
+  name "wall(1)"
+  size 10.4 2.4 0.2
+}
+DEF EXTERNAL_WALL Wall {
+  translation 0 0 -30
+  size 22.4 2.4 0.2
+}
+Shape {
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 1
+    metalness 0
+  }
+  geometry IndexedFaceSet {
+    coord Coordinate {
+      point [
+        0.21 0 0.07
+        0.09 0 0.22
+        0.25 0 0.26
+        0.21 0.0001 0.07
+        0.09 0.0001 0.22
+        0.25 0.0001 0.26
+      ]
+    }
+    coordIndex [
+      2, 1, 0, -1, 3, 4, 5, -1, 0, 1
+      4, 3, -1, 1, 2, 5, 4, -1, 2, 0
+      3, 5, -1
+    ]
+  }
+}
+DEF YELLOW_BOX Solid {
+  translation 7.575177875154338 1.2299999999997016 14.566063051090254
+  rotation 0 0.9999999999999999 0 3.142388812563314
+  children [
+    DEF Shape Shape {
+      appearance DEF PBR PBRAppearance {
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF geometryBox Box {
+        size 0.30000000000000004 2.6999999999999997 11
+      }
+    }
+  ]
+  name "YELLOW_BOX"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE geometryBox
+  }
+}
+DEF MyBot1 Robot {
+  translation 28.00000001002064 -0.0004438506198870887 28.000000008215313
+  rotation 0.02466988431209989 -0.9996258632696391 -0.011812294038690992 -0.8937219283946756
+  children [
+    Emitter {
+      channel 1
+      baudRate 115200
+    }
+    Transform {
+      translation 0 0.0415 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.0820075 0.364731 0.8
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BODY Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03200938840291
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "left wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "left wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.044999975873086066 0.025212115181100395 -1.5428542828351525e-06
+        rotation -0.9999998918029527 0.0003806370909817284 -0.00026741257930969876 1.9316461206448068
+        children [
+          DEF WHEEL Transform {
+            rotation 0 0 1 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0 0
+                  roughness 1
+                  metalness 0
+                }
+                geometry Cylinder {
+                  height 0.01
+                  radius 0.025
+                }
+              }
+            ]
+          }
+        ]
+        name "left wheel"
+        boundingObject USE WHEEL
+        physics DEF PHYSICS_WHEEL Physics {
+          density -1
+          mass 0.05
+        }
+        linearVelocity 8.316162383273e-08 9.284040834171713e-06 6.77858342597192e-08
+        angularVelocity 2.8527693943876325e-06 4.022310181221132e-11 -3.5471282585260423e-06
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03204373980996
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "right wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "right wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.044999989753531276 0.02521206446400789 -1.5431645487759673e-06
+        rotation -0.9999999132083887 -0.00038147689354802404 0.00016750699952696046 2.3290002730900197
+        children [
+          USE WHEEL
+        ]
+        name "right wheel"
+        boundingObject USE WHEEL
+        physics USE PHYSICS_WHEEL
+        linearVelocity 8.401088865282595e-08 9.284068435138598e-06 6.670532345625089e-08
+        angularVelocity 2.853331474170703e-06 -1.0186436186051277e-09 -3.5467043138231036e-06
+      }
+    }
+    DistanceSensor {
+      translation -0.02 0.063 -0.042
+      rotation 0 1 0 2.07
+      children [
+        DEF SENSOR Transform {
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.975691 0.981481 0.0252992
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.004
+                radius 0.008
+              }
+            }
+          ]
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DistanceSensor {
+      translation 0.02 0.063 -0.042
+      rotation 0 1 0 1.07
+      children [
+        USE SENSOR
+      ]
+      name "ds1"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DEF SMILE Transform {
+      translation 0 0.025 -0.036
+      rotation 0.7745972408364944 0.44721228048294853 0.4472139204829502 1.8234794
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.721569 0.290196 0.290196
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.018
+            radius 0.009
+            subdivision 3
+          }
+        }
+      ]
+    }
+    Radar {
+      translation 0 0.1 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.403922 0.403922 0.403922
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BOX Box {
+            size 0.04 0.04 0.04
+          }
+        }
+      ]
+      minRange 0.01
+      maxRange 80
+      horizontalFieldOfView 2
+      verticalFieldOfView 0.5
+      frequency 28
+      transmittedPower 28
+    }
+  ]
+  name "MyBot1"
+  boundingObject Transform {
+    translation 0 0.0415 0
+    children [
+      USE BODY
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.5
+  }
+  controller "unmovingrobot1"
+  battery [
+    0, 100, 30
+  ]
+  cpuConsumption 5
+  linearVelocity 1.0941985791693142e-07 9.277639917798195e-06 8.800178383302615e-08
+  angularVelocity 1.7456186867896137e-06 -4.834777734001208e-10 -2.1700511231810724e-06
+}
+DEF MyBot2 Robot {
+  translation 28.999975143078093 -0.00044385269448794784 -28.999909833007948
+  rotation 0.0018735618331072225 -0.9999283944169899 -0.01181929797908902 -2.8275161598947784
+  children [
+    Emitter {
+      name "emitter2"
+      channel 2
+      baudRate 115200
+    }
+    Transform {
+      translation 0 0.0415 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.0820075 0.364731 0.8
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BODY Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03199354704866
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "left wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "left wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.04499995669495855 0.025212115599603117 -1.4986535755956535e-06
+        rotation -0.9999998918132859 0.0003806741843919661 -0.00026732112129603284 1.9316349321166852
+        children [
+          DEF WHEEL Transform {
+            rotation 0 0 1 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0 0
+                  roughness 1
+                  metalness 0
+                }
+                geometry Cylinder {
+                  height 0.01
+                  radius 0.025
+                }
+              }
+            ]
+          }
+        ]
+        name "left wheel"
+        boundingObject USE WHEEL
+        physics DEF PHYSICS_WHEEL Physics {
+          density -1
+          mass 0.05
+        }
+        linearVelocity 1.5005399934125225e-08 9.28328557540863e-06 -3.4305813781842763e-08
+        angularVelocity -1.538090152155963e-06 -1.1497843079699616e-08 -6.11388858979777e-07
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03196390114847
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "right wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "right wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04499997063249231 0.025212064874160982 -1.4987827782698341e-06
+        rotation -0.99999991321458 -0.00038149265264233334 0.00016743413175874248 2.328925094916148
+        children [
+          USE WHEEL
+        ]
+        name "right wheel"
+        boundingObject USE WHEEL
+        physics USE PHYSICS_WHEEL
+        linearVelocity 1.3474021717151465e-08 9.292909319966255e-06 -3.4185150172618253e-08
+        angularVelocity -1.5381970344791021e-06 -1.3493583672125113e-08 -6.122565601026926e-07
+      }
+    }
+    DistanceSensor {
+      translation -0.02 0.063 -0.042
+      rotation 0 1 0 2.07
+      children [
+        DEF SENSOR Transform {
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.975691 0.981481 0.0252992
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.004
+                radius 0.008
+              }
+            }
+          ]
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DistanceSensor {
+      translation 0.02 0.063 -0.042
+      rotation 0 1 0 1.07
+      children [
+        USE SENSOR
+      ]
+      name "ds1"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DEF SMILE Transform {
+      translation 0 0.025 -0.036
+      rotation 0.7745972408364944 0.44721228048294853 0.4472139204829502 1.8234794
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.721569 0.290196 0.290196
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.018
+            radius 0.009
+            subdivision 3
+          }
+        }
+      ]
+    }
+    Radar {
+      translation 0 0.1 0
+      rotation 0 1 0 6.021385901
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.403922 0.403922 0.403922
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BOX Box {
+            size 0.04 0.04 0.04
+          }
+        }
+      ]
+      minRange 0.01
+      maxRange 78
+      horizontalFieldOfView 2
+      verticalFieldOfView 0.4
+    }
+  ]
+  name "MyBot2"
+  boundingObject Transform {
+    translation 0 0.0415 0
+    children [
+      USE BODY
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.5
+  }
+  controller "unmovingrobot2"
+  cpuConsumption 0.5
+  linearVelocity 7.421725890235516e-09 9.279484841752188e-06 -1.0715499924143633e-08
+  angularVelocity 1.4473315796344467e-07 -1.2526450467100832e-08 -6.515990681230943e-08
+}
+DEF DOUBLE_WINDOW Transform {
+  translation 12 0 -30
+  children [
+    Window {
+      translation -0.4 0 0
+      name "window(9)"
+    }
+    Window {
+      translation 0.4 0 0
+      name "window(10)"
+    }
+  ]
+}
+DEF MyBot3 Robot {
+  translation -26.000000009857963 -0.00044390959092639737 -27.000000008580308
+  rotation -0.00535732219822031 -0.9999157845583927 -0.011820443724260167 2.290271208247849
+  children [
+    Emitter {
+      name "emitter3"
+      channel 3
+      baudRate 115200
+    }
+    Transform {
+      translation 0 0.0415 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.0820075 0.364731 0.8
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BODY Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03199083998598
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "left wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "left wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.04499995633981144 0.025212115464387647 1.5102364395434852e-06
+        rotation -0.9999998919106816 0.0003845169896765646 -0.0002613911048609925 1.9329356926762273
+        children [
+          DEF WHEEL Transform {
+            rotation 0 0 1 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0 0
+                  roughness 1
+                  metalness 0
+                }
+                geometry Cylinder {
+                  height 0.01
+                  radius 0.025
+                }
+              }
+            ]
+          }
+        ]
+        name "left wheel"
+        boundingObject USE WHEEL
+        physics DEF PHYSICS_WHEEL Physics {
+          density -1
+          mass 0.05
+        }
+        linearVelocity -8.021907157816733e-08 9.283926503300032e-06 -7.120199706385593e-08
+        angularVelocity -2.9986897408724382e-06 1.642669574854001e-10 3.4232611043618544e-06
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 76.03193832205598
+        axis -1 0 0
+        anchor 0 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "right wheel motor1"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "right wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04499997016563732 0.0252120648605437 1.5107556791369727e-06
+        rotation -0.9999999132624185 -0.00038388463351629555 0.00016157890879644744 2.3302033011279764
+        children [
+          USE WHEEL
+        ]
+        name "right wheel"
+        boundingObject USE WHEEL
+        physics USE PHYSICS_WHEEL
+        linearVelocity -8.111702771965154e-08 9.283958356595397e-06 -7.016178420028188e-08
+        angularVelocity -2.999229207105215e-06 -8.949259919375503e-10 3.422809570713457e-06
+      }
+    }
+    DistanceSensor {
+      translation -0.02 0.063 -0.042
+      rotation 0 1 0 2.8553981609999997
+      children [
+        DEF SENSOR Transform {
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.975691 0.981481 0.0252992
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.004
+                radius 0.008
+              }
+            }
+          ]
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DistanceSensor {
+      translation 0.02 0.063 -0.042
+      rotation 0 1 0 1.07
+      children [
+        USE SENSOR
+      ]
+      name "ds1"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DEF SMILE Transform {
+      translation 0 0.025 -0.036
+      rotation 0.7745972408364944 0.44721228048294853 0.4472139204829502 1.8234794
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.721569 0.290196 0.290196
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.018
+            radius 0.009
+            subdivision 3
+          }
+        }
+      ]
+    }
+    DEF Radar Radar {
+      translation 0 0.1 0
+      rotation 0 1 0 6.283185307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.403922 0.403922 0.403922
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BOX Box {
+            size 0.04 0.04 0.04
+          }
+        }
+      ]
+      minRange 0.01
+      maxRange 79.23140049567527
+      horizontalFieldOfView 2
+      transmittedPower 77
+    }
+  ]
+  name "MyBot3"
+  boundingObject Transform {
+    translation 0 0.0415 0
+    children [
+      USE BODY
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.5
+  }
+  controller "unmovingrobot3"
+  linearVelocity -1.055870182625987e-07 9.27754188143748e-06 -9.250072095988821e-08
+  angularVelocity -1.834722907064878e-06 -3.592139038687631e-10 2.09403947628512e-06
+}
+DEF TRAIL Shape {
+  appearance Appearance {
+    material Material {
+      diffuseColor 0 1 0
+      emissiveColor 0 1 0
+    }
+  }
+  geometry DEF TRAIL_LINE_SET IndexedLineSet {
+    coord Coordinate {
+      point [
+        0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0, 0 0 0
+      ]
+    }
+    coordIndex [
+      0, 1, -1, 1, 2, -1, 2, 2, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1
+    ]
+  }
+}
+DEF Supervisior1 Robot {
+  translation 0 -1 0
+  children [
+    DEF emittertoyellowbox Emitter {
+      name "emittertoyellowbox"
+      channel 7
+    }
+    Receiver {
+      channel 8
+    }
+    DEF emitter Emitter {
+      channel 8
+    }
+    Receiver {
+      name "receiver2"
+      channel 3
+    }
+    Receiver {
+      name "receiver1"
+      channel 2
+    }
+    Receiver {
+      name "receiver0"
+      channel 1
+    }
+  ]
+  controller "matlab_supervisor"
+  supervisor TRUE
+  cpuConsumption 0.5
+}
+DEF PIONEER_3AT Pioneer3at {
+  hidden position_0_0 5492.9790705516125
+  hidden position_0_1 5669.172950710455
+  hidden position_0_2 5559.28486352273
+  hidden position_0_3 5755.05562017366
+  hidden rotation_8 1 0 0 1.291139436288949
+  hidden rotation_9 1 0 0 4.277710605699422
+  hidden rotation_10 1 0 0 4.324921246304917
+  hidden rotation_11 -0.9999999999999999 0 0 3.526697920234158
+  translation 23.99993427062065 0.10761013313061775 -25.999921617383997
+  rotation -0.0003762477184644434 0.9999998540212183 0.00038780819542777136 1.599981040826588
+  controller "ros"
+  controllerArgs "--name=pioneer3at"
+  extensionSlot [
+    DEF RADAR_TARGET Solid {
+      translation 0 0.19999999999999998 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BOX Box {
+            size 0.04 0.04 0.04
+          }
+        }
+      ]
+      name ""
+      radarCrossSection 1
+    }
+    Camera {
+      translation 0 0.17 -0.22
+      width 256
+      height 128
+      motionBlur 500
+      noise 0.02
+    }
+    Accelerometer {
+      lookupTable [
+        -39.24 -39.24 0.005
+        39.24 39.24 0.005
+      ]
+    }
+    Gyro {
+      lookupTable [
+        -50 -50 0.005
+        50 50 0.005
+      ]
+    }
+    SickLms291 {
+      translation 0 0.23 -0.136
+      noise 0.1
+    }
+    GPS {
+    }
+    InertialUnit {
+    }
+  ]
+}

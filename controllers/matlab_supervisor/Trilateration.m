@@ -1,64 +1,21 @@
 
-% Trilateration algorithm
-% paper "An algebraic solution to the multilateration problem"
-% Author: Norrdine, Abdelmoumen  (norrdine@hotmail.de)
-% https://www.researchgate.net/publication/275027725_An_Algebraic_Solution_to_the_Multilateration_Problem
-% usage: [N1 N2] = Trilateration(P,S,W) 
-% P = [P1 P2 P3 P4 ..] Reference points matrix
-% S = [s1 s2 s3 s4 ..] distance matrix.
-% W : Weights Matrix (Statistics).
-% N : calculated solution
-% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY!! 
+function  Trilateration(beacon1_position_x,beacon1_position_y,beacon2_position_x,beacon2_position_y,beacon3_position_x,beacon3_position_y,beacon1_measurement,beacon2_measurement,beacon3_measurement)
+% This function is used to calculate the position of the moving robot by
+% using the  Trilateration algorithm
+% beacon1_position_x beacon1_position_x are the position from the first beacaon
+% beacon1_measurement is the distance it measures
+ a = 2*(beacon1_position_x-beacon3_position_x);
+ b = 2*(beacon1_position_y-beacon3_position_y);
+ c = beacon3_measurement*beacon3_measurement-beacon1_measurement*beacon1_measurement-beacon3_position_y*beacon3_position_y+beacon1_position_y*beacon1_position_y-beacon3_position_x*beacon3_position_x+beacon1_position_x*beacon1_position_x;
+ d = 2*(beacon2_position_x-beacon3_position_x);
+ e = 2*(beacon2_position_y-beacon3_position_y);
+ f = beacon3_measurement*beacon3_measurement-beacon2_measurement*beacon2_measurement-beacon3_position_y*beacon3_position_y+beacon2_position_y*beacon2_position_y-beacon3_position_x*beacon3_position_x+beacon2_position_x*beacon2_position_x;
+ y = (f-c*d/a)/(e-b*d/a);
+ x = (c-b*y)/a;
+robot_position_x= x;   
+robot_position_y = y;
+X = sprintf('The moving robot position is %.3f %.3f ',robot_position_x,-robot_position_y);
+disp(X)
 
-function [N1 N2] = Trilateration(P,S,W)
-[mp,np] = size(P);
-ns = length(S);
-if (ns~=np)
-    error('Number of reference points and distances are different');
 end
-A=[]; b=[];
-for i1=1:np
-    x = P(1,i1); y = P(2,i1); z = P(3,i1);
-    s = S(i1);
-    A = [A ; 1 -2*x  -2*y  -2*z]; 
-    b= [b ; s^2-x^2-y^2-z^2 ];
-end
-if (np==3)
-    warning off;
-    Xp= A\b;  % Gaussian elimination
-   % or Xp=pinv(A)*b; 
-   % the matrix  inv(A'*A)*A' or inv(A'*C*A)*A'*C or pinv(A)
-   % depend only on the reference points
-   % it could be computed only once
-    xp = Xp(2:4,:);
-    Z = null(A,'r');
-    z = Z(2:4,:);
-    if rank (A)==3
-        %Polynom coeff.
-        a2 = z(1)^2 + z(2)^2 + z(3)^2 ;
-        a1 = 2*(z(1)*xp(1) + z(2)*xp(2) + z(3)*xp(3))-Z(1);
-        a0 = xp(1)^2 +  xp(2)^2+  xp(3)^2-Xp(1);
-        p = [a2 a1 a0];
-        t = roots(p);
 
-        %Solutions
-        N1 = Xp + t(1)*Z;
-        N2 = Xp + t(2)*Z;
-    end
-end
-if  (np>3)
-%Particular solution
-
-    if W~=diag(ones(1,length(W)))
-        C = W'*W;
-        Xpdw =inv(A'*C*A)*A'*C*b; % Solution with Weights Matrix
-    else
-        Xpdw=pinv(A)*b; % Solution without Weights Matrix
-    end
- 
-    % the matrix  inv(A'*A)*A' or inv(A'*C*A)*A'*C or pinv(A)
-    % depend only on the reference points
-    % it could be computed only once
-    N1 = Xpdw;
-    N2 = N1;
-end

@@ -15,7 +15,7 @@
  */
 
 /*
- * Description:  An example of controller using a radar device.
+ * Description:   The controller of the unmoving robot2
  */
 
 #include <stdio.h>
@@ -31,24 +31,15 @@
 
 #define SPEED 6
 #define TIME_STEP 64
-
-// extern double a=0;
- 
-// extern double b=0;
-// extern double c=0;
-double dist2=0;
-//int a;
+double distanceMeasurement2=0;
 int main() {
   WbDeviceTag radar = 0;
   int  i;
   wb_robot_init();
+  //get and enable the emitter
   WbDeviceTag emitter2;
   emitter2 = wb_robot_get_device("emitter2");
   wb_emitter_set_channel(emitter2,2);
-
-  //wb_robot_battery_sensor_enable(TIME_STEP);
-
-
   /* get the radar if this robot has one. */
   for (i = 0; i < wb_robot_get_number_of_devices(); ++i) {
     WbDeviceTag tag = wb_robot_get_device_by_index(i);
@@ -59,33 +50,22 @@ int main() {
     }
   }
 
-
-
-
-
 while (wb_robot_step(TIME_STEP) != -1){
-    //printf("Battery 2: %.3f J\n", wb_robot_battery_sensor_get_value());
-
     if (radar) {
       int targets_number = wb_radar_get_number_of_targets(radar);
       const WbRadarTarget *targets = wb_radar_get_targets(radar);
      //printf("%s see %d targets.\n", wb_robot_get_name(), targets_number);
       for (i = 0; i < targets_number; ++i){
       // printf("---target %d: distance=%lf azimuth=%lf\n", i + 1, targets[i].distance, targets[i].azimuth);
-       
-         dist2 = targets[i].distance;
+         distanceMeasurement2 = targets[i].distance;
          //char message[128];
          //sprintf(message, "the first distance is %f", dist1);
-        double message[1] = { dist2};
+        double message[1] = {distanceMeasurement2};
         wb_emitter_send(emitter2, message,sizeof(double));   
           //int  a = wb_emitter_get_channel(emitter2);
           // printf("send test:%f,from channel%d\n",message[0],a);
-
-
   //wb_emitter_send(emitter, message, strlen(message) + 1);
 
-
-         
          }
     }
 

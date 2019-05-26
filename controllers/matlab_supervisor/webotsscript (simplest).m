@@ -6,8 +6,9 @@ clear all
 pos_Beacon1=[28 0 28];
 pos_Beacon2=[28 0 -25];
 pos_Beacon3=[-26 0 -27];
-% Initialize the position of the robot
-pos_Robot=[0 0 0];
+% Initialize the position and rotation of the robot
+pos_Robot=[24 0 -26];
+rotation_Robot = [0 1 0 1.6];
 % Initialize the transmitted power[dbm]
 transmittedPower = 77;
 % Initialize the workspace

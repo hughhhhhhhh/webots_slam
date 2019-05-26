@@ -15,7 +15,7 @@
  */
 
 /*
- * Description:  An example of controller using a radar device.
+ * Description:  The controller of the unmoving robot1
  */
 
 #include <stdio.h>
@@ -31,25 +31,16 @@
 
 #define SPEED 6
 #define TIME_STEP 64
-
-// extern double a=0;
- 
-// extern double b=0;
-// extern double c=0;
-double dist1=0;
+double distanceMeasurement=0;
 
 int main() {
   WbDeviceTag radar = 0;
   int  i;
   wb_robot_init();
+  //get and enable the emitter
   WbDeviceTag emitter;
   emitter = wb_robot_get_device("emitter");
-    wb_emitter_set_channel(emitter,1);
-
-
-//enable battery measurement
- // wb_robot_battery_sensor_enable(TIME_STEP);
-
+  wb_emitter_set_channel(emitter,1);
 
   /* get the radar if this robot has one. */
   for (i = 0; i < wb_robot_get_number_of_devices(); ++i) {
@@ -61,41 +52,22 @@ int main() {
     }
   }
 
-
-
-
-
 while (wb_robot_step(TIME_STEP) != -1){
- 
- //print battery life  
-  //  printf("Battery 1: %.3f J\n", wb_robot_battery_sensor_get_value());
-  //  if (radar&& wb_robot_battery_sensor_get_value()!=0) {
        if (radar) {
       int targets_number = wb_radar_get_number_of_targets(radar);
       const WbRadarTarget *targets = wb_radar_get_targets(radar);
     // printf("%s see %d targets.\n", wb_robot_get_name(), targets_number);
       for (i = 0; i < targets_number; ++i){
       //printf("---target %d: distance=%lf azimuth=%lf\n", i + 1, targets[i].distance, targets[i].azimuth);
-       
-         dist1 = targets[i].distance;
+         distanceMeasurement = targets[i].distance;
          //char message[128];
-         //sprintf(message, "the first distance is %f", dist1);
-        double message[1] = { dist1 };
+         //sprintf(message, "the first distance measurement is %f", distanceMeasurement);
+        double message[1] = { distanceMeasurement };
         wb_emitter_send(emitter, message, sizeof(double));               
-       printf("the first distance is %f", dist1);
-
- }
+       printf("the first distance is %f", distanceMeasurement);
+                  }
     }
-    // only useful when we want to send the message that the battery is empty
-    // else{double message[1] ={ 0 };
-        // wb_emitter_send(emitter, message, sizeof(double));  
-    // }
-    
-    
-    
-
 }
   wb_robot_cleanup();
-
   return 0;
 }
