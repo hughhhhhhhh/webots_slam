@@ -62,7 +62,7 @@ Extract and copy ‘webots_ros’ document in your workspace (catkin_ws)
 
 ```git clone https://github.com/ros-planning/navigation_msgs.git```
 
-4) Install the package
+4)Install the package
 
 ```cd ..```
 
@@ -91,7 +91,7 @@ There are three worlds with three difficulties: simplest,normal and complex,
 
 1) Open Matlab 
 --------
-1) Open and Run the first section of corresponding webotsscript
+1)Open and Run the first section of corresponding webotsscript
 
 ```controllers/matlab_supervisor/webotsscript(simplest).m``` or 
 
@@ -101,7 +101,7 @@ There are three worlds with three difficulties: simplest,normal and complex,
 
 
 
-2) Line 45: change your own workspace location to save "my_map.pgm"
+2)Line 45: change your own workspace location to save "my_map.pgm"
 
 ```imag_SLAM = '/home/huanghe/catkin_ws/my_map.pgm';```
 
