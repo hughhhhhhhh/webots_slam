@@ -16,10 +16,7 @@ function AW=addWall(AW,P1,P2,P3,P4,RCf)
 %           the impulse response of the wall and p the position of the first
 %           impulse response sample; fs the sampling frequency, fL and fH
 %           are the lower and upper frequency bounds for band optimization
-%
-%  Copyright 2011 LocUS Project.
-%  Written by:  Daniel Filipe Albuquerque.
-%  $Revision: 2.1$    $Date: 2011/12/21 15:50$
+
 
 if(nargin<4 || nargin>6 || nargin==5)
     error('Invalid input arguments.');

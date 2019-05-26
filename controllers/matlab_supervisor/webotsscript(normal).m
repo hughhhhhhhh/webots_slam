@@ -29,6 +29,7 @@ fid = fopen('running_Time.txt','wt');
 fprintf(fid,'%g\n',running_Time); 
 %% Generate RIR
 RIR_Input=importdata('RIR_Input.txt');
+%RIR is the function that calculates the room impulse response
 [t,I] = RIR(RIR_Input(1),RIR_Input(2),RIR_Input(3),[RIR_Input(4) RIR_Input(5) RIR_Input(6)],[RIR_Input(7) RIR_Input(8) RIR_Input(9)],[RIR_Input(10) RIR_Input(11) RIR_Input(12)],[RIR_Input(13) RIR_Input(14) RIR_Input(15)],RIR_Input(16),RIR_Input(17),RIR_Input(18),RIR_Input(19),RIR_Input(20),RIR_Input(21));
 plot(1000*t,abs(I))% draw the RIR 
 ylabel('Amplitude')

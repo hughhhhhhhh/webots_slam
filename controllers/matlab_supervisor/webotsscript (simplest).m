@@ -29,12 +29,14 @@ fid = fopen('running_Time.txt','wt');
 fprintf(fid,'%g\n',running_Time); 
 %% Generate RIR
 RIR_Input=importdata('RIR_Input.txt');
+
 [t,I] = RIR_simple(RIR_Input(1),RIR_Input(2),RIR_Input(3),RIR_Input(16),RIR_Input(17),RIR_Input(18),RIR_Input(19),RIR_Input(20),RIR_Input(21));
 plot(1000*t,abs(I))% draw the RIR 
 ylabel('Amplitude')
 xlabel('Time (ms)')
 legend('Source 1','Source 2','Source 3')
 %% Display the corresponding room model
+% You can view in 3D the room, the sound sources
 displayRoom('testfile','HideVS');
 %% Show the sensor info  
 data=importdata('sensorInfo.txt');
