@@ -46,7 +46,7 @@ Extract and copy ‘webots_ros’ document in your workspace (catkin_ws)
 
 ```sudo apt install libsdl-image1.2-dev```
 
-2) Get into workspace
+2)Get into workspace
 
 ```cd ~/catkin_ws/src/```
 
