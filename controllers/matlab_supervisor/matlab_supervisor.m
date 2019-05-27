@@ -70,31 +70,30 @@ trans_field1 = wb_supervisor_node_get_field(robot_node1, 'translation');
 trans_field2 = wb_supervisor_node_get_field(robot_node2, 'translation');
 trans_field3 = wb_supervisor_node_get_field(robot_node3, 'translation');
 
-
 % initialize the position of the beacons
 filename = 'Initialization.mat';
 initializationData = matfile(filename);
-wb_supervisor_field_set_sf_vec3f(trans_field1, initializationData.pos_Beacon1);
-wb_supervisor_field_set_sf_vec3f(trans_field2, initializationData.pos_Beacon2);
-wb_supervisor_field_set_sf_vec3f(trans_field3, initializationData.pos_Beacon3);
-wb_supervisor_field_set_sf_vec3f(pioneer_transition, initializationData.pos_Robot);
-wb_supervisor_field_set_sf_rotation(pioneer_rotation, initializationData.rotation_Robot);
+wb_supervisor_field_set_sf_vec3f(trans_field1, initializationData.beacon1_position);
+wb_supervisor_field_set_sf_vec3f(trans_field2, initializationData.beacon2_position);
+wb_supervisor_field_set_sf_vec3f(trans_field3, initializationData.beacon3_position);
+wb_supervisor_field_set_sf_vec3f(pioneer_transition, initializationData.robot_position);
+wb_supervisor_field_set_sf_rotation(pioneer_rotation, initializationData.robot_rotation);
 % set the transmitted power 
 wb_supervisor_field_set_sf_float(transmittedPower_field, initializationData.transmittedPower);
 
 %read the data from matlabsscript
 while wb_robot_step(TIME_STEP) ~= -1
-      modeChoice=importdata('mode_Choice.txt');
-    if initializationData.reload_Judgment == 1 && modeChoice == 0
-              a=1001;
-              fid = fopen('mode_Choice.txt','wt');
+      webots_simulationMode=importdata('webots_simulationMode.txt');
+    if initializationData.reload == 1 && webots_simulationMode == 1
+              a=1001;%set a random number that not equal to 1
+              fid = fopen('webots_simulationMode.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the world is reload', WB_STDOUT);
                 wb_supervisor_world_reload();
-      elseif modeChoice == 2
+      elseif webots_simulationMode == 2
               a=1003;
-              fid = fopen('mode_Choice.txt','wt');
+              fid = fopen('webots_simulationMode.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
@@ -104,7 +103,7 @@ while wb_robot_step(TIME_STEP) ~= -1
               wb_supervisor_simulation_set_mode(WB_SUPERVISOR_SIMULATION_MODE_RUN);
                wb_console_print('now it is started', WB_STDOUT);
 
-       elseif modeChoice == 3
+       elseif webots_simulationMode == 3
               running_Time=importdata('running_Time.txt');
               running_Time =  running_Time - 1;
               X=sprintf('running counter is =%f', running_Time);
@@ -114,7 +113,7 @@ while wb_robot_step(TIME_STEP) ~= -1
               fclose(fid);
               if running_Time == 0
               a=1003;
-              fid = fopen('mode_Choice.txt','wt');
+              fid = fopen('webots_simulationMode.txt','wt');
               fprintf(fid,'%g\n',a);     
               fclose(fid);
                wb_console_print('the simulation is stopped', WB_STDOUT);
@@ -255,7 +254,7 @@ while wb_robot_step(TIME_STEP) ~= -1
         % axis([-30 30 -30 30]);
         % title('Trajectory (Supervisor)');
         % hold off;
-        Y=sprintf('The measurement of the distance to the moving robot are Measurement1=%.3f Measurement2=%.3f Measurement3=%.3f', distanceMeasurement1,distanceMeasurement2,distanceMeasurement3);
+        Y=sprintf('The distance to the moving robot are Measurement 1=%.3f Measurement 2=%.3f Measurement 3=%.3f', distanceMeasurement1,distanceMeasurement2,distanceMeasurement3);
         disp(Y); 
         %use trilateration function to calculate the position of the moving robot
         Trilateration(data(10),data(11),data(12),data(13),data(14),data(15), distanceMeasurement1,distanceMeasurement2,distanceMeasurement3);

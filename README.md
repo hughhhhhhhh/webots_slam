@@ -101,7 +101,7 @@ There are three worlds with three difficulties: simplest,normal and complex,
 
 
 
-2)Line 45: change your own workspace location to save "my_map.pgm"
+2)Line 70: change your own workspace location to save "my_map.pgm"
 
 ```imag_SLAM = '/home/huanghe/catkin_ws/my_map.pgm';```
 
@@ -163,7 +163,7 @@ if it doesn't work, you may need to install the map_server package
 
 
 
-8) Calculation the exploration
+8) Calculate the exploration
 --------
 run the corresponding section in matlab script
 

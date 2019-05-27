@@ -8,11 +8,6 @@ function I = impR(file, R, C)
 %    file  - the name of the file with the room data;
 %    R     - receiver data (created with the function addReceiver);
 %    C     - Channel object
-%
-%
-%  Copyright 2012 LocUS Project.
-%  Written by:  Daniel Filipe Albuquerque.
-%  $Revision: 2.1$    $Date: 2012/04/30$
 
 if(nargin~=3)
     error('Not enough input arguments.');

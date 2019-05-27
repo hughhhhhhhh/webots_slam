@@ -36,11 +36,6 @@ function [h]=rir(fs, mic, n, r, rm, src);
 %   4) A paper has been written on this model.  It is available at:
 %      http://www.sgm-audio.com/research/rir/rir.html
 %      
-%
-%Version 3.4.2
-%Copyright � 2003 Stephen G. McGovern
-
-%Some of the following comments are references to equations the my paper.
 
 nn=-n:1:n;                            % Index for the sequence
 rms=nn+0.5-0.5*(-1).^nn;              % Part of equations 2,3,& 4

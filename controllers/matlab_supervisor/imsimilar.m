@@ -1,8 +1,8 @@
 function value = imsimilar( count1,count2,type)
-%imsimilar---�������ƶ�
-%count1------ֱ��ͼ1
-%count2------ֱ��ͼ2
-%value-------���ƶ�
+%imsimilar---calculate the similarity
+%count1------ֱthe first color histogram
+%count2------ֱthe second histogram
+%value------the similarity value
 % 
 % 1, input image
 % 
@@ -24,13 +24,11 @@ N2 = length(count2);
 if N1~=N2
     fprintf('N1<>N2');
     value = 0;
-    fprintf('ά�ȳ���');
     return ;
 end
 
 
 result = 0;
-% type=1ʱ����ʽһ���㣬���򰴹�ʽ������
 if type==1
 for x = 1:N1
     den = max(count1(x),count2(x));
@@ -46,6 +44,5 @@ else
     end
     value = result*100;
 end
-   % fprintf('���ƶ�Ϊ��%s%%\n',num2str(value));
 end
 

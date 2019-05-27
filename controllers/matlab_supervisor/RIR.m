@@ -1,4 +1,9 @@
 function [t,I] = RIR(movingRobot_positionx,movingRobot_positiony,movingRobot_positionz,movableObstacle_positionx,movableObstacle_positiony,movableObstacle_positionz,movableObstacle_rotation,beacon1_positionx,beacon1_positiony,beacon2_positionx,beacon2_positiony,beacon3_positionx,beacon3_positiony)
+    %The input of the function of RIR
+    % RIR_Input(1)~ RIR_Input(3): The position [x y z] of moving robot
+    % RIR_Input(4)~ RIR_Input(12): The position [x y z] of four corners of the movable obstacle
+    % RIR_Input(13)~ RIR_Input(15): The rotation [rx, ry, rz, α] of the movable obstacle
+    % RIR_Input(16)~ RIR_Input(21): The position [x y] of 3 movable beacons
 %% STAGE ONE
 %
 % In this stage we only define the room to simulate and place
@@ -52,8 +57,7 @@ AW = addWall(AW, [-30 0 0], [-30 0 2.5], [-7.4 0 2.5], [-7.4 0 0],0.5);
 % sampling frequency and fL and fH are the lower and upper frequency bounds
 % for band optimization
 %
-hb = @KemoL10_TF; % This is the beam function of a speaker that we use in
-% our LAB 
+hb = @KemoL10_TF; % This is the beam function of a speaker that we use
 
 % To add a source to the simulator we use the function addSource. In the
 % first call we use this function like that:

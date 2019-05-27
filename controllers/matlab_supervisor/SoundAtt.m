@@ -11,14 +11,10 @@ function dbm = SoundAtt(Psin, Tin, hrin, f)
 %
 % INPUT
 %       Psin - atmospheric pressure in atm;
-%       Tin  - temperature in ºC;
+%       Tin  - temperature in C;
 %       hrin - hunidity of the air in %;
 %       f    - central frequency.
-%
-%  Copyright 2008 LocUS Project.
-%  Written by:  Daniel Filipe Albuquerque.
-%  $Revision: 1.0$    $Date: 2008/03/17 20:39$
-%
+
 T = Tin + 273.15; % temp input in K
 To1 = 273.15; % triple point in K
 To = 293.15; % ref temp in K
