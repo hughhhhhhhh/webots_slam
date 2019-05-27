@@ -155,7 +155,7 @@ Add - By topic – Map
 
 ```source devel/setup.bash```
 
-```rosrun map_server map_saver -f my_map```
+```rosrun map_server map_saver -f SLAMresult```
 
 if it doesn't work, you may need to install the map_server package 
 
