@@ -32,7 +32,7 @@ ________
 4) Install the webots_ros package
 ________
 
-Extract and copy ‘webots_ros’ document in your workspace (catkin_ws)
+Open 'installation_webots_ros_Package' and copy ‘webots_ros’ document into your own workspace (catkin_ws)
 
  ```catkin_make ```
  
