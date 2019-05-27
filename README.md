@@ -3,7 +3,7 @@ Webots Preparation Work
 ====  
 
 1) Install Webots
--------  
+________
 
  * R2019a
 
@@ -11,7 +11,7 @@ Webots Preparation Work
 
 
 2) Install ROS 
--------  
+________
 
  * rosdistribution: melodic
  * rosversion: 1.14.3
@@ -19,7 +19,7 @@ Webots Preparation Work
     [ROS](http://wiki.ros.org/ROS/Installation) 
 
 3) Create a workspace
--------  
+________
   (if you haven't created one before)
 
 
@@ -30,7 +30,7 @@ Webots Preparation Work
  ```catkin_init_workspace ```
 
 4) Install the webots_ros package
--------  
+________
 
 Extract and copy ‘webots_ros’ document in your workspace (catkin_ws)
 
@@ -38,7 +38,7 @@ Extract and copy ‘webots_ros’ document in your workspace (catkin_ws)
  
  
 5) Install the gmapping package(Melodic)
------------
+________
 
 1)Install the dependent library
 
@@ -90,7 +90,7 @@ There are three worlds with three difficulties: simplest,normal and complex,
 
 
 1) Open Matlab 
---------
+________
 1)Open and Run the first section of corresponding webotsscript
 
 ```controllers/matlab_supervisor/webotsscript(simplest).m``` or 
@@ -106,11 +106,11 @@ There are three worlds with three difficulties: simplest,normal and complex,
 ```imag_SLAM = '/home/huanghe/catkin_ws/my_map.pgm';```
 
 2) Open  Webots
---------
+________
  Open world ```worlds/SLAM(simplest).wbt``` or ```worlds/SLAM(normal).wbt``` or  ```worlds/SLAM(complex).wbt```
 
 3) Open ROS
----------
+________
 
 open Terminal
 
@@ -125,7 +125,7 @@ open a new tab
 ```rosrun webots_ros pioneer3at```
 
 4) Run gmapping
-----------
+________
 
 open a new tab 
 
@@ -136,20 +136,20 @@ open a new tab
 ```rosrun gmapping slam_gmapping scan:=/pioneer3at/Sick_LMS_291/laser_scan/layer0 _xmax:=30 _xmin:=-30 _ymax:=30 _ymin:=-30 _delta:=0.2```
 
 5) Open GUI
---------
+________
 
 open new tab
 
 ```rqt```
 
 6) Visualize SLAM
--------------
+________
 
 Add - By topic – Map
 
 
 7) Save the result of the SLAM
----------
+________
 
 ```cd catkin_ws/```
 
@@ -164,7 +164,7 @@ if it doesn't work, you may need to install the map_server package
 
 
 8) Calculate the exploration
---------
+________
 run the corresponding section in matlab script
 
 
